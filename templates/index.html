@@ -1,0 +1,32 @@
+<html>
+
+<head>
+    <title> Scholar's Mate </title>
+</head>
+
+<body>
+    <div>
+        {% for x in range(from_page,to_page) %}
+        <a href='{{ data[x]["metadata"][-1]["website"] }}'>{{data[x]['name']}}</a>
+        <br>
+        {{ data[x]['scholarship_for'] }}
+        <br>
+        {{ data[x]['deadline'] }}
+        <br>
+        {% for i in data[x]['metadata'] %}
+            {% for key,value in i.items() %}
+                <b>{{ key }}</b> : {{ value }}
+                <br>    
+            {% endfor %}
+        {% endfor %}
+        <br>
+        {% endfor %}
+    </div>
+    <div>
+        {% for i in range(1,pagination) %}
+            <a href="/{{i}}">{{i}}</a>
+        {% endfor %}
+    </div>
+</body>
+
+</html>

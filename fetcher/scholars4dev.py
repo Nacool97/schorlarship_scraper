@@ -1,12 +1,11 @@
-from datetime import datetime
-from textwrap import indent
+import re
 import requests
 import json
-
+from datetime import datetime
 import pika
 from bs4 import BeautifulSoup
 
-scholarships = open('/home/nacool/Desktop/Projects/scholarship scraper/scholarship_url.json')
+scholarships = open('/home/nacool/Desktop/Projects/scholarship_scraper/scholarship_url.json')
 urls = json.load(scholarships)
 sch_data = urls[0]
 connection = pika.BlockingConnection(pika.ConnectionParameters('localhost'))
@@ -30,10 +29,26 @@ def parser_webpage(content):
         if len(data_list) != 2:
             continue
         scholarship['schship_for'] = data_list[0].text.strip()
-        scholarship['schship_deadline'] = data_list[1].text.strip()
+        deadline = data_list[1].text.strip()
+        m = re.search(r'(\d+\s*[a-z]+\s*\d{4})',deadline, re.I) 
+        if m:
+            deadline = m.group(1)
+            try:
+                try:
+                    deadline = datetime.strptime(deadline,'%d %b %Y').isoformat()
+                except Exception as e:
+                    deadline = datetime.strptime(deadline,'%d %B %Y').isoformat()
+            except Exception:
+                continue
+        scholarship['schship_deadline'] = deadline
         if not data.find('div',attrs={'class':'left'}):
             continue 
-        scholarship['schship_last_updated'] = data.find('div',attrs={'class':'left'}).text
+        last_update = data.find('div',attrs={'class':'left'}).text
+        m = re.search(r'(\d+\s*[a-z]+\s*\d{4})',last_update, re.I)
+        if m:
+            last_update = m.group(1)
+            last_update = datetime.strptime(last_update,'%d %b %Y').isoformat()
+        scholarship['schship_last_updated'] = last_update
         if scholarship:
             scholarship_list.append(scholarship)
     return scholarship_list

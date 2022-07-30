@@ -1,0 +1,123 @@
+Traceback (most recent call last):
+  File "/home/nacool/.local/bin/gunicorn", line 5, in <module>
+    from gunicorn.app.wsgiapp import run
+ModuleNotFoundError: No module named 'gunicorn'
+Traceback (most recent call last):
+  File "/home/nacool/.local/bin/gunicorn", line 5, in <module>
+    from gunicorn.app.wsgiapp import run
+ModuleNotFoundError: No module named 'gunicorn'
+Traceback (most recent call last):
+  File "/home/nacool/.local/bin/gunicorn", line 5, in <module>
+    from gunicorn.app.wsgiapp import run
+ModuleNotFoundError: No module named 'gunicorn'
+Traceback (most recent call last):
+  File "/home/nacool/.local/bin/gunicorn", line 5, in <module>
+    from gunicorn.app.wsgiapp import run
+ModuleNotFoundError: No module named 'gunicorn'
+Traceback (most recent call last):
+  File "/home/nacool/.local/bin/gunicorn", line 5, in <module>
+    from gunicorn.app.wsgiapp import run
+ModuleNotFoundError: No module named 'gunicorn'
+Traceback (most recent call last):
+  File "/home/nacool/.local/bin/gunicorn", line 5, in <module>
+    from gunicorn.app.wsgiapp import run
+ModuleNotFoundError: No module named 'gunicorn'
+Traceback (most recent call last):
+  File "/home/nacool/.local/bin/gunicorn", line 5, in <module>
+    from gunicorn.app.wsgiapp import run
+ModuleNotFoundError: No module named 'gunicorn'
+Traceback (most recent call last):
+  File "/home/nacool/.local/bin/gunicorn", line 5, in <module>
+    from gunicorn.app.wsgiapp import run
+ModuleNotFoundError: No module named 'gunicorn'
+Traceback (most recent call last):
+  File "/home/nacool/.local/bin/gunicorn", line 5, in <module>
+    from gunicorn.app.wsgiapp import run
+ModuleNotFoundError: No module named 'gunicorn'
+Traceback (most recent call last):
+  File "/home/nacool/.local/bin/gunicorn", line 5, in <module>
+    from gunicorn.app.wsgiapp import run
+ModuleNotFoundError: No module named 'gunicorn'
+Traceback (most recent call last):
+  File "/home/nacool/.local/bin/gunicorn", line 5, in <module>
+    from gunicorn.app.wsgiapp import run
+ModuleNotFoundError: No module named 'gunicorn'
+Traceback (most recent call last):
+  File "/home/nacool/.local/bin/gunicorn", line 5, in <module>
+    from gunicorn.app.wsgiapp import run
+ModuleNotFoundError: No module named 'gunicorn'
+[2022-07-30 19:54:56 +0530] [102703] [INFO] Starting gunicorn 20.1.0
+[2022-07-30 19:54:56 +0530] [102703] [INFO] Listening at: http://0.0.0.0:8080 (102703)
+[2022-07-30 19:54:56 +0530] [102703] [INFO] Using worker: sync
+[2022-07-30 19:54:56 +0530] [102706] [INFO] Booting worker with pid: 102706
+[2022-07-30 19:55:51,557] ERROR in app: Exception on /favicon.ico [GET]
+Traceback (most recent call last):
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/flask/app.py", line 1519, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/flask/app.py", line 1517, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/flask/app.py", line 1503, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/app.py", line 15, in index
+    from_page = (int(page)-1)*cont_count
+ValueError: invalid literal for int() with base 10: 'favicon.ico'
+[2022-07-30 21:34:18,477] ERROR in app: Exception on /favicon.ico [GET]
+Traceback (most recent call last):
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/flask/app.py", line 1519, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/flask/app.py", line 1517, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/flask/app.py", line 1503, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/app.py", line 15, in index
+    from_page = (int(page)-1)*cont_count
+ValueError: invalid literal for int() with base 10: 'favicon.ico'
+[2022-07-30 21:34:49 +0530] [102703] [CRITICAL] WORKER TIMEOUT (pid:102706)
+[2022-07-30 21:34:49 +0530] [102706] [INFO] Worker exiting (pid: 102706)
+[2022-07-30 21:34:50 +0530] [110733] [INFO] Booting worker with pid: 110733
+[2022-07-30 21:41:31,850] ERROR in app: Exception on /favicon.ico [GET]
+Traceback (most recent call last):
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/flask/app.py", line 1519, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/flask/app.py", line 1517, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/flask/app.py", line 1503, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/app.py", line 15, in index
+    from_page = (int(page)-1)*cont_count
+ValueError: invalid literal for int() with base 10: 'favicon.ico'
+[2022-07-30 21:41:53,933] ERROR in app: Exception on /favicon.ico [GET]
+Traceback (most recent call last):
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/flask/app.py", line 1519, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/flask/app.py", line 1517, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/flask/app.py", line 1503, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/app.py", line 15, in index
+    from_page = (int(page)-1)*cont_count
+ValueError: invalid literal for int() with base 10: 'favicon.ico'
+[2022-07-30 21:42:04,201] ERROR in app: Exception on /favicon.ico [GET]
+Traceback (most recent call last):
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/flask/app.py", line 1519, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/flask/app.py", line 1517, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/flask/app.py", line 1503, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/app.py", line 15, in index
+    from_page = (int(page)-1)*cont_count
+ValueError: invalid literal for int() with base 10: 'favicon.ico'
+[2022-07-30 21:42:35 +0530] [102703] [CRITICAL] WORKER TIMEOUT (pid:110733)
+[2022-07-30 21:42:35 +0530] [110733] [INFO] Worker exiting (pid: 110733)
+[2022-07-30 21:42:35 +0530] [111424] [INFO] Booting worker with pid: 111424

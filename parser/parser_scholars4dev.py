@@ -17,7 +17,7 @@ def parse_scholars4dev(body):
         scholarship['deadline'] = d['schship_deadline'].replace('\n','').replace('\r','')
         scholarship['last_update'] = d['schship_last_updated'].replace('\n','').replace('\r','')
         try:
-            response = requests.get(d['schship_url'])
+            response = requests.get(d['schship_url'],timeout=100)
             response.raise_for_status
         except Exception as e:
             print(e)
@@ -38,7 +38,7 @@ def parse_scholars4dev(body):
             key = re.sub(r'[\:\-\(\)\@\#\!\.\'\"]+','',key,flags=re.I)
             key = key.replace(' ','-').strip()
             p_tag = title.findNext('p')
-            value = title.findNext('p').text.strip()
+            value = title.findNext('p').text.replace("\xa0",'').strip()
             if re.search(r'Eligibility',key,re.I):
                 value += ' '+title.findNext('ul').text.strip()
             if p_tag.find('a'):
