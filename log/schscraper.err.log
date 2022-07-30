@@ -121,3 +121,96 @@ ValueError: invalid literal for int() with base 10: 'favicon.ico'
 [2022-07-30 21:42:35 +0530] [102703] [CRITICAL] WORKER TIMEOUT (pid:110733)
 [2022-07-30 21:42:35 +0530] [110733] [INFO] Worker exiting (pid: 110733)
 [2022-07-30 21:42:35 +0530] [111424] [INFO] Booting worker with pid: 111424
+[2022-07-30 21:49:05 +0530] [102703] [INFO] Handling signal: term
+[2022-07-30 21:49:05 +0530] [111424] [INFO] Worker exiting (pid: 111424)
+[2022-07-30 21:49:06 +0530] [102703] [INFO] Shutting down: Master
+[2022-07-30 21:49:07 +0530] [112693] [INFO] Starting gunicorn 20.1.0
+[2022-07-30 21:49:07 +0530] [112693] [INFO] Listening at: http://0.0.0.0:8080 (112693)
+[2022-07-30 21:49:07 +0530] [112693] [INFO] Using worker: sync
+[2022-07-30 21:49:07 +0530] [112721] [INFO] Booting worker with pid: 112721
+[2022-07-30 21:50:41,994] ERROR in app: Exception on /favicon.ico [GET]
+Traceback (most recent call last):
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/flask/app.py", line 1519, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/flask/app.py", line 1517, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/flask/app.py", line 1503, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/app.py", line 15, in index
+    from_page = (int(page)-1)*cont_count
+ValueError: invalid literal for int() with base 10: 'favicon.ico'
+[2022-07-30 21:50:47,854] ERROR in app: Exception on /favicon.ico [GET]
+Traceback (most recent call last):
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/flask/app.py", line 1519, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/flask/app.py", line 1517, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/flask/app.py", line 1503, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/app.py", line 15, in index
+    from_page = (int(page)-1)*cont_count
+ValueError: invalid literal for int() with base 10: 'favicon.ico'
+[2022-07-30 21:51:18 +0530] [112693] [CRITICAL] WORKER TIMEOUT (pid:112721)
+[2022-07-30 21:51:18 +0530] [112721] [INFO] Worker exiting (pid: 112721)
+[2022-07-30 21:51:18 +0530] [113171] [INFO] Booting worker with pid: 113171
+[2022-07-30 22:31:35,342] ERROR in app: Exception on /favicon.ico [GET]
+Traceback (most recent call last):
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/flask/app.py", line 1519, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/flask/app.py", line 1517, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/flask/app.py", line 1503, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/app.py", line 15, in index
+    from_page = (int(page)-1)*cont_count
+ValueError: invalid literal for int() with base 10: 'favicon.ico'
+[2022-07-30 22:32:06 +0530] [112693] [CRITICAL] WORKER TIMEOUT (pid:113171)
+[2022-07-30 22:32:06 +0530] [113171] [INFO] Worker exiting (pid: 113171)
+[2022-07-30 22:32:06 +0530] [115641] [INFO] Booting worker with pid: 115641
+[2022-07-30 22:33:49,188] ERROR in app: Exception on / [GET]
+Traceback (most recent call last):
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/flask/app.py", line 1519, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/flask/app.py", line 1517, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/flask/app.py", line 1503, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/app.py", line 18, in index
+    return render_template('index.html',data=sch,from_page=from_page,to_page=to_page,pagination=pagination)
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/flask/templating.py", line 154, in render_template
+    return _render(
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/flask/templating.py", line 128, in _render
+    rv = template.render(context)
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/jinja2/environment.py", line 1301, in render
+    self.environment.handle_exception()
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/jinja2/environment.py", line 936, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/templates/index.html", line 10, in top-level template code
+    <a href='{{ data[x]["metadata"][-1]["website"] }}'>{{data[x]['name']}}</a>
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/jinja2/environment.py", line 466, in getitem
+    return obj[argument]
+jinja2.exceptions.UndefinedError: list object has no element 0
+[2022-07-30 22:33:49,322] ERROR in app: Exception on /favicon.ico [GET]
+Traceback (most recent call last):
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/flask/app.py", line 1519, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/flask/app.py", line 1517, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/flask/app.py", line 1503, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/app.py", line 15, in index
+    from_page = (int(page)-1)*cont_count
+ValueError: invalid literal for int() with base 10: 'favicon.ico'
+[2022-07-30 22:34:20 +0530] [112693] [CRITICAL] WORKER TIMEOUT (pid:115641)
+[2022-07-30 22:34:20 +0530] [115641] [INFO] Worker exiting (pid: 115641)
+[2022-07-30 22:34:21 +0530] [116067] [INFO] Booting worker with pid: 116067

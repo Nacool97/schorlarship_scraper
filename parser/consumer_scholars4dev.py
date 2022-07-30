@@ -9,5 +9,5 @@ channel.queue_declare(queue='new_data_scholars4dev')
 def callback(ch,method,properties,body):
     parser_scholars4dev.parse_scholars4dev(body)
 
-channel.basic_consume(queue='new_data_scholars4dev',on_message_callback=callback)
+channel.basic_consume(queue='new_data_scholars4dev',auto_ack=True,on_message_callback=callback)
 channel.start_consuming()
