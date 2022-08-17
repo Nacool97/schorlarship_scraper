@@ -1,4 +1,4 @@
-import math
+from datetime import datetime
 from flask import Flask, render_template
 from pymongo import MongoClient
 app = Flask(__name__)
@@ -17,8 +17,11 @@ def index(page):
     sch = data
     from_page = (current-1)*cont_count
     to_page = current*cont_count
-    
-    return render_template('index.html',data=sch,from_page=from_page,to_page=to_page,current=current)
+    new_data = []
+    for d in sch:
+        new_data.append(d)
+
+    return render_template('index.html',data=new_data,from_page=from_page,to_page=to_page,current=current)
 
 if __name__ == '__main__':
     app.run('0.0.0.0',port=8080)

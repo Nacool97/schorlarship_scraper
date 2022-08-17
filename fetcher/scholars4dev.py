@@ -35,9 +35,11 @@ def parser_webpage(content):
             deadline = m.group(1)
             try:
                 try:
-                    deadline = datetime.strptime(deadline,'%d %b %Y').isoformat()
+                    date_str = datetime.strptime(deadline,'%d %b %Y').isoformat()
                 except Exception as e:
-                    deadline = datetime.strptime(deadline,'%d %B %Y').isoformat()
+                    date_str = datetime.strptime(deadline,'%d %B %Y').isoformat()
+                date_obj = datetime.strptime(date_str,"%Y-%m-%dT%H:%M:%S")
+                deadline = date_obj.strftime('%d/%m/%Y')
             except Exception:
                 continue
         scholarship['schship_deadline'] = deadline
