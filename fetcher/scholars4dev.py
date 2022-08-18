@@ -4,6 +4,10 @@ import json
 from datetime import datetime
 import pika
 from bs4 import BeautifulSoup
+from pymongo import MongoClient
+
+client = MongoClient('localhost',port=27017)
+collection = client['nacool_projects']['scholarships']
 
 scholarships = open('/home/nacool/Desktop/Projects/scholarship_scraper/scholarship_url.json')
 urls = json.load(scholarships)
@@ -15,6 +19,15 @@ def send_message(queue_name,payload):
     channel.queue_declare(queue=queue_name)
     channel.basic_publish(exchange='',routing_key=queue_name,body=payload)
     connection.close()
+def check_for_duplicate(url):
+    schloarship = collection.find_one({
+        'url':url
+    })
+    if schloarship:
+        print(schloarship)
+        return True
+    return False
+    
 
 def parser_webpage(content):
     scholarship_list = []
@@ -25,6 +38,15 @@ def parser_webpage(content):
         scholarship = {}
         scholarship['schship_name'] = data.find('h2').text.strip()
         scholarship['schship_url'] = data.find('a').get('href')
+        isfetched = check_for_duplicate(scholarship['schship_url'])
+        if isfetched:
+            last_update = datetime.now()
+            date = last_update.strftime('%d/%m/%Y')
+            collection.update_one({'url':scholarship['schship_url']},
+            {
+                '$set':{'last_update':date}
+            })
+            continue
         data_list = data.find_all('div',attrs={'class':'post_column_1'})
         if len(data_list) != 2:
             continue
@@ -43,14 +65,10 @@ def parser_webpage(content):
             except Exception:
                 continue
         scholarship['schship_deadline'] = deadline
-        if not data.find('div',attrs={'class':'left'}):
-            continue 
-        last_update = data.find('div',attrs={'class':'left'}).text
-        m = re.search(r'(\d+\s*[a-z]+\s*\d{4})',last_update, re.I)
-        if m:
-            last_update = m.group(1)
-            last_update = datetime.strptime(last_update,'%d %b %Y').isoformat()
-        scholarship['schship_last_updated'] = last_update
+        
+        last_update = datetime.now()
+        date = last_update.strftime('%d/%m/%Y')
+        scholarship['schship_last_updated'] = date
         if scholarship:
             scholarship_list.append(scholarship)
     return scholarship_list

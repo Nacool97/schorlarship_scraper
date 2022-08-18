@@ -10,8 +10,8 @@
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <link href="{{ url_for('static',filename='assets/img/favicon.png') }}" rel="icon">
-  <link href="{{ url_for('static',filename='assets/img/apple-touch-icon.png') }}" rel="apple-touch-icon">
+  <link href="{{ url_for('static',filename='assets/img/logo.png') }}" rel="icon">
+  <link href="{{ url_for('static',filename='assets/img/logo.png') }}" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
   <link
@@ -60,7 +60,7 @@
 
       <h1 class="logo"><a href="/">Scholars Mate</a></h1>
       <!-- Uncomment below if you prefer to use an image logo -->
-      <!-- <a href=index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+      <!-- <a href=index.html" class="logo"><img src="static/assets/img/logo.png" alt="" class="img-fluid"></a> -->
 
       <!-- <nav id="navbar" class="navbar">
         <ul>
@@ -132,8 +132,10 @@
 
               <div class="entry-meta">
                 <ul>
-                  <li class="d-flex align-items-center"><i class="bi bi-clock"></i>{{ data[x]['deadline'] }}</li>
+                  
                   <li class="d-flex align-items-center"><i class="bi bi-chat-dots"></i>{{ data[x]['scholarship_for'] }}</li>
+                  <li class="d-flex align-items-center"><i class="bi bi-clock"></i>Deadline: {{ data[x]['deadline'] }}</li>
+                  <li class="d-flex align-items-center"><i class="bi bi-clock"></i>Last Updated: {{ data[x]['last_update'] }}</li>
                 </ul>
               </div>
 

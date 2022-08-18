@@ -4807,3 +4807,270 @@ ValueError: time data 'Deadline: University-dependent (Annual)Study in: GermanyC
 [2022-08-17 23:36:43 +0530] [48037] [INFO] Listening at: http://0.0.0.0:8080 (48037)
 [2022-08-17 23:36:43 +0530] [48037] [INFO] Using worker: sync
 [2022-08-17 23:36:43 +0530] [48038] [INFO] Booting worker with pid: 48038
+[2022-08-17 23:48:19 +0530] [48037] [INFO] Handling signal: term
+[2022-08-17 23:48:19 +0530] [48038] [INFO] Worker exiting (pid: 48038)
+[2022-08-17 23:48:20 +0530] [48037] [INFO] Shutting down: Master
+[2022-08-18 15:03:48 +0530] [1603] [INFO] Starting gunicorn 20.1.0
+[2022-08-18 15:03:48 +0530] [1603] [INFO] Listening at: http://0.0.0.0:8080 (1603)
+[2022-08-18 15:03:48 +0530] [1603] [INFO] Using worker: sync
+[2022-08-18 15:03:48 +0530] [1708] [INFO] Booting worker with pid: 1708
+[2022-08-18 15:04:18 +0530] [1603] [CRITICAL] WORKER TIMEOUT (pid:1708)
+[2022-08-18 15:04:18 +0530] [1708] [INFO] Worker exiting (pid: 1708)
+[2022-08-18 15:04:19 +0530] [2090] [INFO] Booting worker with pid: 2090
+[2022-08-18 15:04:49 +0530] [1603] [CRITICAL] WORKER TIMEOUT (pid:2090)
+[2022-08-18 15:04:49 +0530] [2090] [INFO] Worker exiting (pid: 2090)
+[2022-08-18 15:04:49 +0530] [2861] [INFO] Booting worker with pid: 2861
+[2022-08-18 15:05:19 +0530] [1603] [CRITICAL] WORKER TIMEOUT (pid:2861)
+[2022-08-18 15:05:19 +0530] [2861] [INFO] Worker exiting (pid: 2861)
+[2022-08-18 15:05:19 +0530] [3598] [INFO] Booting worker with pid: 3598
+[2022-08-18 15:05:49 +0530] [1603] [CRITICAL] WORKER TIMEOUT (pid:3598)
+[2022-08-18 15:05:49 +0530] [3598] [INFO] Worker exiting (pid: 3598)
+[2022-08-18 15:05:50 +0530] [4685] [INFO] Booting worker with pid: 4685
+[2022-08-18 15:06:20 +0530] [1603] [CRITICAL] WORKER TIMEOUT (pid:4685)
+[2022-08-18 15:06:20 +0530] [4685] [INFO] Worker exiting (pid: 4685)
+[2022-08-18 15:06:20 +0530] [4758] [INFO] Booting worker with pid: 4758
+[2022-08-18 15:06:50 +0530] [1603] [CRITICAL] WORKER TIMEOUT (pid:4758)
+[2022-08-18 15:06:50 +0530] [4758] [INFO] Worker exiting (pid: 4758)
+[2022-08-18 15:06:50 +0530] [4789] [INFO] Booting worker with pid: 4789
+[2022-08-18 15:07:20 +0530] [1603] [CRITICAL] WORKER TIMEOUT (pid:4789)
+[2022-08-18 15:07:20 +0530] [4789] [INFO] Worker exiting (pid: 4789)
+[2022-08-18 15:07:20 +0530] [4834] [INFO] Booting worker with pid: 4834
+[2022-08-18 15:07:50 +0530] [1603] [CRITICAL] WORKER TIMEOUT (pid:4834)
+[2022-08-18 15:07:50 +0530] [4834] [INFO] Worker exiting (pid: 4834)
+[2022-08-18 15:07:51 +0530] [4847] [INFO] Booting worker with pid: 4847
+[2022-08-18 15:08:21 +0530] [1603] [CRITICAL] WORKER TIMEOUT (pid:4847)
+[2022-08-18 15:08:21 +0530] [4847] [INFO] Worker exiting (pid: 4847)
+[2022-08-18 15:08:21 +0530] [4891] [INFO] Booting worker with pid: 4891
+[2022-08-18 15:08:51 +0530] [1603] [CRITICAL] WORKER TIMEOUT (pid:4891)
+[2022-08-18 15:08:51 +0530] [4891] [INFO] Worker exiting (pid: 4891)
+[2022-08-18 15:08:51 +0530] [4918] [INFO] Booting worker with pid: 4918
+[2022-08-18 15:09:21 +0530] [1603] [CRITICAL] WORKER TIMEOUT (pid:4918)
+[2022-08-18 15:09:21 +0530] [4918] [INFO] Worker exiting (pid: 4918)
+[2022-08-18 15:09:22 +0530] [4994] [INFO] Booting worker with pid: 4994
+[2022-08-18 15:09:52 +0530] [1603] [CRITICAL] WORKER TIMEOUT (pid:4994)
+[2022-08-18 15:09:52 +0530] [4994] [INFO] Worker exiting (pid: 4994)
+[2022-08-18 15:09:52 +0530] [5004] [INFO] Booting worker with pid: 5004
+[2022-08-18 15:10:22 +0530] [1603] [CRITICAL] WORKER TIMEOUT (pid:5004)
+[2022-08-18 15:10:22 +0530] [5004] [INFO] Worker exiting (pid: 5004)
+[2022-08-18 15:10:22 +0530] [5050] [INFO] Booting worker with pid: 5050
+[2022-08-18 15:10:52 +0530] [1603] [CRITICAL] WORKER TIMEOUT (pid:5050)
+[2022-08-18 15:10:52 +0530] [5050] [INFO] Worker exiting (pid: 5050)
+[2022-08-18 15:10:53 +0530] [5060] [INFO] Booting worker with pid: 5060
+[2022-08-18 15:11:23 +0530] [1603] [CRITICAL] WORKER TIMEOUT (pid:5060)
+[2022-08-18 15:11:23 +0530] [5060] [INFO] Worker exiting (pid: 5060)
+[2022-08-18 15:11:23 +0530] [5106] [INFO] Booting worker with pid: 5106
+[2022-08-18 15:11:53 +0530] [1603] [CRITICAL] WORKER TIMEOUT (pid:5106)
+[2022-08-18 15:11:53 +0530] [5106] [INFO] Worker exiting (pid: 5106)
+[2022-08-18 15:11:53 +0530] [5119] [INFO] Booting worker with pid: 5119
+[2022-08-18 15:12:23 +0530] [1603] [CRITICAL] WORKER TIMEOUT (pid:5119)
+[2022-08-18 15:12:23 +0530] [5119] [INFO] Worker exiting (pid: 5119)
+[2022-08-18 15:12:23 +0530] [5164] [INFO] Booting worker with pid: 5164
+[2022-08-18 15:12:54 +0530] [1603] [CRITICAL] WORKER TIMEOUT (pid:5164)
+[2022-08-18 15:12:54 +0530] [5164] [INFO] Worker exiting (pid: 5164)
+[2022-08-18 15:12:54 +0530] [5173] [INFO] Booting worker with pid: 5173
+[2022-08-18 15:13:24 +0530] [1603] [CRITICAL] WORKER TIMEOUT (pid:5173)
+[2022-08-18 15:13:24 +0530] [5173] [INFO] Worker exiting (pid: 5173)
+[2022-08-18 15:13:24 +0530] [5219] [INFO] Booting worker with pid: 5219
+[2022-08-18 15:13:54 +0530] [1603] [CRITICAL] WORKER TIMEOUT (pid:5219)
+[2022-08-18 15:13:54 +0530] [5219] [INFO] Worker exiting (pid: 5219)
+[2022-08-18 15:13:54 +0530] [5230] [INFO] Booting worker with pid: 5230
+[2022-08-18 15:14:24 +0530] [1603] [CRITICAL] WORKER TIMEOUT (pid:5230)
+[2022-08-18 15:14:24 +0530] [5230] [INFO] Worker exiting (pid: 5230)
+[2022-08-18 15:14:25 +0530] [5275] [INFO] Booting worker with pid: 5275
+[2022-08-18 15:14:55 +0530] [1603] [CRITICAL] WORKER TIMEOUT (pid:5275)
+[2022-08-18 15:14:55 +0530] [5275] [INFO] Worker exiting (pid: 5275)
+[2022-08-18 15:14:55 +0530] [5318] [INFO] Booting worker with pid: 5318
+[2022-08-18 15:15:25 +0530] [1603] [CRITICAL] WORKER TIMEOUT (pid:5318)
+[2022-08-18 15:15:25 +0530] [5318] [INFO] Worker exiting (pid: 5318)
+[2022-08-18 15:15:25 +0530] [5334] [INFO] Booting worker with pid: 5334
+[2022-08-18 15:15:55 +0530] [1603] [CRITICAL] WORKER TIMEOUT (pid:5334)
+[2022-08-18 15:15:55 +0530] [5334] [INFO] Worker exiting (pid: 5334)
+[2022-08-18 15:15:56 +0530] [5377] [INFO] Booting worker with pid: 5377
+[2022-08-18 15:16:26 +0530] [1603] [CRITICAL] WORKER TIMEOUT (pid:5377)
+[2022-08-18 15:16:26 +0530] [5377] [INFO] Worker exiting (pid: 5377)
+[2022-08-18 15:16:26 +0530] [5388] [INFO] Booting worker with pid: 5388
+[2022-08-18 15:16:56 +0530] [1603] [CRITICAL] WORKER TIMEOUT (pid:5388)
+[2022-08-18 15:16:56 +0530] [5388] [INFO] Worker exiting (pid: 5388)
+[2022-08-18 15:16:56 +0530] [5432] [INFO] Booting worker with pid: 5432
+[2022-08-18 15:17:26 +0530] [1603] [CRITICAL] WORKER TIMEOUT (pid:5432)
+[2022-08-18 15:17:26 +0530] [5432] [INFO] Worker exiting (pid: 5432)
+[2022-08-18 15:17:27 +0530] [5448] [INFO] Booting worker with pid: 5448
+[2022-08-18 15:17:57 +0530] [1603] [CRITICAL] WORKER TIMEOUT (pid:5448)
+[2022-08-18 15:17:57 +0530] [5448] [INFO] Worker exiting (pid: 5448)
+[2022-08-18 15:17:57 +0530] [5492] [INFO] Booting worker with pid: 5492
+[2022-08-18 15:18:27 +0530] [1603] [CRITICAL] WORKER TIMEOUT (pid:5492)
+[2022-08-18 15:18:27 +0530] [5492] [INFO] Worker exiting (pid: 5492)
+[2022-08-18 15:18:27 +0530] [5503] [INFO] Booting worker with pid: 5503
+[2022-08-18 15:18:57 +0530] [1603] [CRITICAL] WORKER TIMEOUT (pid:5503)
+[2022-08-18 15:18:57 +0530] [5503] [INFO] Worker exiting (pid: 5503)
+[2022-08-18 15:18:57 +0530] [5546] [INFO] Booting worker with pid: 5546
+[2022-08-18 15:19:28 +0530] [1603] [CRITICAL] WORKER TIMEOUT (pid:5546)
+[2022-08-18 15:19:28 +0530] [5546] [INFO] Worker exiting (pid: 5546)
+[2022-08-18 15:19:28 +0530] [5557] [INFO] Booting worker with pid: 5557
+[2022-08-18 15:19:58 +0530] [1603] [CRITICAL] WORKER TIMEOUT (pid:5557)
+[2022-08-18 15:19:58 +0530] [5557] [INFO] Worker exiting (pid: 5557)
+[2022-08-18 15:19:58 +0530] [5600] [INFO] Booting worker with pid: 5600
+[2022-08-18 15:20:28 +0530] [1603] [CRITICAL] WORKER TIMEOUT (pid:5600)
+[2022-08-18 15:20:28 +0530] [5600] [INFO] Worker exiting (pid: 5600)
+[2022-08-18 15:20:28 +0530] [5612] [INFO] Booting worker with pid: 5612
+[2022-08-18 15:20:58 +0530] [1603] [CRITICAL] WORKER TIMEOUT (pid:5612)
+[2022-08-18 15:20:58 +0530] [5612] [INFO] Worker exiting (pid: 5612)
+[2022-08-18 15:20:59 +0530] [5655] [INFO] Booting worker with pid: 5655
+[2022-08-18 15:21:29 +0530] [1603] [CRITICAL] WORKER TIMEOUT (pid:5655)
+[2022-08-18 15:21:29 +0530] [5655] [INFO] Worker exiting (pid: 5655)
+[2022-08-18 15:21:29 +0530] [5666] [INFO] Booting worker with pid: 5666
+[2022-08-18 15:21:59 +0530] [1603] [CRITICAL] WORKER TIMEOUT (pid:5666)
+[2022-08-18 15:21:59 +0530] [5666] [INFO] Worker exiting (pid: 5666)
+[2022-08-18 15:21:59 +0530] [5710] [INFO] Booting worker with pid: 5710
+[2022-08-18 15:22:29 +0530] [1603] [CRITICAL] WORKER TIMEOUT (pid:5710)
+[2022-08-18 15:22:29 +0530] [5710] [INFO] Worker exiting (pid: 5710)
+[2022-08-18 15:22:30 +0530] [5721] [INFO] Booting worker with pid: 5721
+[2022-08-18 15:23:00 +0530] [1603] [CRITICAL] WORKER TIMEOUT (pid:5721)
+[2022-08-18 15:23:00 +0530] [5721] [INFO] Worker exiting (pid: 5721)
+[2022-08-18 15:23:00 +0530] [5764] [INFO] Booting worker with pid: 5764
+[2022-08-18 15:23:30 +0530] [1603] [CRITICAL] WORKER TIMEOUT (pid:5764)
+[2022-08-18 15:23:30 +0530] [5764] [INFO] Worker exiting (pid: 5764)
+[2022-08-18 15:23:30 +0530] [5776] [INFO] Booting worker with pid: 5776
+[2022-08-18 15:24:00 +0530] [1603] [CRITICAL] WORKER TIMEOUT (pid:5776)
+[2022-08-18 15:24:00 +0530] [5776] [INFO] Worker exiting (pid: 5776)
+[2022-08-18 15:24:00 +0530] [5819] [INFO] Booting worker with pid: 5819
+[2022-08-18 15:24:30 +0530] [1603] [CRITICAL] WORKER TIMEOUT (pid:5819)
+[2022-08-18 15:24:30 +0530] [5819] [INFO] Worker exiting (pid: 5819)
+[2022-08-18 15:24:31 +0530] [5831] [INFO] Booting worker with pid: 5831
+[2022-08-18 15:25:01 +0530] [1603] [CRITICAL] WORKER TIMEOUT (pid:5831)
+[2022-08-18 15:25:01 +0530] [5831] [INFO] Worker exiting (pid: 5831)
+[2022-08-18 15:25:01 +0530] [5874] [INFO] Booting worker with pid: 5874
+[2022-08-18 15:25:31 +0530] [1603] [CRITICAL] WORKER TIMEOUT (pid:5874)
+[2022-08-18 15:25:31 +0530] [5874] [INFO] Worker exiting (pid: 5874)
+[2022-08-18 15:25:31 +0530] [5888] [INFO] Booting worker with pid: 5888
+[2022-08-18 15:26:01 +0530] [1603] [CRITICAL] WORKER TIMEOUT (pid:5888)
+[2022-08-18 15:26:01 +0530] [5888] [INFO] Worker exiting (pid: 5888)
+[2022-08-18 15:26:02 +0530] [5931] [INFO] Booting worker with pid: 5931
+[2022-08-18 15:26:32 +0530] [1603] [CRITICAL] WORKER TIMEOUT (pid:5931)
+[2022-08-18 15:26:32 +0530] [5931] [INFO] Worker exiting (pid: 5931)
+[2022-08-18 15:26:32 +0530] [5942] [INFO] Booting worker with pid: 5942
+[2022-08-18 15:27:02 +0530] [1603] [CRITICAL] WORKER TIMEOUT (pid:5942)
+[2022-08-18 15:27:02 +0530] [5942] [INFO] Worker exiting (pid: 5942)
+[2022-08-18 15:27:02 +0530] [6015] [INFO] Booting worker with pid: 6015
+[2022-08-18 15:27:32 +0530] [1603] [CRITICAL] WORKER TIMEOUT (pid:6015)
+[2022-08-18 15:27:32 +0530] [6015] [INFO] Worker exiting (pid: 6015)
+[2022-08-18 15:27:33 +0530] [6032] [INFO] Booting worker with pid: 6032
+[2022-08-18 15:28:03 +0530] [1603] [CRITICAL] WORKER TIMEOUT (pid:6032)
+[2022-08-18 15:28:03 +0530] [6032] [INFO] Worker exiting (pid: 6032)
+[2022-08-18 15:28:03 +0530] [6082] [INFO] Booting worker with pid: 6082
+[2022-08-18 15:28:33 +0530] [1603] [CRITICAL] WORKER TIMEOUT (pid:6082)
+[2022-08-18 15:28:33 +0530] [6082] [INFO] Worker exiting (pid: 6082)
+[2022-08-18 15:28:33 +0530] [6841] [INFO] Booting worker with pid: 6841
+[2022-08-18 15:29:03 +0530] [1603] [CRITICAL] WORKER TIMEOUT (pid:6841)
+[2022-08-18 15:29:03 +0530] [6841] [INFO] Worker exiting (pid: 6841)
+[2022-08-18 15:29:04 +0530] [7009] [INFO] Booting worker with pid: 7009
+[2022-08-18 15:29:34 +0530] [1603] [CRITICAL] WORKER TIMEOUT (pid:7009)
+[2022-08-18 15:29:34 +0530] [7009] [INFO] Worker exiting (pid: 7009)
+[2022-08-18 15:29:34 +0530] [7035] [INFO] Booting worker with pid: 7035
+[2022-08-18 15:30:04 +0530] [1603] [CRITICAL] WORKER TIMEOUT (pid:7035)
+[2022-08-18 15:30:04 +0530] [7035] [INFO] Worker exiting (pid: 7035)
+[2022-08-18 15:30:04 +0530] [7149] [INFO] Booting worker with pid: 7149
+[2022-08-18 15:30:35 +0530] [1603] [CRITICAL] WORKER TIMEOUT (pid:7149)
+[2022-08-18 15:30:35 +0530] [7149] [INFO] Worker exiting (pid: 7149)
+[2022-08-18 15:30:35 +0530] [7237] [INFO] Booting worker with pid: 7237
+[2022-08-18 15:31:05 +0530] [1603] [CRITICAL] WORKER TIMEOUT (pid:7237)
+[2022-08-18 15:31:05 +0530] [7237] [INFO] Worker exiting (pid: 7237)
+[2022-08-18 15:31:05 +0530] [7559] [INFO] Booting worker with pid: 7559
+[2022-08-18 15:31:35 +0530] [1603] [CRITICAL] WORKER TIMEOUT (pid:7559)
+[2022-08-18 15:31:35 +0530] [7559] [INFO] Worker exiting (pid: 7559)
+[2022-08-18 15:31:35 +0530] [7583] [INFO] Booting worker with pid: 7583
+[2022-08-18 15:42:31 +0530] [1603] [INFO] Handling signal: term
+[2022-08-18 15:42:31 +0530] [7583] [INFO] Worker exiting (pid: 7583)
+[2022-08-18 15:42:32 +0530] [1603] [INFO] Shutting down: Master
+[2022-08-18 15:42:33 +0530] [8963] [INFO] Starting gunicorn 20.1.0
+[2022-08-18 15:42:33 +0530] [8963] [INFO] Listening at: http://0.0.0.0:8080 (8963)
+[2022-08-18 15:42:33 +0530] [8963] [INFO] Using worker: sync
+[2022-08-18 15:42:33 +0530] [8964] [INFO] Booting worker with pid: 8964
+[2022-08-18 15:44:10 +0530] [8963] [INFO] Handling signal: term
+[2022-08-18 15:44:10 +0530] [8964] [INFO] Worker exiting (pid: 8964)
+[2022-08-18 15:44:10 +0530] [8963] [INFO] Shutting down: Master
+[2022-08-18 15:44:12 +0530] [9418] [INFO] Starting gunicorn 20.1.0
+[2022-08-18 15:44:12 +0530] [9418] [INFO] Listening at: http://0.0.0.0:8080 (9418)
+[2022-08-18 15:44:12 +0530] [9418] [INFO] Using worker: sync
+[2022-08-18 15:44:12 +0530] [9419] [INFO] Booting worker with pid: 9419
+[2022-08-18 15:44:48,206] ERROR in app: Exception on /setup.cgi [GET]
+Traceback (most recent call last):
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/flask/app.py", line 1519, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/flask/app.py", line 1517, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/flask/app.py", line 1503, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/app.py", line 14, in index
+    current = int(page)
+ValueError: invalid literal for int() with base 10: 'setup.cgi'
+[2022-08-18 15:45:52 +0530] [9418] [INFO] Handling signal: term
+[2022-08-18 15:45:52 +0530] [9419] [INFO] Worker exiting (pid: 9419)
+[2022-08-18 15:45:52 +0530] [9418] [INFO] Shutting down: Master
+[2022-08-18 15:45:53 +0530] [9557] [INFO] Starting gunicorn 20.1.0
+[2022-08-18 15:45:53 +0530] [9557] [INFO] Listening at: http://0.0.0.0:8080 (9557)
+[2022-08-18 15:45:53 +0530] [9557] [INFO] Using worker: sync
+[2022-08-18 15:45:53 +0530] [9558] [INFO] Booting worker with pid: 9558
+[2022-08-18 15:46:36 +0530] [9557] [INFO] Handling signal: term
+[2022-08-18 15:46:36 +0530] [9558] [INFO] Worker exiting (pid: 9558)
+[2022-08-18 15:46:37 +0530] [9557] [INFO] Shutting down: Master
+[2022-08-18 15:46:38 +0530] [9647] [INFO] Starting gunicorn 20.1.0
+[2022-08-18 15:46:38 +0530] [9647] [INFO] Listening at: http://0.0.0.0:8080 (9647)
+[2022-08-18 15:46:38 +0530] [9647] [INFO] Using worker: sync
+[2022-08-18 15:46:38 +0530] [9648] [INFO] Booting worker with pid: 9648
+[2022-08-18 16:55:45 +0530] [9647] [CRITICAL] WORKER TIMEOUT (pid:9648)
+[2022-08-18 16:55:45 +0530] [9648] [INFO] Worker exiting (pid: 9648)
+[2022-08-18 16:55:45 +0530] [13786] [INFO] Booting worker with pid: 13786
+[2022-08-18 16:59:22 +0530] [9647] [CRITICAL] WORKER TIMEOUT (pid:13786)
+[2022-08-18 16:59:22 +0530] [13786] [INFO] Worker exiting (pid: 13786)
+[2022-08-18 16:59:22 +0530] [13986] [INFO] Booting worker with pid: 13986
+[2022-08-18 17:00:25 +0530] [9647] [CRITICAL] WORKER TIMEOUT (pid:13986)
+[2022-08-18 17:00:25 +0530] [13986] [INFO] Worker exiting (pid: 13986)
+[2022-08-18 17:00:25 +0530] [14044] [INFO] Booting worker with pid: 14044
+[2022-08-18 17:00:56 +0530] [9647] [CRITICAL] WORKER TIMEOUT (pid:14044)
+[2022-08-18 17:00:56 +0530] [14044] [INFO] Worker exiting (pid: 14044)
+[2022-08-18 17:00:56 +0530] [14058] [INFO] Booting worker with pid: 14058
+[2022-08-18 17:01:27 +0530] [9647] [CRITICAL] WORKER TIMEOUT (pid:14058)
+[2022-08-18 17:01:27 +0530] [14058] [INFO] Worker exiting (pid: 14058)
+[2022-08-18 17:01:28 +0530] [14105] [INFO] Booting worker with pid: 14105
+[2022-08-18 18:59:37 +0530] [9647] [INFO] Handling signal: term
+[2022-08-18 18:59:37 +0530] [14105] [INFO] Worker exiting (pid: 14105)
+[2022-08-18 18:59:37 +0530] [9647] [INFO] Shutting down: Master
+[2022-08-18 18:59:39 +0530] [24655] [INFO] Starting gunicorn 20.1.0
+[2022-08-18 18:59:39 +0530] [24655] [INFO] Listening at: http://0.0.0.0:8080 (24655)
+[2022-08-18 18:59:39 +0530] [24655] [INFO] Using worker: sync
+[2022-08-18 18:59:39 +0530] [24656] [INFO] Booting worker with pid: 24656
+[2022-08-18 20:42:13 +0530] [24655] [INFO] Handling signal: term
+[2022-08-18 20:42:13 +0530] [24656] [INFO] Worker exiting (pid: 24656)
+[2022-08-18 20:42:13 +0530] [24655] [INFO] Shutting down: Master
+[2022-08-18 20:42:15 +0530] [30356] [INFO] Starting gunicorn 20.1.0
+[2022-08-18 20:42:15 +0530] [30356] [INFO] Listening at: http://0.0.0.0:8080 (30356)
+[2022-08-18 20:42:15 +0530] [30356] [INFO] Using worker: sync
+[2022-08-18 20:42:15 +0530] [30357] [INFO] Booting worker with pid: 30357
+[2022-08-18 20:43:29 +0530] [30356] [CRITICAL] WORKER TIMEOUT (pid:30357)
+[2022-08-18 20:43:29 +0530] [30357] [INFO] Worker exiting (pid: 30357)
+[2022-08-18 20:43:29 +0530] [30897] [INFO] Booting worker with pid: 30897
+[2022-08-18 20:44:00 +0530] [30356] [CRITICAL] WORKER TIMEOUT (pid:30897)
+[2022-08-18 20:44:00 +0530] [30897] [INFO] Worker exiting (pid: 30897)
+[2022-08-18 20:44:00 +0530] [31003] [INFO] Booting worker with pid: 31003
+[2022-08-18 20:44:31 +0530] [30356] [CRITICAL] WORKER TIMEOUT (pid:31003)
+[2022-08-18 20:44:31 +0530] [31003] [INFO] Worker exiting (pid: 31003)
+[2022-08-18 20:44:32 +0530] [31302] [INFO] Booting worker with pid: 31302
+[2022-08-18 20:47:51 +0530] [30356] [INFO] Handling signal: term
+[2022-08-18 20:47:51 +0530] [31302] [INFO] Worker exiting (pid: 31302)
+[2022-08-18 20:47:52 +0530] [30356] [INFO] Shutting down: Master
+[2022-08-18 20:47:53 +0530] [32173] [INFO] Starting gunicorn 20.1.0
+[2022-08-18 20:47:53 +0530] [32173] [INFO] Listening at: http://0.0.0.0:8080 (32173)
+[2022-08-18 20:47:53 +0530] [32173] [INFO] Using worker: sync
+[2022-08-18 20:47:53 +0530] [32174] [INFO] Booting worker with pid: 32174
+[2022-08-18 20:48:33 +0530] [32173] [CRITICAL] WORKER TIMEOUT (pid:32174)
+[2022-08-18 20:48:33 +0530] [32174] [INFO] Worker exiting (pid: 32174)
+[2022-08-18 20:48:33 +0530] [32242] [INFO] Booting worker with pid: 32242
+[2022-08-18 20:50:16 +0530] [32173] [CRITICAL] WORKER TIMEOUT (pid:32242)
+[2022-08-18 20:50:16 +0530] [32242] [INFO] Worker exiting (pid: 32242)
+[2022-08-18 20:50:16 +0530] [32436] [INFO] Booting worker with pid: 32436
+[2022-08-18 20:51:27 +0530] [32173] [CRITICAL] WORKER TIMEOUT (pid:32436)
+[2022-08-18 20:51:27 +0530] [32436] [INFO] Worker exiting (pid: 32436)
+[2022-08-18 20:51:27 +0530] [32558] [INFO] Booting worker with pid: 32558
