@@ -17,7 +17,7 @@ def index(page):
     if current < 1:
         current = 1
         previous_page = None
-    if current*5 > len(data):
+    if current*5 >= len(data):
         current = int(len(data)/5)
         next_page = None
     from_page = (current-1)*cont_count
