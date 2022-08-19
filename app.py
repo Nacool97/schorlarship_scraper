@@ -15,13 +15,12 @@ def index(page):
     if current < 1:
         current = 1
     if current*5 > len(data):
-        current = len(data)/5
-    sch = data
+        current = (len(data)/5)-1
     from_page = (current-1)*cont_count
     to_page = current*cont_count
     
 
-    return render_template('index.html',data=sch,from_page=from_page,to_page=to_page,current=current)
+    return render_template('index.html',data=data,from_page=from_page,to_page=to_page,current=current)
 
 if __name__ == '__main__':
     app.run('0.0.0.0',port=8080)
