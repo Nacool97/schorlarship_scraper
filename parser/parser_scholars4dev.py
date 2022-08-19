@@ -18,7 +18,7 @@ def parse_scholars4dev(body):
         scholarship['last_update'] = d['schship_last_updated'].replace('\n','').replace('\r','')
         scholarship['url'] = d['schship_url']
         try:
-            response = requests.get(d[' '],timeout=100)
+            response = requests.get(d['schship_url'],timeout=100)
             response.raise_for_status
         except Exception as e:
             print(e)
