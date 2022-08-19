@@ -119,6 +119,11 @@
           <div class="col-lg-8 entries">
             
             {% for x in range(from_page,to_page) %}
+            {% if not data[x]['metadata'][-1]['website'] %}
+            {% set url = data[x]['url'] %}
+            {% else %}
+            {% set url = data[x]['metadata'][-1]['website'] %}
+            {% endif %}
 
             <article class="entry">
 
@@ -127,7 +132,7 @@
               </div>
 
               <h2 class="entry-title">
-                <a href="{{ data[x]['metadata'][-1]['website'] }}">{{ data[x]['name'] }}</a>
+                <a href="{{ url }}">{{ data[x]['name'] }}</a>
               </h2>
 
               <div class="entry-meta">
@@ -141,7 +146,7 @@
 
               <div class="entry-content">
                 <div class="read-more">
-                  <a href="{{ data[x]['metadata'][-1]['website'] }}">Read More</a>
+                  <a href="{{ url }}">Read More</a>
                 </div>
               </div>
 
