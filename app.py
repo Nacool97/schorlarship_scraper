@@ -14,14 +14,14 @@ def index(page):
     current = int(page)
     if current < 1:
         current = 1
+    if current*5 > len(data):
+        current = len(data)/5
     sch = data
     from_page = (current-1)*cont_count
     to_page = current*cont_count
-    new_data = []
-    for d in sch:
-        new_data.append(d)
+    
 
-    return render_template('index.html',data=new_data,from_page=from_page,to_page=to_page,current=current)
+    return render_template('index.html',data=sch,from_page=from_page,to_page=to_page,current=current)
 
 if __name__ == '__main__':
     app.run('0.0.0.0',port=8080)
