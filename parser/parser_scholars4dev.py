@@ -16,6 +16,7 @@ def parse_scholars4dev(body):
         scholarship['scholarship_for'] = d['schship_for'].replace('\n','').replace('\r','')
         scholarship['deadline'] = d['schship_deadline'].replace('\n','').replace('\r','')
         scholarship['last_update'] = d['schship_last_updated'].replace('\n','').replace('\r','')
+        scholarship['expired'] = d['expired']
         scholarship['url'] = d['schship_url']
         try:
             response = requests.get(d['schship_url'],timeout=100)

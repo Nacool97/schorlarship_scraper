@@ -36,6 +36,7 @@ def parser_webpage(content):
         return {}
     for data in web_data:
         scholarship = {}
+        scholarship['expired'] = False
         scholarship['schship_name'] = data.find('h2').text.strip()
         scholarship['schship_url'] = data.find('a').get('href')
         isfetched = check_for_duplicate(scholarship['schship_url'])
@@ -61,6 +62,8 @@ def parser_webpage(content):
                 except Exception as e:
                     date_str = datetime.strptime(deadline,'%d %B %Y').isoformat()
                 date_obj = datetime.strptime(date_str,"%Y-%m-%dT%H:%M:%S")
+                if date_obj < datetime.now():
+                    scholarship['expired'] = True
                 deadline = date_obj.strftime('%d/%m/%Y')
             except Exception:
                 continue
