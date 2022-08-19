@@ -145,7 +145,7 @@
                   {% set status = "Expired" %}
                   {% else %}
                   {% set status = "Active" %}
-                  {% endfor %}
+                  {% endif %}
                   <li class="d-flex align-items-center"><i class="bi bi-status"></i>Status: {{ status }}</li>
                 </ul>
               </div>
