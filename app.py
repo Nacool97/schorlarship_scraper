@@ -12,15 +12,19 @@ cont_count = 5
 @app.route('/<page>')
 def index(page):
     current = int(page)
+    next_page = current+1
+    previous_page = current-1
     if current < 1:
         current = 1
+        previous_page = None
     if current*5 > len(data):
         current = int(len(data)/5)
+        next_page = None
     from_page = (current-1)*cont_count
     to_page = current*cont_count
     
 
-    return render_template('index.html',data=data,from_page=from_page,to_page=to_page,current=current)
+    return render_template('index.html',data=data,from_page=from_page,to_page=to_page,current=current,next=next_page,previous=previous_page)
 
 if __name__ == '__main__':
     app.run('0.0.0.0',port=8080)
