@@ -5,7 +5,7 @@ app = Flask(__name__)
 
 cleint = MongoClient('localhost',27017)
 collection = cleint['nacool_projects']['scholarships']
-data = list(collection.find())
+data = list(collection.find({'expired':False}))
 page_number = 1
 cont_count = 5
 @app.route('/',defaults={'page':1})
