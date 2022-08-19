@@ -142,9 +142,9 @@
                   <li class="d-flex align-items-center"><i class="bi bi-clock"></i>Deadline: {{ data[x]['deadline'] }}</li>
                   <li class="d-flex align-items-center"><i class="bi bi-clock"></i>Last Updated: {{ data[x]['last_update'] }}</li>
                   {% if data[x]['expired'] %}
-                  {% set status="Expired" %}
+                  {% set status = "Expired" %}
                   {% else %}
-                  {% set status="Active" %}
+                  {% set status = "Active" %}
                   {% endfor %}
                   <li class="d-flex align-items-center"><i class="bi bi-status"></i>Status: {{ status }}</li>
                 </ul>
