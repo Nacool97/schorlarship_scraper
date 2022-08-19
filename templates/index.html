@@ -160,9 +160,13 @@
             {% endfor %}
             <div class="blog-pagination">
               <ul class="justify-content-center">
+                {% if current > 1 %}
                 <li><a href="/{{ current-1 }}">Previous</a></li>
+                {% endif %}
                 <li class="active"><a href="#">{{ current }}</a></li>
+                {% if current < int(len(data)/5) }}
                 <li><a href="/{{ current+1 }}">Next</a></li>
+                {% endif %}
               </ul>
             </div>
 
