@@ -26,7 +26,7 @@ def check_if_expired(scholarship):
         collection.update_one({'_id':scholarship['_id']},
             {'$set':{'expired':True}})
     else:
-        days_left = datetime.strptime(scholarship['deadline'],'%d/%m/%Y') - datetime.now()
+        days_left = int(datetime.strptime(scholarship['deadline'],'%d/%m/%Y').timestamp() - datetime.now().timestamp())
         collection.update_one({'_id':scholarship['_id']},
         {'$set':{'days_left':days_left}}) 
     return False
@@ -78,7 +78,7 @@ def parser_webpage(content):
                 date_obj = datetime.strptime(date_str,"%Y-%m-%dT%H:%M:%S")
                 if date_obj < datetime.now():
                     scholarship['expired'] = True
-                number_of_days = date_obj - datetime.now()
+                number_of_days = int(date_obj.timestamp() - datetime.now().timestamp())
                 deadline = date_obj.strftime('%d/%m/%Y')
             except Exception:
                 continue
