@@ -117,7 +117,7 @@
         <div class="row">
 
           <div class="col-lg-8 entries">
-            
+
             {% for x in range(from_page,to_page) %}
             {% if not data[x]['metadata'][-1]['website'] %}
             {% set url = data[x]['url'] %}
@@ -137,10 +137,13 @@
 
               <div class="entry-meta">
                 <ul>
-                  
-                  <li class="d-flex align-items-center"><i class="bi bi-chat-dots"></i>{{ data[x]['scholarship_for'] }}</li>
-                  <li class="d-flex align-items-center"><i class="bi bi-clock"></i>Deadline: {{ data[x]['deadline'] }}</li>
-                  <li class="d-flex align-items-center"><i class="bi bi-clock"></i>Last Updated: {{ data[x]['last_update'] }}</li>
+
+                  <li class="d-flex align-items-center"><i class="bi bi-chat-dots"></i>{{ data[x]['scholarship_for'] }}
+                  </li>
+                  <li class="d-flex align-items-center"><i class="bi bi-clock"></i>Deadline: {{ data[x]['deadline'] }}
+                  </li>
+                  <li class="d-flex align-items-center"><i class="bi bi-clock"></i>Last Updated: {{
+                    data[x]['last_update'] }}</li>
                   {% if data[x]['expired'] %}
                   {% set status = "Expired" %}
                   {% else %}
@@ -171,9 +174,16 @@
             </div>
 
           </div><!-- End blog entries list -->
-        </div>
+          
+          <h3 class="sidebar-title">Recent Posts</h3>
+          <div class="sidebar-item recent-posts">
+            <div class="post-item clearfix">
+              <h4><a href="blog-single.html">Nihil blanditiis at in nihil autem</a></h4>
+              <time datetime="2020-01-01">Jan 1, 2020</time>
+            </div>
+          </div><!-- End of recent entries-->
 
-      </div>
+        </div>
     </section><!-- End Blog Section -->
 
   </main><!-- End #main -->
@@ -181,21 +191,22 @@
   <!-- ======= Footer ======= -->
   <footer id="footer">
     <div class="container">
-        <div class="copyright">
-          &copy; Copyright <strong><span>Scholars Mate</span></strong>. All Rights Reserved
-        </div>
-        <div class="credits">
-          <!-- All the links in the footer should remain intact. -->
-          <!-- You can delete the links only if you purchased the pro version. -->
-          <!-- Licensing information: https://bootstrapmade.com/license/ -->
-          <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/anyar-free-multipurpose-one-page-bootstrap-theme/ -->
-          Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
-        </div>
+      <div class="copyright">
+        &copy; Copyright <strong><span>Scholars Mate</span></strong>. All Rights Reserved
       </div>
-    </footer><!-- End Footer -->
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/anyar-free-multipurpose-one-page-bootstrap-theme/ -->
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
 
   <div id="preloader"></div>
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
 
   <!-- Vendor JS Files -->
   <script src="{{ url_for('static',filename='assets/vendor/aos/aos.js') }}"></script>
