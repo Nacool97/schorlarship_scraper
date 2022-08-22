@@ -23,7 +23,7 @@ def index(page):
     from_page = (current-1)*cont_count
     to_page = current*cont_count
     recent_data = list(collection.find({'expired':False}).sort({'_id':-1}).limit(5))
-
+    
     return render_template('index.html',data=data,from_page=from_page,to_page=to_page,current=current,next=next_page,previous=previous_page,recent_data=recent_data)
 
 if __name__ == '__main__':
