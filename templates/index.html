@@ -180,12 +180,11 @@
 
               <h3 class="sidebar-title">Recent Posts</h3>
               <div class="sidebar-item recent-posts">
-                {% for x in range(0,5) %}
-                <!--<div class="post-item clearfix">
+                {% for d in recent_data %}
+                <div class="post-item clearfix">
                   <h4><a href="{{ recent_data[x]['metadata'][-1]['website'] }}">{{ recent_data[x]['name'] }}</a></h4>
                   <time datetime="{{ d['deadline'] }}">{{ d['deadline'] }}</time>
-                </div>-->
-                {{ recent_data[x]['name'] }}
+                </div>
                 {% endfor %}
               </div><!-- End of recent entries-->
 
