@@ -182,7 +182,7 @@
               <div class="sidebar-item recent-posts">
                 {% for d in recent_data %}
                 <div class="post-item clearfix">
-                  <h4><a href="{{ recent_data[x]['metadata'][-1]['website'] }}">{{ recent_data[x]['name'] }}</a></h4>
+                  <h4><a href="{{ d['metadata'][-1]['website'] }}">{{ d['name'] }}</a></h4>
                   <time datetime="{{ d['deadline'] }}">{{ d['deadline'] }}</time>
                 </div>
                 {% endfor %}
