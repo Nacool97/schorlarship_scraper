@@ -180,15 +180,22 @@
 
               <h3 class="sidebar-title">Recent Posts</h3>
               <div class="sidebar-item recent-posts">
+                {% for d in recent_data %}
+                {% if not d['metadata'][-1]['website'] %}
+                {% set url = d['url'] %}
+                {% else %}
+                {% set url = d['metadata'][-1]['website'] %}
+                {% endif %}
                 <div class="post-item clearfix">
-                  <h4><a href="blog-single.html">Nihil blanditiis at in nihil autem</a></h4>
-                  <time datetime="2020-01-01">Jan 1, 2020</time>
+                  <h4><a href="{{ url }}">{{ d['name'] }}</a></h4>
+                  <time datetime="{{ d['deadline'] }}">{{ d['deadline'] }}</time>
                 </div>
+                {% endfor %}
               </div><!-- End of recent entries-->
 
             </div>
-            </div>
-            </div>
+          </div>
+        </div>
     </section><!-- End Blog Section -->
 
   </main><!-- End #main -->
