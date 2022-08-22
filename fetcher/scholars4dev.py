@@ -19,12 +19,22 @@ def send_message(queue_name,payload):
     channel.queue_declare(queue=queue_name)
     channel.basic_publish(exchange='',routing_key=queue_name,body=payload)
     connection.close()
+
+# check if scholarship is expired and update exipred field
+def check_if_expired(scholarship):
+    if datetime.strptime(scholarship['deadline'],'%d/%m/%Y') < datetime.now():
+        collection.update_one({'_id':scholarship['_id']},
+            {'$set':{'expired':True}})
+        return True 
+    return False
+
+# check if scholarship is already fecthed
 def check_for_duplicate(url):
-    schloarship = collection.find_one({
+    scholarship = collection.find_one({
         'url':url
     })
-    if schloarship:
-        print(schloarship)
+    if scholarship:
+        check_if_expired(scholarship)
         return True
     return False
     
