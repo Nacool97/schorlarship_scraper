@@ -22,13 +22,16 @@ def send_message(queue_name,payload):
 
 # check if scholarship is expired and update exipred field
 def check_if_expired(scholarship):
-    if datetime.strptime(scholarship['deadline'],'%d/%m/%Y') < datetime.now():
-        collection.update_one({'_id':scholarship['_id']},
+    try:
+        if datetime.strptime(scholarship['deadline'],'%d/%m/%Y') < datetime.now():
+            collection.update_one({'_id':scholarship['_id']},
             {'$set':{'expired':True}})
-    else:
-        days_left = int(datetime.strptime(scholarship['deadline'],'%d/%m/%Y').timestamp() - datetime.now().timestamp())
-        collection.update_one({'_id':scholarship['_id']},
-        {'$set':{'days_left':days_left}}) 
+        else:
+            days_left = int(datetime.strptime(scholarship['deadline'],'%d/%m/%Y').timestamp() - datetime.now().timestamp())
+            collection.update_one({'_id':scholarship['_id']},
+            {'$set':{'days_left':days_left}})
+    except Exception as e:
+        print(e) 
 
 # check if scholarship is already fecthed
 def check_for_duplicate(url):
