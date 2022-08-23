@@ -66,7 +66,7 @@ def parser_webpage(content):
         scholarship['schship_for'] = data_list[0].text.strip()
         deadline = data_list[1].text.strip()
         m = re.search(r'(\d+\s*[a-z]+\s*\d{4})',deadline, re.I) 
-        number_of_days = (datetime.now + timedelta(days=50)).timestamp()
+        number_of_days = (datetime.now() + timedelta(days=50)).timestamp()
         if m:
             deadline = m.group(1)
             try:
