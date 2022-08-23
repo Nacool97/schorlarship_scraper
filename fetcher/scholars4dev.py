@@ -31,7 +31,9 @@ def check_if_expired(scholarship):
             collection.update_one({'_id':scholarship['_id']},
             {'$set':{'days_left':days_left}})
     except Exception as e:
-        print(e) 
+        days_left = int((datetime.now()+timedelta(days=50)).timestamp())
+        collection.update_one({'_id':scholarship['_id']},
+            {'$set':{'days_left':days_left}})
 
 # check if scholarship is already fecthed
 def check_for_duplicate(url):
