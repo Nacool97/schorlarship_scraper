@@ -29,7 +29,6 @@ def check_if_expired(scholarship):
         days_left = int(datetime.strptime(scholarship['deadline'],'%d/%m/%Y').timestamp() - datetime.now().timestamp())
         collection.update_one({'_id':scholarship['_id']},
         {'$set':{'days_left':days_left}}) 
-    return False
 
 # check if scholarship is already fecthed
 def check_for_duplicate(url):
