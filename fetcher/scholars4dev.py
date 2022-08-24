@@ -1,3 +1,6 @@
+"""
+Fetcher to fetch and do minimal parsing from scholars4dev website
+"""
 import re
 import requests
 import json
@@ -15,13 +18,18 @@ sch_data = urls[0]
 connection = pika.BlockingConnection(pika.ConnectionParameters('localhost'))
 channel = connection.channel()
 
-def send_message(queue_name,payload):
-    channel.queue_declare(queue=queue_name)
-    channel.basic_publish(exchange='',routing_key=queue_name,body=payload)
-    connection.close()
 
 # check if scholarship is expired and update exipred field
 def check_if_expired(scholarship):
+    '''
+    check if the scholarship is expired by checking if we have passed deadline
+    param: scholarship (dict)
+    it if fetched from either db for newly fetched
+    sets expired flag true if deadline is passed
+    or
+    updates number of days left
+    return: None
+    '''
     try:
         if datetime.strptime(scholarship['deadline'],'%d/%m/%Y') < datetime.now():
             collection.update_one({'_id':scholarship['_id']},
@@ -37,6 +45,13 @@ def check_if_expired(scholarship):
 
 # check if scholarship is already fecthed
 def check_for_duplicate(url):
+    '''
+    checks if the url is already present in the db
+    param :url
+    returns bool 
+    True if exists
+    False if doesn't exists
+    '''
     scholarship = collection.find_one({
         'url':url
     })
@@ -45,8 +60,18 @@ def check_for_duplicate(url):
         return True
     return False
     
-
+# scrape the important data and return dict
 def parser_webpage(content):
+    '''
+    scrapes data from the content parameter using bs4 lxml parser
+    and extract follwing details
+    name
+    url
+    deadline
+    param content 
+    response body from requests
+    returns dict
+    '''
     scholarship_list = []
     web_data = content.find_all('div',attrs={'class':'post clearfix'})
     if not web_data:
@@ -56,6 +81,7 @@ def parser_webpage(content):
         scholarship['expired'] = False
         scholarship['schship_name'] = data.find('h2').text.strip()
         scholarship['schship_url'] = data.find('a').get('href')
+        #check for duplicate
         isfetched = check_for_duplicate(scholarship['schship_url'])
         if isfetched:
             last_update = datetime.now()
@@ -84,7 +110,8 @@ def parser_webpage(content):
                     scholarship['expired'] = True
                 number_of_days = int(date_obj.timestamp() - datetime.now().timestamp())
                 deadline = date_obj.strftime('%d/%m/%Y')
-            except Exception:
+            except Exception as e:
+                print(e)
                 continue
         scholarship['schship_deadline'] = deadline
         scholarship['number_of_days_left'] = number_of_days
@@ -94,8 +121,13 @@ def parser_webpage(content):
         if scholarship:
             scholarship_list.append(scholarship)
     return scholarship_list
-
+# fetch data from url using requests
 def fetch_data():
+    '''
+    fetch data from the url in json file parse data
+    param None
+    returns list of scholarship 
+    '''
     response = None
     try:
         response = requests.get(sch_data['url'],timeout=100)
@@ -108,10 +140,17 @@ def fetch_data():
         return []
     results = []
     soup = BeautifulSoup(response.content,'lxml')
+    if not soup:
+        return []
+    # parse data
     results = parser_webpage(soup)
     pagination = soup.find('div',attrs={'class':'wp-pagenavi'})
+    if not pagination:
+        return []
+    # extract all details from the next pages
     pagination_links = pagination.find_all('a')
     if pagination_links:
+        # crawl every page and parse data
         for url in pagination_links:
             try:
                 response = requests.get(url.get('href'),timeout=100)
@@ -119,8 +158,17 @@ def fetch_data():
             except Exception as e:
                 continue
             soup = BeautifulSoup(response.content,'lxml')
+            if not soup:
+                return []
             results.extend(parser_webpage(soup))
     return results
+
+
+# publish data to queue
+def send_message(queue_name,payload):
+    channel.queue_declare(queue=queue_name)
+    channel.basic_publish(exchange='',routing_key=queue_name,body=payload)
+    connection.close()
 
 def main():
     scholarships = fetch_data()

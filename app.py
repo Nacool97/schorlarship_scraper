@@ -2,12 +2,15 @@ from datetime import datetime
 from flask import Flask, render_template
 from pymongo import MongoClient
 app = Flask(__name__)
-
+# get the mongodb access
 cleint = MongoClient('localhost',27017)
 collection = cleint['nacool_projects']['scholarships']
+# find the non expired scholarships
 data = list(collection.find({'expired':False}).sort('days_left'))
 page_number = 1
 cont_count = 5
+
+#default page
 @app.route('/',defaults={'page':1})
 @app.route('/<page>')
 def index(page):
@@ -22,8 +25,9 @@ def index(page):
         next_page = None
     from_page = (current-1)*cont_count
     to_page = current*cont_count
+    # get the last 5 entires i.e. recent 5 scraped enterirs which are not expired
     recent_data = list(collection.find({'expired':False}).sort('_id',-1).limit(5))
-
+    
     return render_template('index.html',data=data,from_page=from_page,to_page=to_page,current=current,next=next_page,previous=previous_page,recent_data=recent_data)
 
 if __name__ == '__main__':

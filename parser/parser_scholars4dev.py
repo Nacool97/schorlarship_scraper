@@ -1,3 +1,6 @@
+'''
+get data from queue and parse data form
+'''
 import requests
 from pymongo import MongoClient
 import re
