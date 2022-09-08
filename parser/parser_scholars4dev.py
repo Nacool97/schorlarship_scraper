@@ -15,13 +15,18 @@ def parse_scholars4dev(body):
     scholarship_list = []
     for d in data:
         scholarship = {}
-        scholarship['name'] = d['schship_name'].replace('\n','').replace('\r','')
-        scholarship['scholarship_for'] = d['schship_for'].replace('\n','').replace('\r','')
-        scholarship['deadline'] = d['schship_deadline'].replace('\n','').replace('\r','')
-        scholarship['last_update'] = d['schship_last_updated'].replace('\n','').replace('\r','')
-        scholarship['days_left'] = d['number_of_days_left']
-        scholarship['expired'] = d['expired']
-        scholarship['url'] = d['schship_url']
+        try:
+            scholarship['name'] = d['schship_name'].replace('\n','').replace('\r','')
+            scholarship['scholarship_for'] = d['schship_for'].replace('\n','').replace('\r','')
+            scholarship['deadline'] = d['schship_deadline'].replace('\n','').replace('\r','')
+            scholarship['last_update'] = d['schship_last_updated'].replace('\n','').replace('\r','')
+            scholarship['days_left'] = d['number_of_days_left']
+            scholarship['expired'] = d['expired']
+            scholarship['country'] = d['country']
+            scholarship['url'] = d['schship_url']
+        except Exception as e:
+            print(e)
+            continue
         try:
             response = requests.get(d['schship_url'],timeout=100)
             response.raise_for_status

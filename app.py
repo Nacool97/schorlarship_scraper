@@ -6,7 +6,7 @@ app = Flask(__name__)
 cleint = MongoClient('localhost',27017)
 collection = cleint['nacool_projects']['scholarships']
 # find the non expired scholarships
-data = list(collection.find({'expired':False}).sort('days_left'))
+data = list(collection.find({'expired':False}).sort('days_left',1))
 page_number = 1
 cont_count = 5
 

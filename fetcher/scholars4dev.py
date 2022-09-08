@@ -96,6 +96,10 @@ def parser_webpage(content):
             continue
         scholarship['schship_for'] = data_list[0].text.strip()
         deadline = data_list[1].text.strip()
+        scholarship['country'] = "Not Sure"
+        match = re.search(r'(country\:|study in\:)(.*)',deadline,re.I)
+        if match:
+            scholarship['country'] = match.group(2)
         m = re.search(r'(\d+\s*[a-z]+\s*\d{4})',deadline, re.I) 
         number_of_days = (datetime.now() + timedelta(days=50)).timestamp()
         if m:
