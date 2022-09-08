@@ -1,0 +1,129 @@
+[2022-08-30 20:40:55 +0530] [527054] [INFO] Starting gunicorn 20.1.0
+[2022-08-30 20:40:55 +0530] [527054] [INFO] Listening at: http://0.0.0.0:5080 (527054)
+[2022-08-30 20:40:55 +0530] [527054] [INFO] Using worker: sync
+[2022-08-30 20:40:55 +0530] [527055] [INFO] Booting worker with pid: 527055
+[2022-09-06 23:09:04 +0530] [527054] [INFO] Handling signal: term
+[2022-09-06 23:09:05 +0530] [527055] [INFO] Worker exiting (pid: 527055)
+[2022-09-06 23:09:09 +0530] [527054] [INFO] Shutting down: Master
+[2022-09-08 11:25:59 +0530] [1592] [INFO] Starting gunicorn 20.1.0
+[2022-09-08 11:25:59 +0530] [1592] [INFO] Listening at: http://0.0.0.0:5080 (1592)
+[2022-09-08 11:25:59 +0530] [1592] [INFO] Using worker: sync
+[2022-09-08 11:25:59 +0530] [1684] [INFO] Booting worker with pid: 1684
+[2022-09-08 11:26:29 +0530] [1592] [CRITICAL] WORKER TIMEOUT (pid:1684)
+[2022-09-08 11:26:29 +0530] [1684] [INFO] Worker exiting (pid: 1684)
+[2022-09-08 11:26:30 +0530] [2099] [INFO] Booting worker with pid: 2099
+[2022-09-08 11:27:00 +0530] [1592] [CRITICAL] WORKER TIMEOUT (pid:2099)
+[2022-09-08 11:27:00 +0530] [2099] [INFO] Worker exiting (pid: 2099)
+[2022-09-08 11:27:00 +0530] [2812] [INFO] Booting worker with pid: 2812
+[2022-09-08 11:27:30 +0530] [1592] [CRITICAL] WORKER TIMEOUT (pid:2812)
+[2022-09-08 11:27:30 +0530] [2812] [INFO] Worker exiting (pid: 2812)
+[2022-09-08 11:27:30 +0530] [3868] [INFO] Booting worker with pid: 3868
+[2022-09-08 11:28:01 +0530] [1592] [CRITICAL] WORKER TIMEOUT (pid:3868)
+[2022-09-08 11:28:01 +0530] [3868] [INFO] Worker exiting (pid: 3868)
+[2022-09-08 11:28:01 +0530] [4852] [INFO] Booting worker with pid: 4852
+[2022-09-08 11:28:31 +0530] [1592] [CRITICAL] WORKER TIMEOUT (pid:4852)
+[2022-09-08 11:28:31 +0530] [4852] [INFO] Worker exiting (pid: 4852)
+[2022-09-08 11:28:31 +0530] [5220] [INFO] Booting worker with pid: 5220
+[2022-09-08 11:29:01 +0530] [1592] [CRITICAL] WORKER TIMEOUT (pid:5220)
+[2022-09-08 11:29:01 +0530] [5220] [INFO] Worker exiting (pid: 5220)
+[2022-09-08 11:29:02 +0530] [5264] [INFO] Booting worker with pid: 5264
+[2022-09-08 11:29:32 +0530] [1592] [CRITICAL] WORKER TIMEOUT (pid:5264)
+[2022-09-08 11:29:32 +0530] [5264] [INFO] Worker exiting (pid: 5264)
+[2022-09-08 11:29:32 +0530] [5658] [INFO] Booting worker with pid: 5658
+[2022-09-08 11:52:19 +0530] [1592] [INFO] Handling signal: term
+[2022-09-08 11:52:19 +0530] [5658] [INFO] Worker exiting (pid: 5658)
+[2022-09-08 11:52:19 +0530] [1592] [INFO] Shutting down: Master
+[2022-09-08 11:52:21 +0530] [24628] [INFO] Starting gunicorn 20.1.0
+[2022-09-08 11:52:21 +0530] [24628] [INFO] Listening at: http://0.0.0.0:5080 (24628)
+[2022-09-08 11:52:21 +0530] [24628] [INFO] Using worker: sync
+[2022-09-08 11:52:21 +0530] [24629] [INFO] Booting worker with pid: 24629
+[2022-09-08 11:54:14,915] ERROR in app: Exception on / [GET]
+Traceback (most recent call last):
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/flask/app.py", line 1519, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/flask/app.py", line 1517, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/flask/app.py", line 1503, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/test_app.py", line 31, in index
+    return render_template('index.html',data=data,from_page=from_page,to_page=to_page,current=current,next=next_page,previous=previous_page,recent_data=recent_data)
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/flask/templating.py", line 154, in render_template
+    return _render(
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/flask/templating.py", line 128, in _render
+    rv = template.render(context)
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/jinja2/environment.py", line 1301, in render
+    self.environment.handle_exception()
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/jinja2/environment.py", line 936, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/templates/index.html", line 121, in top-level template code
+    {% if not data[x]['metadata'][-1]['website'] %}
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/jinja2/environment.py", line 466, in getitem
+    return obj[argument]
+jinja2.exceptions.UndefinedError: list object has no element -5
+[2022-09-08 11:54:15,010] ERROR in app: Exception on /favicon.ico [GET]
+Traceback (most recent call last):
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/flask/app.py", line 1519, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/flask/app.py", line 1517, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/flask/app.py", line 1503, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/test_app.py", line 17, in index
+    current = int(page)
+ValueError: invalid literal for int() with base 10: 'favicon.ico'
+[2022-09-08 12:03:38,697] ERROR in app: Exception on / [GET]
+Traceback (most recent call last):
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/flask/app.py", line 1519, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/flask/app.py", line 1517, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/flask/app.py", line 1503, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/test_app.py", line 31, in index
+    return render_template('index.html',data=data,from_page=from_page,to_page=to_page,current=current,next=next_page,previous=previous_page,recent_data=recent_data)
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/flask/templating.py", line 154, in render_template
+    return _render(
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/flask/templating.py", line 128, in _render
+    rv = template.render(context)
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/jinja2/environment.py", line 1301, in render
+    self.environment.handle_exception()
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/jinja2/environment.py", line 936, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/templates/index.html", line 121, in top-level template code
+    {% if not data[x]['metadata'][-1]['website'] %}
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/jinja2/environment.py", line 466, in getitem
+    return obj[argument]
+jinja2.exceptions.UndefinedError: list object has no element -5
+[2022-09-08 12:03:38,838] ERROR in app: Exception on /favicon.ico [GET]
+Traceback (most recent call last):
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/flask/app.py", line 1519, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/flask/app.py", line 1517, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/flask/app.py", line 1503, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/test_app.py", line 17, in index
+    current = int(page)
+ValueError: invalid literal for int() with base 10: 'favicon.ico'
+[2022-09-08 12:06:42 +0530] [24628] [INFO] Handling signal: term
+[2022-09-08 12:06:42 +0530] [24629] [INFO] Worker exiting (pid: 24629)
+[2022-09-08 12:06:42 +0530] [24628] [INFO] Shutting down: Master
+[2022-09-08 12:06:44 +0530] [26848] [INFO] Starting gunicorn 20.1.0
+[2022-09-08 12:06:44 +0530] [26848] [INFO] Listening at: http://0.0.0.0:5080 (26848)
+[2022-09-08 12:06:44 +0530] [26848] [INFO] Using worker: sync
+[2022-09-08 12:06:44 +0530] [26850] [INFO] Booting worker with pid: 26850
+[2022-09-08 13:41:44 +0530] [26848] [INFO] Handling signal: term
+[2022-09-08 13:41:44 +0530] [26850] [INFO] Worker exiting (pid: 26850)
+[2022-09-08 13:41:45 +0530] [26848] [INFO] Shutting down: Master
+[2022-09-08 13:41:46 +0530] [45286] [INFO] Starting gunicorn 20.1.0
+[2022-09-08 13:41:46 +0530] [45286] [INFO] Listening at: http://0.0.0.0:5080 (45286)
+[2022-09-08 13:41:46 +0530] [45286] [INFO] Using worker: sync
+[2022-09-08 13:41:46 +0530] [45288] [INFO] Booting worker with pid: 45288
