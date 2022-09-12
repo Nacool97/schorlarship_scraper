@@ -4,7 +4,7 @@ from pymongo import MongoClient
 app = Flask(__name__)
 # get the mongodb access
 cleint = MongoClient('localhost',27017)
-collection = cleint['nacool_projects']['scholarships']
+collection = cleint['nacool_projects']['test_scholarships']
 # find the non expired scholarships
 data = list(collection.find({'expired':False}).sort('days_left'))
 page_number = 1
