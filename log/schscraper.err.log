@@ -5396,3 +5396,27 @@ ValueError: invalid literal for int() with base 10: 'login.action'
 [2022-09-14 01:08:59 +0530] [386520] [INFO] Listening at: http://0.0.0.0:8080 (386520)
 [2022-09-14 01:08:59 +0530] [386520] [INFO] Using worker: sync
 [2022-09-14 01:08:59 +0530] [386521] [INFO] Booting worker with pid: 386521
+[2022-09-14 01:20:41 +0530] [388765] [INFO] Starting gunicorn 20.1.0
+[2022-09-14 01:20:41 +0530] [388765] [INFO] Listening at: http://0.0.0.0:8080 (388765)
+[2022-09-14 01:20:41 +0530] [388765] [INFO] Using worker: sync
+[2022-09-14 01:20:41 +0530] [388766] [INFO] Booting worker with pid: 388766
+[2022-09-14 01:21:49,367] ERROR in app: Exception on /favicon.ico [GET]
+Traceback (most recent call last):
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/flask/app.py", line 1519, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/flask/app.py", line 1517, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/flask/app.py", line 1503, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/app.py", line 19, in index
+    current = int(page)
+ValueError: invalid literal for int() with base 10: 'favicon.ico'
+[2022-09-14 01:26:48 +0530] [388765] [INFO] Handling signal: term
+[2022-09-14 01:26:48 +0530] [388766] [INFO] Worker exiting (pid: 388766)
+[2022-09-14 01:26:49 +0530] [388765] [INFO] Shutting down: Master
+[2022-09-14 01:26:50 +0530] [389475] [INFO] Starting gunicorn 20.1.0
+[2022-09-14 01:26:50 +0530] [389475] [INFO] Listening at: http://0.0.0.0:8080 (389475)
+[2022-09-14 01:26:50 +0530] [389475] [INFO] Using worker: sync
+[2022-09-14 01:26:50 +0530] [389476] [INFO] Booting worker with pid: 389476
