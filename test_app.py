@@ -1,6 +1,7 @@
 from datetime import datetime
 from flask import Flask, render_template
 from pymongo import MongoClient
+from bson import ObjectId
 app = Flask(__name__)
 # get the mongodb access
 cleint = MongoClient('localhost',27017)
@@ -31,7 +32,7 @@ def index(page):
     return render_template('index.html',data=data,from_page=from_page,to_page=to_page,current=current,next=next_page,previous=previous_page,recent_data=recent_data)
 @app.route('/view/<string:id>')
 def scholarship_page(id):
-    scholarship_data = collection.find_one({'_id':id})
+    scholarship_data = collection.find_one({'_id':ObjectId(id)})
     return scholarship_data
     
 if __name__ == '__main__':
