@@ -29,8 +29,8 @@ def index(page):
     recent_data = list(collection.find({'expired':False}).sort('_id',-1).limit(5))
     
     return render_template('index.html',data=data,from_page=from_page,to_page=to_page,current=current,next=next_page,previous=previous_page,recent_data=recent_data)
-@app.route('/id:<id>')
+@app.route('/view/<int:id>')
 def scholarship_page(id):
-    return id
+    return str(id)
 if __name__ == '__main__':
     app.run('0.0.0.0',port=5080)
