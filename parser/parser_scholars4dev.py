@@ -6,10 +6,21 @@ from pymongo import MongoClient
 import re
 from bs4 import BeautifulSoup
 import json
+from difflib import SequenceMatcher
+from math import ceil
 
 client = MongoClient('localhost',27017)
 collection = client['nacool_projects']['scholarships']
-
+scholarship_lists = list(collection.find())
+# Checking for name similarity in scholarships
+def check_if_exists(name):
+    if not scholarship_lists:
+        return False
+    for scholarship in scholarship_lists:
+        similarity = SequenceMatcher(None,name,scholarship['name']).ratio()*100
+        if ceil(similarity) > 85:
+            return True
+    return False
 def parse_scholars4dev(body):
     data = json.loads(body)
     scholarship_list = []
@@ -17,6 +28,8 @@ def parse_scholars4dev(body):
         scholarship = {}
         try:
             scholarship['name'] = d['schship_name'].replace('\n','').replace('\r','')
+            if check_if_exists(scholarship['name']):
+                continue
             scholarship['scholarship_for'] = d['schship_for'].replace('\n','').replace('\r','')
             scholarship['deadline'] = d['schship_deadline'].replace('\n','').replace('\r','')
             scholarship['last_update'] = d['schship_last_updated'].replace('\n','').replace('\r','')
