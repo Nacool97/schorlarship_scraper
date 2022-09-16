@@ -40,4 +40,4 @@ def scholarship_page(index):
     return render_template('blog-single.html',data=scholarship_data,recent_data=recent_data)
 
 if __name__ == '__main__':
-    app.run('0.0.0.0',port=8080)
+    app.run('0.0.0.0',port=8080,threaded=True)
