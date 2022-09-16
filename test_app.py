@@ -29,7 +29,7 @@ def index(page):
     from_page = (current-1)*cont_count
     to_page = current*cont_count
     # get the last 5 entires i.e. recent 5 scraped enterirs which are not expired
-    recent_data = list(collection.find({'expired':False}).sort('_id',-1).limit(5))
+    recent_data = data[-5]
     
     return render_template('index.html',data=data,from_page=from_page,to_page=to_page,current=current,next=next_page,previous=previous_page,recent_data=recent_data)
 @app.route('/view', defaults={'/view/<index>':"630e275b1b232898cd94af20"})
@@ -37,7 +37,7 @@ def index(page):
 def scholarship_page(index):
     scholarship_data = collection.find_one({'_id':ObjectId(index)})
     # get the last 5 entires i.e. recent 5 scraped enterirs which are not expired
-    recent_data = list(collection.find({'expired':False}).sort('_id',-1).limit(5))
+    recent_data = data[-5]
     return render_template('blog-single.html',data=scholarship_data,recent_data=recent_data)
 if __name__ == '__main__':
     app.run('0.0.0.0',port=5080)
