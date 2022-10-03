@@ -2,6 +2,9 @@ require 'open-uri'
 require 'json'
 require 'nokogiri'
 require 'openssl'
+require 'bunny'
+connection = Bunny.new(hostname: 'rabbit.local')
+connection.start
 class ScholarshipPortal
     def initialize
         #@request = HTTPClient.new()
@@ -44,7 +47,45 @@ class ScholarshipPortal
     end
     
     def get_scholars_data(url_list)
-     puts url_list[0]   
+        scholarship_lists =[]
+        for url in url_list
+            scholarship_details = {}
+            begin
+                soup = Nokogiri::HTML(URI.open(url['url']))
+                if !soup
+                   raise Exception.new('error-while-creating-dom')
+                end
+                scholarship_details['title'] = url['title']
+                scholarship_details['amount'] = url['amount']
+                scholarship_details['deadline'] = url['deadline']
+                scholarship_details['url'] = url['url']
+                scholarship_details['scholarship_for'] = url['scholarship_for']
+                scholarship_details['website'] = soup.xpath('//*[@id="app"]/div[1]/div[1]/div/main/div[1]/span/a').map{|l| l['href']}[0]
+                scholarship_details['description'] = soup.xpath('//*[@id="app"]/div[1]/div[1]/div/main/div[2]/p').text
+                data = soup.xpath('//div[contains(@class,"content")]')
+                for d in data
+                    if !d.css('h2')
+                        next
+                    end
+                    key = d.css('h2').text
+                    value = d.css('p').text
+                    scholarship_details[key] = value
+                end
+
+            rescue Exception =>e
+                puts e.message()
+            end
+            scholarship_lists << scholarship_details
+            
+        end  
+        return scholarship_lists
+    end
+
+    def queue_message(data)
+        channel = connection.create_channel
+        queue = channel.queue('new_data_scholarship_portal')
+        channel.default_exchange.publish(data, routing_key: queue.name)
+        connection.close
     end
     
 end
@@ -52,5 +93,6 @@ end
 if __FILE__ == $0
     obj = ScholarshipPortal.new()
     url_list = obj.get_scholarships_depth1()
-    get_scholars_data(url_list) 
+    sch_list = obj.get_scholars_data(url_list) 
+    obj.queue_message(sch_list)
 end
