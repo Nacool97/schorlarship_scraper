@@ -3,7 +3,7 @@ require 'json'
 require 'nokogiri'
 require 'openssl'
 require 'bunny'
-@@connection = Bunny.new(hostname: 'rabbit.local')
+@@connection = Bunny.new(hostname: 'localhost')
 @@connection.start
 class ScholarshipPortal
     def initialize
