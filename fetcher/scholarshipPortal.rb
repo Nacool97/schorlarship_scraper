@@ -3,8 +3,7 @@ require 'json'
 require 'nokogiri'
 require 'openssl'
 require 'bunny'
-@connection = Bunny.new(hostname: 'localhost')
-@connection.start
+
 class ScholarshipPortal
     def initialize
         #@request = HTTPClient.new()
@@ -82,10 +81,12 @@ class ScholarshipPortal
     end
 
     def queue_message(data)
-        channel = @connection.create_channel
+        connection = Bunny.new(hostname: 'localhost')
+        connection.start
+        channel = connection.create_channel
         queue = channel.queue('new_data_scholarship_portal')
         channel.default_exchange.publish(data, routing_key: queue.name)
-        @connection.close
+        connection.close
     end
     
 end
