@@ -85,7 +85,7 @@ class ScholarshipPortal
         connection.start
         channel = connection.create_channel
         queue = channel.queue('new_data_scholarship_portal')
-        channel.default_exchange.publish(data, routing_key: queue.name)
+        channel.default_exchange.publish(data.to_s, routing_key: queue.name)
         connection.close
     end
     
