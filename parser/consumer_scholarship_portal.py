@@ -9,5 +9,5 @@ channel.queue_declare(queue='new_data_scholarship_portal')
 def callback(ch,method,properties,body):
     print(body, type(body))
 
-channel.basic_consume(queue='new_data_scholarship_portal',auto_ack=True,on_message_callback=callback)
+channel.basic_consume(queue='new_data_scholarship_portal',on_message_callback=callback,auto_ack=True)
 channel.start_consuming()
