@@ -5427,3 +5427,16 @@ ValueError: invalid literal for int() with base 10: 'favicon.ico'
 [2022-10-08 15:32:12 +0530] [1538761] [INFO] Booting worker with pid: 1538761
 [2022-10-08 15:32:12 +0530] [1538762] [INFO] Booting worker with pid: 1538762
 [2022-10-08 15:32:12 +0530] [1538764] [INFO] Booting worker with pid: 1538764
+[2022-10-08 15:57:21,113] ERROR in app: Exception on /robots.txt [HEAD]
+Traceback (most recent call last):
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/flask/app.py", line 1519, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/flask/app.py", line 1517, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/flask/app.py", line 1503, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/app.py", line 19, in index
+    current = int(page)
+ValueError: invalid literal for int() with base 10: 'robots.txt'
