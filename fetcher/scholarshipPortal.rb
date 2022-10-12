@@ -7,8 +7,8 @@ require 'bunny'
 class ScholarshipPortal
     def initialize
         #@request = HTTPClient.new()
-        file = File.open("/home/nacool/Desktop/Projects/scholarship_scraper/scholarship_url.json")
-        #file = File.open("/home/nakulk/pynacool/schorlarship_scraper/scholarship_url.json")
+        #file = File.open("/home/nacool/Desktop/Projects/scholarship_scraper/scholarship_url.json")
+        file = File.open("/home/nakulk/pynacool/schorlarship_scraper/scholarship_url.json")
         data = JSON.load(file)
         file.close()
         @url = data[1]['url']
@@ -85,7 +85,8 @@ class ScholarshipPortal
         connection.start
         channel = connection.create_channel
         queue = channel.queue('new_data_scholarship_portal')
-        channel.default_exchange.publish(data.to_s, routing_key: queue.name)
+        puts "Message Queued"
+        channel.default_exchange.publish(data, routing_key: queue.name)
         connection.close
     end
     
@@ -95,5 +96,5 @@ if __FILE__ == $0
     obj = ScholarshipPortal.new()
     url_list = obj.get_scholarships_depth1()
     sch_list = obj.get_scholars_data(url_list) 
-    obj.queue_message(sch_list)
+    obj.queue_message(sch_list.to_json)
 end

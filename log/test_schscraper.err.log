@@ -1493,3 +1493,10 @@ TypeError: scholarship_page() got an unexpected keyword argument '<index>'
 [2022-10-08 15:32:12 +0530] [1538759] [INFO] Listening at: http://0.0.0.0:5080 (1538759)
 [2022-10-08 15:32:12 +0530] [1538759] [INFO] Using worker: sync
 [2022-10-08 15:32:12 +0530] [1538763] [INFO] Booting worker with pid: 1538763
+[2022-10-11 12:39:08 +0530] [1538759] [INFO] Handling signal: term
+[2022-10-11 12:39:08 +0530] [1538763] [INFO] Worker exiting (pid: 1538763)
+[2022-10-11 12:39:11 +0530] [1538759] [INFO] Shutting down: Master
+[2022-10-11 12:39:15 +0530] [1791669] [INFO] Starting gunicorn 20.1.0
+[2022-10-11 12:39:15 +0530] [1791669] [INFO] Listening at: http://0.0.0.0:5080 (1791669)
+[2022-10-11 12:39:15 +0530] [1791669] [INFO] Using worker: sync
+[2022-10-11 12:39:15 +0530] [1791672] [INFO] Booting worker with pid: 1791672

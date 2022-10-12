@@ -50,3 +50,47 @@ Traceback (most recent call last):
   File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/pika/adapters/blocking_connection.py", line 451, in _create_connection
     raise self._reap_last_connection_workflow_error(error)
 pika.exceptions.AMQPConnectionError
+Traceback (most recent call last):
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/parser/consumer_scholars4dev.py", line 13, in <module>
+    channel.start_consuming()
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/pika/adapters/blocking_connection.py", line 1880, in start_consuming
+    self._process_data_events(time_limit=None)
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/pika/adapters/blocking_connection.py", line 2041, in _process_data_events
+    self.connection.process_data_events(time_limit=time_limit)
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/pika/adapters/blocking_connection.py", line 848, in process_data_events
+    self._dispatch_channel_events()
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/pika/adapters/blocking_connection.py", line 567, in _dispatch_channel_events
+    impl_channel._get_cookie()._dispatch_events()
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/pika/adapters/blocking_connection.py", line 1507, in _dispatch_events
+    consumer_info.on_message_callback(self, evt.method,
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/parser/consumer_scholars4dev.py", line 10, in callback
+    parser_scholars4dev.parse_scholars4dev(body)
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/parser/parser_scholars4dev.py", line 73, in parse_scholars4dev
+    collection.insert_many(scholarship_list)
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/pymongo/_csot.py", line 105, in csot_wrapper
+    return func(self, *args, **kwargs)
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/pymongo/collection.py", line 691, in insert_many
+    raise TypeError("documents must be a non-empty list")
+TypeError: documents must be a non-empty list
+Traceback (most recent call last):
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/parser/consumer_scholars4dev.py", line 13, in <module>
+    channel.start_consuming()
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/pika/adapters/blocking_connection.py", line 1880, in start_consuming
+    self._process_data_events(time_limit=None)
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/pika/adapters/blocking_connection.py", line 2041, in _process_data_events
+    self.connection.process_data_events(time_limit=time_limit)
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/pika/adapters/blocking_connection.py", line 848, in process_data_events
+    self._dispatch_channel_events()
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/pika/adapters/blocking_connection.py", line 567, in _dispatch_channel_events
+    impl_channel._get_cookie()._dispatch_events()
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/pika/adapters/blocking_connection.py", line 1507, in _dispatch_events
+    consumer_info.on_message_callback(self, evt.method,
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/parser/consumer_scholars4dev.py", line 10, in callback
+    parser_scholars4dev.parse_scholars4dev(body)
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/parser/parser_scholars4dev.py", line 73, in parse_scholars4dev
+    collection.insert_many(scholarship_list)
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/pymongo/_csot.py", line 105, in csot_wrapper
+    return func(self, *args, **kwargs)
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/pymongo/collection.py", line 691, in insert_many
+    raise TypeError("documents must be a non-empty list")
+TypeError: documents must be a non-empty list
