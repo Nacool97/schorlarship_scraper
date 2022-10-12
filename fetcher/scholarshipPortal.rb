@@ -7,8 +7,8 @@ require 'bunny'
 class ScholarshipPortal
     def initialize
         #@request = HTTPClient.new()
-        #file = File.open("/home/nacool/Desktop/Projects/scholarship_scraper/scholarship_url.json")
-        file = File.open("/home/nakulk/pynacool/schorlarship_scraper/scholarship_url.json")
+        file = File.open("/home/nacool/Desktop/Projects/scholarship_scraper/scholarship_url.json")
+        #file = File.open("/home/nakulk/pynacool/schorlarship_scraper/scholarship_url.json")
         data = JSON.load(file)
         file.close()
         @url = data[1]['url']
