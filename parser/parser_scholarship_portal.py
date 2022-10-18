@@ -63,7 +63,7 @@ def parse_scholarship_portal(body):
             scholarship['expired'] = True
         number_of_days = (datetime.now() + timedelta(days=50)).timestamp()
         if deadline:
-            number_of_days = int(datetime.now().timestamp - deadline.timestamp)
+            number_of_days = int(datetime.now().timestamp() - deadline.timestamp())
         exlude_keys = ['tile','amount','deadline']
         scholarship = {k: d[k] for k in set(list(d.keys()))-set(exlude_keys)}
         scholarship['number_of_days_left'] = number_of_days
