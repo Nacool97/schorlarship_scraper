@@ -118,9 +118,9 @@
           <div class="col-lg-8 entries">
 
             {% for x in range(from_page,to_page) %}
-            {% if not data[x]['metadata'][-1]['website'] %}
+            {% if not data[x].get('metadata') and data[x]['metadata'][-1]['website'] %}
             {% set url = data[x]['url'] %}
-            {% else %}
+            {% elif data[x].get('metadata') %}
             {% set url = data[x]['metadata'][-1]['website'] %}
             {% endif %}
             {% set scholarship_id = data[x]['_id'] %}
@@ -180,10 +180,12 @@
               <h3 class="sidebar-title">Recent Posts</h3>
               <div class="sidebar-item recent-posts">
                 {% for d in recent_data %}
+		{% if d.get('metadata') %}
                 <div class="post-item clearfix">
                   <h4><a href="{{ d['metadata'][-1]['website'] }}">{{ d['name'] }}</a></h4>
                   <time datetime="{{ d['deadline'] }}">{{ d['deadline'] }}</time>
                 </div>
+		{% endif %}
                 {% endfor %}
               </div><!-- End of recent entries-->
 

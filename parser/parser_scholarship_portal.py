@@ -15,6 +15,7 @@ def check_for_duplicate_data(data):
     if sch:
         return True
     for scholarship in scholarship_lists:
+        print(data)
         similarity = SequenceMatcher(None,data['name'],scholarship['name']).ratio()*100
         if ceil(similarity) > 85:
             return True
@@ -55,8 +56,8 @@ def parse_scholarship_portal(body):
     scholarship_list = []
     for d in data:
         scholarship = {}
-        scholarship['name'] = d['title']
-        scholarship['amount'] = d['amount'] if d.get('amount') and d['amount'] else "NA"
+        exlude_keys = ['tile','amount','deadline']
+        scholarship = {k: d[k] for k in set(list(d.keys()))-set(exlude_keys)}
         deadline =  get_valid_date_object(d['deadline']) if d.get('deadline') and d['deadline'] else None
         scholarship['expired'] = False
         if deadline and deadline < datetime.now():
@@ -64,8 +65,8 @@ def parse_scholarship_portal(body):
         number_of_days = (datetime.now() + timedelta(days=50)).timestamp()
         if deadline:
             number_of_days = int(datetime.now().timestamp() - deadline.timestamp())
-        exlude_keys = ['tile','amount','deadline']
-        scholarship = {k: d[k] for k in set(list(d.keys()))-set(exlude_keys)}
+        scholarship['name'] = d['title']
+        scholarship['amount'] = d['amount'] if d.get('amount') and d['amount'] else "NA"
         scholarship['number_of_days_left'] = number_of_days
         if deadline:
             scholarship['deadline'] = deadline.strftime('%d/%m/%Y')
