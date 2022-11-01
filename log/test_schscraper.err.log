@@ -1568,3 +1568,51 @@ TypeError: scholarship_page() got an unexpected keyword argument '<index>'
 [2022-10-20 09:59:31 +0530] [2581119] [INFO] Listening at: http://0.0.0.0:5080 (2581119)
 [2022-10-20 09:59:31 +0530] [2581119] [INFO] Using worker: sync
 [2022-10-20 09:59:31 +0530] [2581120] [INFO] Booting worker with pid: 2581120
+[2022-10-24 16:09:59 +0530] [2581119] [INFO] Handling signal: term
+[2022-10-24 16:09:59 +0530] [2581120] [INFO] Worker exiting (pid: 2581120)
+[2022-10-24 16:09:59 +0530] [2581119] [INFO] Shutting down: Master
+[2022-10-24 16:10:01 +0530] [2935186] [INFO] Starting gunicorn 20.1.0
+[2022-10-24 16:10:01 +0530] [2935186] [INFO] Listening at: http://0.0.0.0:5080 (2935186)
+[2022-10-24 16:10:01 +0530] [2935186] [INFO] Using worker: sync
+[2022-10-24 16:10:01 +0530] [2935196] [INFO] Booting worker with pid: 2935196
+[2022-10-27 21:23:23 +0530] [2935186] [INFO] Handling signal: term
+[2022-10-27 21:23:23 +0530] [2935196] [INFO] Worker exiting (pid: 2935196)
+[2022-10-27 21:23:23 +0530] [2935186] [INFO] Shutting down: Master
+[2022-10-27 21:23:25 +0530] [3209583] [INFO] Starting gunicorn 20.1.0
+[2022-10-27 21:23:25 +0530] [3209583] [INFO] Listening at: http://0.0.0.0:5080 (3209583)
+[2022-10-27 21:23:25 +0530] [3209583] [INFO] Using worker: sync
+[2022-10-27 21:23:25 +0530] [3209584] [INFO] Booting worker with pid: 3209584
+[2022-11-01 12:48:11 +0530] [1594] [INFO] Starting gunicorn 20.1.0
+[2022-11-01 12:48:11 +0530] [1594] [INFO] Listening at: http://0.0.0.0:5080 (1594)
+[2022-11-01 12:48:11 +0530] [1594] [INFO] Using worker: sync
+[2022-11-01 12:48:11 +0530] [1716] [INFO] Booting worker with pid: 1716
+[2022-11-01 12:48:41 +0530] [1594] [CRITICAL] WORKER TIMEOUT (pid:1716)
+[2022-11-01 12:48:41 +0530] [1716] [INFO] Worker exiting (pid: 1716)
+[2022-11-01 12:48:41 +0530] [1925] [INFO] Booting worker with pid: 1925
+[2022-11-01 12:49:11 +0530] [1594] [CRITICAL] WORKER TIMEOUT (pid:1925)
+[2022-11-01 12:49:11 +0530] [1925] [INFO] Worker exiting (pid: 1925)
+[2022-11-01 12:49:11 +0530] [2020] [INFO] Booting worker with pid: 2020
+[2022-11-01 12:49:41 +0530] [1594] [CRITICAL] WORKER TIMEOUT (pid:2020)
+[2022-11-01 12:49:41 +0530] [2020] [INFO] Worker exiting (pid: 2020)
+[2022-11-01 12:49:42 +0530] [2113] [INFO] Booting worker with pid: 2113
+[2022-11-01 12:50:12 +0530] [1594] [CRITICAL] WORKER TIMEOUT (pid:2113)
+[2022-11-01 12:50:12 +0530] [2113] [INFO] Worker exiting (pid: 2113)
+[2022-11-01 12:50:12 +0530] [2379] [INFO] Booting worker with pid: 2379
+[2022-11-01 12:50:42 +0530] [1594] [CRITICAL] WORKER TIMEOUT (pid:2379)
+[2022-11-01 12:50:42 +0530] [2379] [INFO] Worker exiting (pid: 2379)
+[2022-11-01 12:50:42 +0530] [2701] [INFO] Booting worker with pid: 2701
+[2022-11-01 12:51:12 +0530] [1594] [CRITICAL] WORKER TIMEOUT (pid:2701)
+[2022-11-01 12:51:12 +0530] [2701] [INFO] Worker exiting (pid: 2701)
+[2022-11-01 12:51:12 +0530] [3227] [INFO] Booting worker with pid: 3227
+[2022-11-01 12:51:42 +0530] [1594] [CRITICAL] WORKER TIMEOUT (pid:3227)
+[2022-11-01 12:51:42 +0530] [3227] [INFO] Worker exiting (pid: 3227)
+[2022-11-01 12:51:43 +0530] [3581] [INFO] Booting worker with pid: 3581
+[2022-11-01 12:52:13 +0530] [1594] [CRITICAL] WORKER TIMEOUT (pid:3581)
+[2022-11-01 12:52:13 +0530] [3581] [INFO] Worker exiting (pid: 3581)
+[2022-11-01 12:52:13 +0530] [3818] [INFO] Booting worker with pid: 3818
+[2022-11-01 12:52:43 +0530] [1594] [CRITICAL] WORKER TIMEOUT (pid:3818)
+[2022-11-01 12:52:43 +0530] [3818] [INFO] Worker exiting (pid: 3818)
+[2022-11-01 12:52:43 +0530] [4010] [INFO] Booting worker with pid: 4010
+[2022-11-01 12:53:13 +0530] [1594] [CRITICAL] WORKER TIMEOUT (pid:4010)
+[2022-11-01 12:53:13 +0530] [4010] [INFO] Worker exiting (pid: 4010)
+[2022-11-01 12:53:14 +0530] [4653] [INFO] Booting worker with pid: 4653
