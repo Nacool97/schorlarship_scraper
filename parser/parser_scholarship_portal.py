@@ -9,6 +9,8 @@ client = MongoClient('localhost',27017)
 collection = client['nacool_projects']['scholarships']
 scholarship_lists = list(collection.find())
 def check_for_duplicate_data(data):
+    if not data.get('url'):
+        return True
     sch = collection.find_one({
         'url':data['url']
     })
