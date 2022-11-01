@@ -73,5 +73,5 @@ def parse_scholarship_portal(body):
         else:
             scholarship['deadline'] = "Data Not Available"
         scholarship_list.append(scholarship)
-        save_data(scholarship_list)
+    save_data(scholarship_list)
     
