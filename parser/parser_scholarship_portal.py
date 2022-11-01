@@ -66,9 +66,13 @@ def parse_scholarship_portal(body):
         number_of_days = (datetime.now() + timedelta(days=50)).timestamp()
         if deadline:
             number_of_days = int(datetime.now().timestamp() - deadline.timestamp())
-        exlude_keys = ['tile','amount','deadline']
+        exlude_keys = ['tile','amount','deadline','url']
         scholarship['metadata'] = [{k: d[k] for k in set(list(d.keys()))-set(exlude_keys)}]
         scholarship['name'] = d['title'] if d.get('title') else "NA"
+        if d.get('url'):
+            scholarship['url'] = d['url'] 
+        else:
+            continue
         scholarship['amount'] = d['amount'] if d.get('amount') and d['amount'] else "NA"
         scholarship['number_of_days_left'] = number_of_days
         if deadline:
