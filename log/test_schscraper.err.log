@@ -1616,3 +1616,23 @@ TypeError: scholarship_page() got an unexpected keyword argument '<index>'
 [2022-11-01 12:53:13 +0530] [1594] [CRITICAL] WORKER TIMEOUT (pid:4010)
 [2022-11-01 12:53:13 +0530] [4010] [INFO] Worker exiting (pid: 4010)
 [2022-11-01 12:53:14 +0530] [4653] [INFO] Booting worker with pid: 4653
+[2022-11-01 20:38:04 +0530] [1594] [INFO] Handling signal: term
+[2022-11-01 20:38:04 +0530] [4653] [INFO] Worker exiting (pid: 4653)
+[2022-11-01 20:38:04 +0530] [1594] [INFO] Shutting down: Master
+[2022-11-01 20:38:06 +0530] [41680] [INFO] Starting gunicorn 20.1.0
+[2022-11-01 20:38:06 +0530] [41680] [INFO] Listening at: http://0.0.0.0:5080 (41680)
+[2022-11-01 20:38:06 +0530] [41680] [INFO] Using worker: sync
+[2022-11-01 20:38:06 +0530] [41681] [INFO] Booting worker with pid: 41681
+[2022-11-06 00:19:39 +0530] [41680] [CRITICAL] WORKER TIMEOUT (pid:41681)
+[2022-11-06 00:19:39 +0530] [41681] [INFO] Worker exiting (pid: 41681)
+[2022-11-06 00:19:39 +0530] [410599] [INFO] Booting worker with pid: 410599
+[2022-11-06 00:26:03 +0530] [41680] [INFO] Handling signal: term
+[2022-11-06 00:26:03 +0530] [410599] [INFO] Worker exiting (pid: 410599)
+[2022-11-06 00:26:04 +0530] [41680] [INFO] Shutting down: Master
+[2022-11-06 00:26:04 +0530] [411226] [INFO] Starting gunicorn 20.1.0
+[2022-11-06 00:26:04 +0530] [411226] [INFO] Listening at: http://0.0.0.0:5080 (411226)
+[2022-11-06 00:26:04 +0530] [411226] [INFO] Using worker: sync
+[2022-11-06 00:26:04 +0530] [411227] [INFO] Booting worker with pid: 411227
+[2022-11-06 00:27:02 +0530] [411226] [CRITICAL] WORKER TIMEOUT (pid:411227)
+[2022-11-06 00:27:02 +0530] [411227] [INFO] Worker exiting (pid: 411227)
+[2022-11-06 00:27:02 +0530] [411319] [INFO] Booting worker with pid: 411319
