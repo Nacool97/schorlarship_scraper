@@ -6,7 +6,7 @@ from difflib import SequenceMatcher
 from math import ceil
 
 client = MongoClient('localhost',27017)
-collection = client['nacool_projects']['scholarships']
+collection = client['nacool_projects']['test_scholarships']
 scholarship_lists = list(collection.find())
 def check_for_duplicate_data(data):
     if not data.get('url'):
