@@ -38,7 +38,6 @@ class ScholarshipPortal
                 end
                 sch_lists << sch_details
             end
-            break
         end
         rescue Exception => e
             puts e.message()
