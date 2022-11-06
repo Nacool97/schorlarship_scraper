@@ -10,5 +10,5 @@ channel.queue_declare(queue='new_data_scholarship_portal')
 def callback(ch,method,properties,body):
     parser_scholarship_portal.parse_scholarship_portal(body)
 
-channel.basic_consume(queue='new_data_scholarship_portal',auto_ack=False,on_message_callback=callback)
+channel.basic_consume(queue='new_data_scholarship_portal',auto_ack=True,on_message_callback=callback)
 channel.start_consuming()
