@@ -6,7 +6,7 @@ from difflib import SequenceMatcher
 from math import ceil
 
 client = MongoClient('localhost', 27017)
-collection = client['nacool_projects']['test_scholarships']
+collection = client['nacool_projects']['scholarships']
 scholarship_lists = list(collection.find())
 
 
@@ -77,10 +77,9 @@ def parse_scholarship_portal(body):
         scholarship['expired'] = False
         if not deadline or deadline < datetime.now():
             scholarship['expired'] = True
-        number_of_days = (datetime.now() + timedelta(days=50)).timestamp()
+        number_of_days = int((datetime.now() + timedelta(days=50)).timestamp())
         if deadline:
-            number_of_days = int(
-                datetime.now().timestamp() - deadline.timestamp())
+            number_of_days = int(deadline.timestamp() - datetime.now().timestamp())
         exlude_keys = ['tile', 'amount', 'deadline', 'url']
         scholarship['metadata'] = [{k: d[k]
                                     for k in set(list(d.keys()))-set(exlude_keys)}]

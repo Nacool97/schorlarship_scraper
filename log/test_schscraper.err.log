@@ -1642,3 +1642,38 @@ TypeError: scholarship_page() got an unexpected keyword argument '<index>'
 [2022-11-06 01:33:17 +0530] [411226] [CRITICAL] WORKER TIMEOUT (pid:415343)
 [2022-11-06 01:33:17 +0530] [415343] [INFO] Worker exiting (pid: 415343)
 [2022-11-06 01:33:18 +0530] [416098] [INFO] Booting worker with pid: 416098
+[2022-11-06 12:32:20 +0530] [411226] [INFO] Handling signal: term
+[2022-11-06 12:32:20 +0530] [416098] [INFO] Worker exiting (pid: 416098)
+[2022-11-06 12:32:26 +0530] [411226] [INFO] Shutting down: Master
+[2022-11-06 12:32:27 +0530] [474405] [INFO] Starting gunicorn 20.1.0
+[2022-11-06 12:32:27 +0530] [474405] [INFO] Listening at: http://0.0.0.0:5080 (474405)
+[2022-11-06 12:32:27 +0530] [474405] [INFO] Using worker: sync
+[2022-11-06 12:32:27 +0530] [474406] [INFO] Booting worker with pid: 474406
+[2022-11-06 12:37:35 +0530] [474405] [INFO] Handling signal: term
+[2022-11-06 12:37:35 +0530] [474406] [INFO] Worker exiting (pid: 474406)
+[2022-11-06 12:37:35 +0530] [474405] [INFO] Shutting down: Master
+[2022-11-06 12:37:36 +0530] [475107] [INFO] Starting gunicorn 20.1.0
+[2022-11-06 12:37:36 +0530] [475107] [INFO] Listening at: http://0.0.0.0:5080 (475107)
+[2022-11-06 12:37:36 +0530] [475107] [INFO] Using worker: sync
+[2022-11-06 12:37:36 +0530] [475114] [INFO] Booting worker with pid: 475114
+[2022-11-06 12:38:34 +0530] [475107] [INFO] Handling signal: term
+[2022-11-06 12:38:34 +0530] [475114] [INFO] Worker exiting (pid: 475114)
+[2022-11-06 12:38:34 +0530] [475107] [INFO] Shutting down: Master
+[2022-11-06 12:38:36 +0530] [475262] [INFO] Starting gunicorn 20.1.0
+[2022-11-06 12:38:36 +0530] [475262] [INFO] Listening at: http://0.0.0.0:5080 (475262)
+[2022-11-06 12:38:36 +0530] [475262] [INFO] Using worker: sync
+[2022-11-06 12:38:36 +0530] [475263] [INFO] Booting worker with pid: 475263
+[2022-11-06 12:40:00 +0530] [475262] [INFO] Handling signal: term
+[2022-11-06 12:40:00 +0530] [475263] [INFO] Worker exiting (pid: 475263)
+[2022-11-06 12:40:00 +0530] [475262] [INFO] Shutting down: Master
+[2022-11-06 12:40:02 +0530] [475504] [INFO] Starting gunicorn 20.1.0
+[2022-11-06 12:40:02 +0530] [475504] [INFO] Listening at: http://0.0.0.0:5080 (475504)
+[2022-11-06 12:40:02 +0530] [475504] [INFO] Using worker: sync
+[2022-11-06 12:40:02 +0530] [475505] [INFO] Booting worker with pid: 475505
+[2022-11-06 12:45:37 +0530] [475504] [INFO] Handling signal: term
+[2022-11-06 12:45:37 +0530] [475505] [INFO] Worker exiting (pid: 475505)
+[2022-11-06 12:45:38 +0530] [475504] [INFO] Shutting down: Master
+[2022-11-06 12:45:39 +0530] [476024] [INFO] Starting gunicorn 20.1.0
+[2022-11-06 12:45:39 +0530] [476024] [INFO] Listening at: http://0.0.0.0:5080 (476024)
+[2022-11-06 12:45:39 +0530] [476024] [INFO] Using worker: sync
+[2022-11-06 12:45:39 +0530] [476031] [INFO] Booting worker with pid: 476031

@@ -23568,3 +23568,29 @@ Traceback (most recent call last):
   File "/home/nacool/Desktop/Projects/scholarship_scraper/app.py", line 19, in index
     current = int(page)
 ValueError: invalid literal for int() with base 10: 'shell'
+[2022-11-06 12:32:20 +0530] [411224] [INFO] Handling signal: term
+[2022-11-06 12:32:20 +0530] [440830] [INFO] Worker exiting (pid: 440830)
+[2022-11-06 12:32:20 +0530] [440844] [INFO] Worker exiting (pid: 440844)
+[2022-11-06 12:32:20 +0530] [440831] [INFO] Worker exiting (pid: 440831)
+[2022-11-06 12:32:20 +0530] [440775] [INFO] Worker exiting (pid: 440775)
+[2022-11-06 12:32:21 +0530] [411224] [INFO] Shutting down: Master
+[2022-11-06 12:32:27 +0530] [474403] [INFO] Starting gunicorn 20.1.0
+[2022-11-06 12:32:27 +0530] [474403] [INFO] Listening at: http://0.0.0.0:8080 (474403)
+[2022-11-06 12:32:27 +0530] [474403] [INFO] Using worker: sync
+[2022-11-06 12:32:27 +0530] [474407] [INFO] Booting worker with pid: 474407
+[2022-11-06 12:32:27 +0530] [474408] [INFO] Booting worker with pid: 474408
+[2022-11-06 12:32:27 +0530] [474409] [INFO] Booting worker with pid: 474409
+[2022-11-06 12:32:27 +0530] [474410] [INFO] Booting worker with pid: 474410
+[2022-11-06 12:37:35 +0530] [474403] [INFO] Handling signal: term
+[2022-11-06 12:37:35 +0530] [474407] [INFO] Worker exiting (pid: 474407)
+[2022-11-06 12:37:35 +0530] [474408] [INFO] Worker exiting (pid: 474408)
+[2022-11-06 12:37:35 +0530] [474410] [INFO] Worker exiting (pid: 474410)
+[2022-11-06 12:37:35 +0530] [474409] [INFO] Worker exiting (pid: 474409)
+[2022-11-06 12:37:35 +0530] [474403] [INFO] Shutting down: Master
+[2022-11-06 12:37:36 +0530] [475105] [INFO] Starting gunicorn 20.1.0
+[2022-11-06 12:37:36 +0530] [475105] [INFO] Listening at: http://0.0.0.0:8080 (475105)
+[2022-11-06 12:37:36 +0530] [475105] [INFO] Using worker: sync
+[2022-11-06 12:37:36 +0530] [475115] [INFO] Booting worker with pid: 475115
+[2022-11-06 12:37:36 +0530] [475117] [INFO] Booting worker with pid: 475117
+[2022-11-06 12:37:36 +0530] [475118] [INFO] Booting worker with pid: 475118
+[2022-11-06 12:37:37 +0530] [475119] [INFO] Booting worker with pid: 475119
