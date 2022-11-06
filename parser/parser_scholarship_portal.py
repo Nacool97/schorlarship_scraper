@@ -91,7 +91,7 @@ def parse_scholarship_portal(body):
             continue
         scholarship['amount'] = d['amount'] if d.get(
             'amount') and d['amount'] else "NA"
-        scholarship['number_of_days_left'] = number_of_days
+        scholarship['days_left'] = number_of_days
         scholarship['last_update'] = datetime.now().strftime('%d/%m/%Y')
         if deadline:
             scholarship['deadline'] = deadline.strftime('%d/%m/%Y')

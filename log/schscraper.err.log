@@ -23484,3 +23484,87 @@ Traceback (most recent call last):
   File "/home/nacool/Desktop/Projects/scholarship_scraper/app.py", line 19, in index
     current = int(page)
 ValueError: invalid literal for int() with base 10: 'robots.txt'
+[2022-11-06 01:48:23,726] ERROR in app: Exception on /index.php [GET]
+Traceback (most recent call last):
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/flask/app.py", line 1519, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/flask/app.py", line 1517, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/flask/app.py", line 1503, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/app.py", line 19, in index
+    current = int(page)
+ValueError: invalid literal for int() with base 10: 'index.php'
+[2022-11-06 03:04:15,225] ERROR in app: Exception on /shell [GET]
+Traceback (most recent call last):
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/flask/app.py", line 1519, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/flask/app.py", line 1517, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/flask/app.py", line 1503, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/app.py", line 19, in index
+    current = int(page)
+ValueError: invalid literal for int() with base 10: 'shell'
+[2022-11-06 06:26:30 +0530] [411224] [CRITICAL] WORKER TIMEOUT (pid:411236)
+[2022-11-06 06:26:30 +0530] [411236] [INFO] Worker exiting (pid: 411236)
+[2022-11-06 06:26:30 +0530] [434235] [INFO] Booting worker with pid: 434235
+[2022-11-06 06:26:59 +0530] [411224] [CRITICAL] WORKER TIMEOUT (pid:411228)
+[2022-11-06 06:26:59 +0530] [411228] [INFO] Worker exiting (pid: 411228)
+[2022-11-06 06:27:00 +0530] [434283] [INFO] Booting worker with pid: 434283
+[2022-11-06 08:07:00 +0530] [411224] [CRITICAL] WORKER TIMEOUT (pid:434235)
+[2022-11-06 08:07:00 +0530] [434235] [INFO] Worker exiting (pid: 434235)
+[2022-11-06 08:07:01 +0530] [440152] [INFO] Booting worker with pid: 440152
+[2022-11-06 08:17:42 +0530] [411224] [CRITICAL] WORKER TIMEOUT (pid:440152)
+[2022-11-06 08:17:42 +0530] [440152] [INFO] Worker exiting (pid: 440152)
+[2022-11-06 08:17:43 +0530] [411224] [CRITICAL] WORKER TIMEOUT (pid:411237)
+[2022-11-06 08:17:43 +0530] [411237] [INFO] Worker exiting (pid: 411237)
+[2022-11-06 08:17:43 +0530] [440758] [INFO] Booting worker with pid: 440758
+[2022-11-06 08:17:43 +0530] [440765] [INFO] Booting worker with pid: 440765
+[2022-11-06 08:17:44 +0530] [411224] [CRITICAL] WORKER TIMEOUT (pid:411238)
+[2022-11-06 08:17:44 +0530] [411224] [CRITICAL] WORKER TIMEOUT (pid:434283)
+[2022-11-06 08:17:44 +0530] [411238] [INFO] Worker exiting (pid: 411238)
+[2022-11-06 08:17:44 +0530] [434283] [INFO] Worker exiting (pid: 434283)
+[2022-11-06 08:17:45 +0530] [440774] [INFO] Booting worker with pid: 440774
+[2022-11-06 08:17:45 +0530] [411224] [WARNING] Worker with pid 434283 was terminated due to signal 9
+[2022-11-06 08:17:45 +0530] [440775] [INFO] Booting worker with pid: 440775
+[2022-11-06 08:18:14 +0530] [411224] [CRITICAL] WORKER TIMEOUT (pid:440758)
+[2022-11-06 08:18:14 +0530] [411224] [CRITICAL] WORKER TIMEOUT (pid:440765)
+[2022-11-06 08:18:14 +0530] [440758] [INFO] Worker exiting (pid: 440758)
+[2022-11-06 08:18:14 +0530] [440765] [INFO] Worker exiting (pid: 440765)
+[2022-11-06 08:18:14 +0530] [440830] [INFO] Booting worker with pid: 440830
+[2022-11-06 08:18:14 +0530] [411224] [WARNING] Worker with pid 440765 was terminated due to signal 9
+[2022-11-06 08:18:14 +0530] [440831] [INFO] Booting worker with pid: 440831
+[2022-11-06 08:18:15 +0530] [411224] [CRITICAL] WORKER TIMEOUT (pid:440774)
+[2022-11-06 08:18:15 +0530] [440774] [INFO] Worker exiting (pid: 440774)
+[2022-11-06 08:18:16 +0530] [440844] [INFO] Booting worker with pid: 440844
+[2022-11-06 08:51:17,387] ERROR in app: Exception on /docker-compose.yml [GET]
+Traceback (most recent call last):
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/flask/app.py", line 1519, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/flask/app.py", line 1517, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/flask/app.py", line 1503, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/app.py", line 19, in index
+    current = int(page)
+ValueError: invalid literal for int() with base 10: 'docker-compose.yml'
+[2022-11-06 10:50:27,629] ERROR in app: Exception on /shell [GET]
+Traceback (most recent call last):
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/flask/app.py", line 1519, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/flask/app.py", line 1517, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/flask/app.py", line 1503, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/app.py", line 19, in index
+    current = int(page)
+ValueError: invalid literal for int() with base 10: 'shell'
