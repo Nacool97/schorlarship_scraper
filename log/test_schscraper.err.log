@@ -1677,3 +1677,89 @@ TypeError: scholarship_page() got an unexpected keyword argument '<index>'
 [2022-11-06 12:45:39 +0530] [476024] [INFO] Listening at: http://0.0.0.0:5080 (476024)
 [2022-11-06 12:45:39 +0530] [476024] [INFO] Using worker: sync
 [2022-11-06 12:45:39 +0530] [476031] [INFO] Booting worker with pid: 476031
+[2022-11-06 13:14:59 +0530] [476024] [INFO] Handling signal: term
+[2022-11-06 13:14:59 +0530] [476031] [INFO] Worker exiting (pid: 476031)
+[2022-11-06 13:15:00 +0530] [476024] [INFO] Shutting down: Master
+[2022-11-06 13:15:01 +0530] [480131] [INFO] Starting gunicorn 20.1.0
+[2022-11-06 13:15:01 +0530] [480131] [INFO] Listening at: http://0.0.0.0:5080 (480131)
+[2022-11-06 13:15:01 +0530] [480131] [INFO] Using worker: sync
+[2022-11-06 13:15:01 +0530] [480133] [INFO] Booting worker with pid: 480133
+[2022-11-06 22:36:48 +0530] [480131] [INFO] Handling signal: term
+[2022-11-06 22:36:48 +0530] [480133] [INFO] Worker exiting (pid: 480133)
+[2022-11-06 22:36:48 +0530] [480131] [INFO] Shutting down: Master
+[2022-11-06 22:36:49 +0530] [515127] [INFO] Starting gunicorn 20.1.0
+[2022-11-06 22:36:49 +0530] [515127] [INFO] Listening at: http://0.0.0.0:5080 (515127)
+[2022-11-06 22:36:49 +0530] [515127] [INFO] Using worker: sync
+[2022-11-06 22:36:49 +0530] [515129] [INFO] Booting worker with pid: 515129
+[2022-11-06 22:41:05 +0530] [515127] [INFO] Handling signal: term
+[2022-11-06 22:41:05 +0530] [515129] [INFO] Worker exiting (pid: 515129)
+[2022-11-06 22:41:06 +0530] [515127] [INFO] Shutting down: Master
+[2022-11-06 22:41:07 +0530] [515493] [INFO] Starting gunicorn 20.1.0
+[2022-11-06 22:41:07 +0530] [515493] [INFO] Listening at: http://0.0.0.0:5080 (515493)
+[2022-11-06 22:41:07 +0530] [515493] [INFO] Using worker: sync
+[2022-11-06 22:41:07 +0530] [515503] [INFO] Booting worker with pid: 515503
+[2022-11-09 18:22:47,019] ERROR in app: Exception on /sitemap.xml [GET]
+Traceback (most recent call last):
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/flask/app.py", line 1519, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/flask/app.py", line 1517, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/flask/app.py", line 1503, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/test_app.py", line 20, in index
+    current = int(page)
+ValueError: invalid literal for int() with base 10: 'sitemap.xml'
+[2022-11-09 18:22:47,633] ERROR in app: Exception on /robots.txt [GET]
+Traceback (most recent call last):
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/flask/app.py", line 1519, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/flask/app.py", line 1517, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/flask/app.py", line 1503, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/test_app.py", line 20, in index
+    current = int(page)
+ValueError: invalid literal for int() with base 10: 'robots.txt'
+[2022-11-12 10:50:19,540] ERROR in app: Exception on /favicon.ico [GET]
+Traceback (most recent call last):
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/flask/app.py", line 1519, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/flask/app.py", line 1517, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/flask/app.py", line 1503, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/test_app.py", line 20, in index
+    current = int(page)
+ValueError: invalid literal for int() with base 10: 'favicon.ico'
+[2022-11-13 08:09:54,400] ERROR in app: Exception on /sitemap.xml [GET]
+Traceback (most recent call last):
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/flask/app.py", line 1519, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/flask/app.py", line 1517, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/flask/app.py", line 1503, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/test_app.py", line 20, in index
+    current = int(page)
+ValueError: invalid literal for int() with base 10: 'sitemap.xml'
+[2022-11-13 08:09:54,402] ERROR in app: Exception on /robots.txt [GET]
+Traceback (most recent call last):
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/flask/app.py", line 1519, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/flask/app.py", line 1517, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/flask/app.py", line 1503, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/test_app.py", line 20, in index
+    current = int(page)
+ValueError: invalid literal for int() with base 10: 'robots.txt'
