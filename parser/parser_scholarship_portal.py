@@ -9,6 +9,19 @@ client = MongoClient('localhost', 27017)
 collection = client['nacool_projects']['scholarships']
 scholarship_lists = list(collection.find())
 
+def check_if_expired(scholarship):
+    try:
+        if datetime.strptime(scholarship['deadline'],'%d/%m/%Y') < datetime.now():
+            collection.update_one({'_id':scholarship['_id']},
+            {'$set':{'expired':True}})
+        else:
+            days_left = int(datetime.strptime(scholarship['deadline'],'%d/%m/%Y').timestamp() - datetime.now().timestamp())
+            collection.update_one({'_id':scholarship['_id']},
+            {'$set':{'days_left':days_left}})
+    except Exception as e:
+            days_left = int((datetime.now()+timedelta.days(50)).timestamp())
+            collection.update_one({'_id':scholarship['_id']},
+            {'$set':{'days_left':days_left}})
 
 def check_for_duplicate_data(data):
     if not data.get('url'):
@@ -17,12 +30,14 @@ def check_for_duplicate_data(data):
         'url': data['url']
     })
     if sch:
+        check_if_expired(sch)
         return True
     for scholarship in scholarship_lists:
         print(data)
         similarity = SequenceMatcher(
             None, data['name'], scholarship['name']).ratio()*100
         if ceil(similarity) > 85:
+            check_if_expired(sch)
             return True
     return False
 
@@ -37,6 +52,7 @@ def save_data(data_list):
                                   )
             continue
         new_data.append(data)
+        
     if new_data:
         collection.insert_many(new_data)
     print('saved-data-to-db')
