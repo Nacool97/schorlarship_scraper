@@ -13,8 +13,9 @@ def update_all(scholarship):
             {'$set':{'expired':True}})
     except Exception:
         days_left = int((datetime.now()+timedelta(days=50)).timestamp())
+        last_update = datetime.now().strftime('%d/%m/%Y')
         collection.update_one({'_id':scholarship['_id']},
-            {'$set':{'days_left':days_left}})
+            {'$set':{'days_left':days_left,'last_update':last_update}})
     print(f"{scholarship['url']} --> changed")
 
 if __name__ == "__main__":
