@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <title>Scholars Mate</title>
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+
+    <!-- Favicons -->
+    <link href="{{ url_for('static',filename='assets/img/new_logo1.png') }}" rel="icon">
+    <link href="{{ url_for('static',filename='assets/img/new_logo1.png') }}" rel="apple-touch-icon">
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+        rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link href="{{ url_for('static',filename='assets/vendor/animate.css/animate.min.css') }}" rel="stylesheet">
+    <!-- <link href="{{ url_for('static',filename='assets/vendor/aos/aos.css') }}" rel="stylesheet"> -->
+    <link href="{{ url_for('static',filename='assets/vendor/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static',filename='assets/vendor/bootstrap-icons/bootstrap-icons.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static',filename='assets/vendor/boxicons/css/boxicons.min.css') }}" rel="stylesheet">
+    <!-- <link href="{{ url_for('static',filename='assets/vendor/glightbox/css/glightbox.min.css') }}" rel="stylesheet">
+  <link href="{{ url_for('static',filename='assets/vendor/remixicon/remixicon.css') }}" rel="stylesheet"> -->
+    <link href="{{ url_for('static',filename='assets/vendor/swiper/swiper-bundle.min.css') }}" rel="stylesheet">
+
+    <!-- Template Main CSS File -->
+    <link href="{{ url_for('static',filename='assets/css/style.css') }}" rel="stylesheet">
+
+    <!-- =======================================================
+  * Template Name: Anyar - v4.8.0
+  * Template URL: https://bootstrapmade.com/anyar-free-multipurpose-one-page-bootstrap-theme/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+    <!-- ======= Top Bar ======= -->
+    <div id="topbar" class="fixed-top d-flex align-items-center topbar-inner-pages">
+        <div class="container d-flex align-items-center justify-content-center justify-content-md-between">
+            <div class="contact-info d-flex align-items-center">
+                <i class="bi bi-envelope-fill"></i><a
+                    href="mailto:nacool.scholarsmate@gmail.com">nacool.scholarsmate@gmail.com</a>
+            </div>
+            <div class="cta d-none d-md-block">
+                <a href="/login" class="scrollto">Login</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- ======= Header ======= -->
+    <header id="header" class="fixed-top d-flex align-items-center header-inner-pages">
+        <div class="container d-flex align-items-center justify-content-between">
+
+            <h1 class="logo"><a href="/">Scholars Mate</a></h1>
+            <!-- Uncomment below if you prefer to use an image logo -->
+            <!-- <a href=index.html" class="logo"><img src="static/assets/img/logo.png" alt="" class="img-fluid"></a> -->
+
+            <nav id="navbar" class="navbar">
+                <ul>
+                    <li><a class="active" href="/">Blog</a></li>
+                </ul>
+                <i class="bi bi-list mobile-nav-toggle"></i>
+            </nav>
+
+        </div>
+    </header><!-- End Header -->
+
+    <main id="main">
+
+        <!-- ======= Breadcrumbs ======= -->
+        <section id="breadcrumbs" class="breadcrumbs">
+            <div class="container">
+
+                <ol>
+                    <li><a href="/">Home</a></li>
+                </ol>
+                <h2>Blog</h2>
+
+            </div>
+        </section><!-- End Breadcrumbs -->
+        <!-- ======= Contact Section ======= -->
+        <section id="contact" class="contact">
+            <div class="container" data-aos="fade-up">
+
+                <div class="section-title">
+                    <h2>Login</h2>
+                </div>
+                <div class="col-lg-6 mx-auto mt-5 mt-lg-0" data-aos="fade-right" data-aos-delay="100">
+                    <form action="/login" method="post" role="form">
+                        <div class="row" style="text-align: center;">
+                            <div class="form-group mt-3">
+                                <input type="email" name="email" class="form-control" id="email"
+                                    placeholder="Your Email" required>
+                            </div>
+
+                        </div>
+                        <div class="row">
+                            <div class="form-group mt-3">
+                                <input type="password" class="form-control" name="password" id="password"
+                                    placeholder="Your Password" required>
+                            </div>
+                        </div>
+                        <div class="row">
+                            {% if error %}
+                            <div class="form-group mt-3">
+                                <div class="message">{{ error }}</div>
+                            </div>
+                            {% endif %}
+                        </div>
+                </div>
+
+                <div class="row">
+                    <div class="form-group mt-3">
+                        <div class="text-center">
+                            <button type="submit">Login</button>
+                            <button type="submit" onclick="window.location.href='/signup';">Signup</button>
+                        </div>
+                    </div>
+                </div>
+                </form>
+            </div>
+            </div>
+
+            </div>
+
+            </div>
+        </section><!-- End Contact Section -->
+
+    </main><!-- End #main -->
+
+    <!-- ======= Footer ======= -->
+    <footer id="footer">
+        <div class="container">
+            <div class="copyright">
+                &copy; Copyright <strong><span>Scholars Mate</span></strong>. All Rights Reserved
+            </div>
+            <div class="credits">
+                <!-- All the links in the footer should remain intact. -->
+                <!-- You can delete the links only if you purchased the pro version. -->
+                <!-- Licensing information: https://bootstrapmade.com/license/ -->
+                <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/anyar-free-multipurpose-one-page-bootstrap-theme/ -->
+                Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+            </div>
+        </div>
+    </footer><!-- End Footer -->
+
+    <div id="preloader"></div>
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+            class="bi bi-arrow-up-short"></i></a>
+
+    <!-- Vendor JS Files -->
+    <script src="{{ url_for('static',filename='assets/vendor/aos/aos.js') }}"></script>
+    <script src="{{ url_for('static',filename='assets/vendor/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
+    <script src="{{ url_for('static',filename='assets/vendor/glightbox/js/glightbox.min.js') }}"></script>
+    <script src="{{ url_for('static',filename='assets/vendor/isotope-layout/isotope.pkgd.min.js') }}"></script>
+    <script src="{{ url_for('static',filename='assets/vendor/swiper/swiper-bundle.min.js') }}"></script>
+    <script src="{{ url_for('static',filename='assets/vendor/php-email-form/validate.js') }}"></script>
+
+    <!-- Template Main JS File -->
+    <script src="{{ url_for('static',filename='assets/js/main.js') }}"></script>
+
+</body>
+
+</html>

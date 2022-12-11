@@ -1084,6 +1084,25 @@ section {
   margin-bottom: 0;
 }
 
+/*------------------------------------------------------------
+# Button
+-------------------------------------------------------------*/
+
+.button {
+  border-radius: 8px;
+  width: auto;
+  color: #054a85;
+  font-weight: bold;
+  padding: 10px;
+  transition-duration: 0.4s;
+}
+
+.button:hover {
+  color: white;
+  background-color: #0880e8; /* Blue */
+}
+
+
 /*--------------------------------------------------------------
 # Cta
 --------------------------------------------------------------*/
@@ -1666,6 +1685,26 @@ section {
   margin-top: 25px;
 }
 
+.contact  .message {
+  /* display: none; */
+  color: #fff;
+  background: #ed3c0d;
+  text-align: left;
+  padding: 15px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.contact .message br+br {
+  margin-top: 25px;
+}
+
+.contact input {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .contact .php-email-form .sent-message {
   display: none;
   color: #fff;
@@ -1718,6 +1757,49 @@ section {
   border-radius: 50px;
   border: 2px solid #0880e8;
   background: #fff;
+}
+
+.contact  button[type=submit] {
+  border: 0;
+  padding: 10px 32px;
+  color: #0880e8;
+  transition: 0.4s;
+  border-radius: 50px;
+  border: 2px solid #0880e8;
+  background: #fff;
+}
+
+.contact  button[type=submit]:hover {
+  background: #0880e8;
+  color: #fff;
+}
+
+.custom_btn {
+  border: 0;
+  border-radius: 3px;
+  box-shadow: none; 
+  display: inline-block;
+  background: #f6b024;
+  color: #fff;
+  padding: 6px 20px;
+  transition: 0.3s;
+  font-size: 14px;
+  /*border-radius: 4px;*/
+}
+
+.custom_btn:hover {
+  background: #f7b93c;
+}
+
+.contact  input,
+.contact  textarea {
+  border-radius: 4px;
+  box-shadow: none;
+  font-size: 14px;
+}
+
+.contact  input {
+  height: 44px;
 }
 
 .contact .php-email-form button[type=submit]:hover {
@@ -2291,11 +2373,22 @@ section {
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
-#footer {
+.footer-container {
+min-height: 100%;
+/* equal to footer height */
+margin-bottom: -120px;
+}
+.footer-container:after {
+  display: block;
+  }
+
+#footer, .footer-container:after {
   background: #05579e;
   padding: 0 0 30px 0;
   color: #fff;
   font-size: 14px;
+  bottom: 0%;
+  width: 100%;
 }
 
 #footer .footer-newsletter {
@@ -2460,4 +2553,67 @@ section {
 
 #footer .credits a {
   color: #f6b024;
+}
+/*================================================================
+# Alert Checkbox
+===================================================================*/
+.switch {
+  position: relative;
+  /*display: ;*/
+  width: 60px;
+  height: 33.5px;
+  float: right;
+}
+
+.switch input { 
+  opacity: 1;
+  width: 10%;
+  height: 10%;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 45px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
 }

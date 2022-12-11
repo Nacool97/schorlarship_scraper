@@ -47,9 +47,13 @@
       <div class="contact-info d-flex align-items-center">
         <i class="bi bi-envelope-fill"></i><a href="mailto:nacool.scholarsmate@gmail.com">nacool.scholarsmate@gmail.com</a>
       </div>
-      <!-- <div class="cta d-none d-md-block">
-        <a href="#about" class="scrollto">Get Started</a>
-      </div> -->
+      <div class="cta d-none d-md-block">
+        {% if not session.get('email') %}
+        <a href="/login" class="scrollto">Login</a>
+        {% else %}
+        <a href="/logout" class="scrollto">Logout</a>
+        {% endif %}
+      </div>
     </div>
   </div>
 
