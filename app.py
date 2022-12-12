@@ -127,19 +127,19 @@ def index(page):
     from_page = (current-1)*cont_count
     to_page = current*cont_count
     # get the last 5 entires i.e. recent 5 scraped enterirs which are not expired
-    #recent_data = list(collection.find({'expired':False}).sort('_id',-1).limit(5))
-    recent_data = data
+    recent_data = list(collection.find({'expired':False}).sort('_id',-1).limit(5))
+    #recent_data = data
     if session.get('email'):
         return render_template('logged_index.html',data=data,from_page=from_page,to_page=to_page,current=current,next=next_page,previous=previous_page,recent_data=recent_data,session=session)
     return render_template('index.html',data=data,from_page=from_page,to_page=to_page,current=current,next=next_page,previous=previous_page,recent_data=recent_data,session=session)
 @app.route('/view', defaults={'/view/<index>':"630e275b1b232898cd94af20"})
 @app.route('/view/<string:index>')
 def scholarship_page(index):
-    #scholarship_data = collection.find_one({'_id':ObjectId(index)})
-    scholarship_data = data
+    scholarship_data = collection.find_one({'_id':ObjectId(index)})
+    #scholarship_data = data
     # get the last 5 entires i.e. recent 5 scraped enterirs which are not expired
-    #recent_data = list(collection.find({'expired':False}).sort('_id',-1).limit(5))
-    recent_data = data
+    recent_data = list(collection.find({'expired':False}).sort('_id',-1).limit(5))
+    #recent_data = data
     return render_template('blog-single.html',data=scholarship_data,recent_data=recent_data)
 
 @app.route("/mail")
@@ -188,8 +188,8 @@ def send_email(sch_id,recipient):
     name = "User"
     if session.get('email'):
         name = session.get('email')
-    #scholarship = collection.find_one({'_id':sch_id})
-    scholarship = data[1]
+    scholarship = collection.find_one({'_id':sch_id})
+    #scholarship = data[1]
     message = Message(
         f"Scholarship Deadline Alert ",
         sender= 'nacool.scholarsmate@gmail.com',
