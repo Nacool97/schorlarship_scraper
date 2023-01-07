@@ -39,7 +39,14 @@ mydb = mysql.connector.connect(
 cursor = mydb.cursor()
 
 
-def get_scholars(email):
+def get_scholars(email, scholarship_id):
+    if scholarship_id:
+        cursor.execute(
+        f"SELECT * from scholars_subs where scholarship_id = '{scholarship_id}' and email = '{email}'")
+        result = cursor.fetchall()
+        print(result)
+        if result:
+            return result 
     cursor.execute(f"SELECT password FROM scholars where email = '{email}'")
     result = cursor.fetchone()
     if result:
@@ -61,9 +68,17 @@ def get_scholars_subs(scholarship_id):
     result = cursor.fetchall()
     if result:
         return list(*zip(*result))
+    return None
 
 
 def insert_scholars_subs(email, scholarship_id, deadline):
+    if get_scholars(email,scholarship_id):
+        print(scholarship_id)
+        sql = f"update scholars_subs set send_alert = {True} where scholarship_id = '{scholarship_id}' and email = '{email}'"
+        cursor.execute(sql)
+        mydb.commit()
+        print(cursor.rowcount, "row(s) deleted")
+        return
     sql = "INSERT INTO scholars_subs (email, scholarship_id, send_alert, deadline) VALUES (%s, %s, %s, %s)"
     val = (email, scholarship_id, True, deadline)
     cursor.execute(sql, val)
@@ -188,9 +203,7 @@ def alert_me():
     data = request.json
     sch_id = data.get('sch_id')
     deadline = data.get('deadline')
-    db_email = get_scholars_subs(sch_id)
-    if not db_email or session['email'] not in db_email:
-        insert_scholars_subs(session['email'], sch_id, deadline)
+    insert_scholars_subs(session['email'], sch_id, deadline)
     return redirect(url_for('index'))
 
 

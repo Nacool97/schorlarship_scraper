@@ -25548,3 +25548,39 @@ Traceback (most recent call last):
   File "/home/nacool/Desktop/Projects/scholarship_scraper/app.py", line 19, in index
     current = int(page)
 ValueError: invalid literal for int() with base 10: 'robots.txt'
+[2023-01-07 13:15:02 +0530] [386251] [INFO] Starting gunicorn 20.1.0
+[2023-01-07 13:15:02 +0530] [386251] [INFO] Listening at: http://0.0.0.0:8080 (386251)
+[2023-01-07 13:15:02 +0530] [386251] [INFO] Using worker: sync
+[2023-01-07 13:15:02 +0530] [386262] [INFO] Booting worker with pid: 386262
+[2023-01-07 13:15:02 +0530] [386263] [INFO] Booting worker with pid: 386263
+[2023-01-07 13:15:02 +0530] [386264] [INFO] Booting worker with pid: 386264
+[2023-01-07 13:15:02 +0530] [386265] [INFO] Booting worker with pid: 386265
+[2023-01-07 13:17:43,186] ERROR in app: Exception on /favicon.ico [GET]
+Traceback (most recent call last):
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/flask/app.py", line 1519, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/flask/app.py", line 1517, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/flask/app.py", line 1503, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/app.py", line 135, in index
+    current = int(page)
+ValueError: invalid literal for int() with base 10: 'favicon.ico'
+[2023-01-07 20:17:58 +0530] [386251] [CRITICAL] WORKER TIMEOUT (pid:386265)
+[2023-01-07 20:17:58 +0530] [386265] [INFO] Worker exiting (pid: 386265)
+[2023-01-07 20:17:59 +0530] [411991] [INFO] Booting worker with pid: 411991
+[2023-01-07 21:07:29,068] ERROR in app: Exception on /shell [GET]
+Traceback (most recent call last):
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/flask/app.py", line 1519, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/flask/app.py", line 1517, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/flask/app.py", line 1503, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/app.py", line 135, in index
+    current = int(page)
+ValueError: invalid literal for int() with base 10: 'shell'
