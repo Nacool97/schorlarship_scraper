@@ -39,13 +39,14 @@
   ======================================================== -->
     <script>
 
-        function send_post(e, sch_id) {
+        function send_post(e, sch_id, deadline) {
             if (e.target.checked) {
                 var xhr = new XMLHttpRequest();
                 xhr.open("POST", "/alert_me", true)
                 xhr.setRequestHeader('Content-Type', 'application/json');
                 xhr.send(JSON.stringify({
-                    sch_id
+                    sch_id,
+                    deadline
                 }));
             }
             else {
@@ -53,7 +54,8 @@
                 xhr.open("POST", "/unalert_me", true)
                 xhr.setRequestHeader('Content-Type', 'application/json');
                 xhr.send(JSON.stringify({
-                    sch_id
+                    sch_id,
+                    deadline
                 }));
             }
         }
@@ -150,6 +152,7 @@
                         {% set url = data[x]['metadata'][-1]['website'] %}
                         {% endif %}
                         {% set scholarship_id = data[x]['_id'] %}
+                        {% set sch_deadline = data[x]['deadline'] %}
                         <article class="entry">
 
                             <!-- <div class="entry-img">
@@ -160,7 +163,7 @@
                                 <!-- Alert Check Box  -->
                                 <label class="switch">
                                     <input type="checkbox" , class="custom_checkbox" ,
-                                        onclick='send_post(event, "{{ data[x] }}")'>
+                                        onclick='send_post(event, "{{ scholarship_id }}","{{ sch_deadline }}")'>
                                     <span class="slider round"></span>
                                 </label>
                                 <!--  Checkbox Done -->

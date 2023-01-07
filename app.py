@@ -63,16 +63,16 @@ def get_scholars_subs(scholarship_id):
         return list(*zip(*result))
 
 
-def insert_scholars_subs(email, scholarship_id):
-    sql = "INSERT INTO scholars_subs (email, scholarship_id) VALUES (%s, %s)"
-    val = (email, scholarship_id)
+def insert_scholars_subs(email, scholarship_id, deadline):
+    sql = "INSERT INTO scholars_subs (email, scholarship_id, send_alert, deadline) VALUES (%s, %s, %s, %s)"
+    val = (email, scholarship_id, True, deadline)
     cursor.execute(sql, val)
     mydb.commit()
     print(cursor.rowcount, "record inserted.")
 
 
 def delete_scholars_subs(email, scholarship_id):
-    sql = f"delete from scholars_subs where scholarship_id = '{scholarship_id}' and email = '{email}'"
+    sql = f"update scholars_subs set send_alert = {False} where scholarship_id = '{scholarship_id}' and email = '{email}'"
     cursor.execute(sql)
     mydb.commit()
     print(cursor.rowcount, "row(s) deleted")
@@ -185,24 +185,20 @@ def send_mail():
 
 @app.route('/alert_me', methods=['GET', 'POST'])
 def alert_me():
-    sch_id = request.json
-    sch_id = sch_id.get('sch_id')
-    sch_id = sch_id.replace("'", '"').replace("False", "false").replace(
-        "True", "true").replace('t"s', "t's").replace("\n", "").replace("\t", "")
-    sch_id = json.loads(sch_id).get('_id')
+    data = request.json
+    sch_id = data.get('sch_id')
+    deadline = data.get('deadline')
     db_email = get_scholars_subs(sch_id)
     if not db_email or session['email'] not in db_email:
-        insert_scholars_subs(session['email'], sch_id)
+        insert_scholars_subs(session['email'], sch_id, deadline)
     return redirect(url_for('index'))
 
 
 @app.route('/unalert_me', methods=['GET', 'POST'])
 def unalert_me():
-    sch_id = request.json
-    sch_id = sch_id.get('sch_id')
-    sch_id = sch_id.replace("'", '"').replace("False", "false").replace(
-        "True", "true").replace('t"s', "t's").replace("\n", "").replace("\t", "")
-    sch_id = json.loads(sch_id).get('_id')
+    data = request.json
+    sch_id = data.get('sch_id')
+    deadline = data.get('deadline')
     db_email = get_scholars_subs(sch_id)
     if not db_email or session['email'] in db_email:
         delete_scholars_subs(session['email'], sch_id)
