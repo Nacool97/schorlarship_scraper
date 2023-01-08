@@ -39,3 +39,16 @@
 []
 636763fcc84225d69a0ee2de
 0 row(s) deleted
+[('nacoolthedj@gmail.com', '639aa9deceba170f19cde285', 1, '20/01/2023')]
+639aa9deceba170f19cde285
+0 row(s) updated
+[]
+1 record inserted.
+[('nacoolthedj@gmail.com', '639aa9deceba170f19cde285', 1, '20/01/2023')]
+639aa9deceba170f19cde285
+0 row(s) updated
+get_scholars() missing 1 required positional argument: 'scholarship_id'
+get_scholars() missing 1 required positional argument: 'scholarship_id'
+get_scholars() missing 1 required positional argument: 'scholarship_id'
+get_scholars() missing 1 required positional argument: 'scholarship_id'
+get_scholars() missing 1 required positional argument: 'scholarship_id'

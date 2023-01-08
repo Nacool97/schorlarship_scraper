@@ -38,7 +38,7 @@ mydb = mysql.connector.connect(
 cursor = mydb.cursor()
 
 
-def get_scholars(email, scholarship_id):
+def get_scholars(email, scholarship_id=None):
     if scholarship_id:
         cursor.execute(
         f"SELECT * from scholars_subs where scholarship_id = '{scholarship_id}' and email = '{email}'")
