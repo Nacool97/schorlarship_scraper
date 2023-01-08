@@ -2,7 +2,7 @@ from flask import Flask, render_template, request, session, redirect, url_for
 from flask_mail import Mail, Message
 import mysql.connector
 from pymongo import MongoClient
-
+from datetime import datetime
 app = Flask(__name__)
 app.secret_key = "any@random#string"
 
@@ -30,3 +30,22 @@ mydb = mysql.connector.connect(
 )
 
 cursor = mydb.cursor()
+# fetch all the email id scholarship_id and deadline who as sent_alert flag as 1
+def get_all_mails_for_alerts():
+    query = "SELECT email, scholarship_id, deadline from scholars_subs where send_alert=1"
+    cursor.execute(query)
+    result = cursor.fetchall()
+    return result
+# fetch all email and scholarship_id for deadline less than 1 week
+def get_all_email_id(results):
+    alerts_list = []
+    today = datetime.now()
+    for result in results:
+        alerts =()
+        try:
+            deadline = datetime.strptime(result[1],"%d/%m/%YYYY")
+        except Exception as e:
+            deadline = None
+        if deadline and deadline - today:
+            pass
+
