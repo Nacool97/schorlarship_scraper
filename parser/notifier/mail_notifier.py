@@ -80,7 +80,7 @@ def send_mail(email, scholarship):
         sender='nacool.scholarsmate@gmail.com',
         recipients=[email]
     )
-    message.html = f'Hello {name},<br>This the deadline alert for the {scholarship["name"]}.<br>Deadline is on {scholarship["deadline"]}.<br>Here is the <a href="https://scholarslsmate.uk/view/{scholarship["_id"]}">scholarship url</a>'
+    message.html = f'Hello {name},<br>This the deadline alert for the {scholarship["name"]}.<br>Deadline is on {scholarship["deadline"]}.<br>Here is the <a href="https://scholarsmate.uk/view/{scholarship["_id"]}">scholarship url</a>'
     mail.send(message)
     return 'Sent'
 @app.route("/")

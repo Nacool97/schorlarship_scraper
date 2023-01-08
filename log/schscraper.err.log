@@ -25957,3 +25957,16 @@ ValueError: invalid literal for int() with base 10: 'title_bar.html'
 [2023-01-08 15:32:15 +0530] [500555] [INFO] Booting worker with pid: 500555
 [2023-01-08 15:32:15 +0530] [500559] [INFO] Booting worker with pid: 500559
 [2023-01-08 15:32:15 +0530] [500560] [INFO] Booting worker with pid: 500560
+[2023-01-08 15:33:24 +0530] [500544] [INFO] Handling signal: term
+[2023-01-08 15:33:24 +0530] [500549] [INFO] Worker exiting (pid: 500549)
+[2023-01-08 15:33:24 +0530] [500559] [INFO] Worker exiting (pid: 500559)
+[2023-01-08 15:33:24 +0530] [500560] [INFO] Worker exiting (pid: 500560)
+[2023-01-08 15:33:24 +0530] [500555] [INFO] Worker exiting (pid: 500555)
+[2023-01-08 15:33:24 +0530] [500544] [INFO] Shutting down: Master
+[2023-01-08 15:33:25 +0530] [500875] [INFO] Starting gunicorn 20.1.0
+[2023-01-08 15:33:25 +0530] [500875] [INFO] Listening at: http://0.0.0.0:8080 (500875)
+[2023-01-08 15:33:25 +0530] [500875] [INFO] Using worker: sync
+[2023-01-08 15:33:25 +0530] [500886] [INFO] Booting worker with pid: 500886
+[2023-01-08 15:33:26 +0530] [500889] [INFO] Booting worker with pid: 500889
+[2023-01-08 15:33:26 +0530] [500890] [INFO] Booting worker with pid: 500890
+[2023-01-08 15:33:26 +0530] [500896] [INFO] Booting worker with pid: 500896
