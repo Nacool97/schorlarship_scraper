@@ -46,10 +46,11 @@ def get_scholars(email, scholarship_id):
         print(result)
         if len(result)>0:
             return result 
-    cursor.execute(f"SELECT password FROM scholars where email = '{email}'")
-    result = cursor.fetchone()
-    if result:
-        return result[0]
+    else:
+        cursor.execute(f"SELECT password FROM scholars where email = '{email}'")
+        result = cursor.fetchone()
+        if result:
+            return result[0]
     return None
 
 
@@ -76,7 +77,7 @@ def insert_scholars_subs(email, scholarship_id, deadline):
         sql = f"update scholars_subs set send_alert = {True} where scholarship_id = '{scholarship_id}' and email = '{email}'"
         cursor.execute(sql)
         mydb.commit()
-        print(cursor.rowcount, "row(s) deleted")
+        print(cursor.rowcount, "row(s) updated")
         return
     sql = "INSERT INTO scholars_subs (email, scholarship_id, send_alert, deadline) VALUES (%s, %s, %s, %s)"
     val = (email, scholarship_id, True, deadline)
@@ -239,4 +240,4 @@ def sitemap():
     return send_file("robots.txt")
 
 if __name__ == '__main__':
-    app.run('0.0.0.0', port=5080, threaded=True)
+    app.run('0.0.0.0', port=8080, threaded=True)

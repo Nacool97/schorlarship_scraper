@@ -1,7 +1,7 @@
 from datetime import datetime
 from email.policy import default
 from bson import ObjectId
-from flask import Flask, render_template, request, session, redirect, url_for
+from flask import Flask, render_template, request, session, redirect, url_for, send_file
 from flask_mail import Mail, Message
 import mysql.connector
 from pymongo import MongoClient
@@ -11,7 +11,7 @@ app.secret_key = "any@random#string"
 
 app.config['MAIL_SERVER'] = 'smtp.gmail.com'
 app.config['MAIL_PORT'] = 465
-app.config['MAIL_USERNAME'] = 'nakul.scholarsmate@gmail.com'
+app.config['MAIL_USERNAME'] = 'nacool.scholarsmate@gmail.com'
 app.config['MAIL_PASSWORD'] = os.environ.get("scholars_mail")
 app.config['MAIL_USE_TLS'] = False
 app.config['MAIL_USE_SSL'] = True
@@ -44,13 +44,14 @@ def get_scholars(email, scholarship_id):
         f"SELECT * from scholars_subs where scholarship_id = '{scholarship_id}' and email = '{email}'")
         result = cursor.fetchall()
         print(result)
-        if result:
+        if len(result)>0:
             return result 
-    cursor.execute(f"SELECT password FROM scholars where email = '{email}'")
-    result = cursor.fetchone()
-    if result:
-        return result[0]
-    return
+    else:
+        cursor.execute(f"SELECT password FROM scholars where email = '{email}'")
+        result = cursor.fetchone()
+        if result:
+            return result[0]
+    return None
 
 
 def insert_scholars(email, password):
@@ -76,7 +77,7 @@ def insert_scholars_subs(email, scholarship_id, deadline):
         sql = f"update scholars_subs set send_alert = {True} where scholarship_id = '{scholarship_id}' and email = '{email}'"
         cursor.execute(sql)
         mydb.commit()
-        print(cursor.rowcount, "row(s) deleted")
+        print(cursor.rowcount, "row(s) updated")
         return
     sql = "INSERT INTO scholars_subs (email, scholarship_id, send_alert, deadline) VALUES (%s, %s, %s, %s)"
     val = (email, scholarship_id, True, deadline)
@@ -234,6 +235,9 @@ def send_email(sch_id, recipient):
     mail.send(message)
     return 'Sent'
 
+@app.route('/robots.txt')
+def sitemap():
+    return send_file("robots.txt")
 
 if __name__ == '__main__':
     app.run('0.0.0.0', port=5080, threaded=True)

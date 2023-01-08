@@ -26035,3 +26035,29 @@ ValueError: invalid literal for int() with base 10: 'shell'
 [2023-01-08 16:37:26 +0530] [510040] [INFO] Booting worker with pid: 510040
 [2023-01-08 16:37:26 +0530] [510041] [INFO] Booting worker with pid: 510041
 [2023-01-08 16:37:26 +0530] [510042] [INFO] Booting worker with pid: 510042
+[2023-01-08 16:44:57 +0530] [510027] [INFO] Handling signal: term
+[2023-01-08 16:44:57 +0530] [510040] [INFO] Worker exiting (pid: 510040)
+[2023-01-08 16:44:57 +0530] [510038] [INFO] Worker exiting (pid: 510038)
+[2023-01-08 16:44:57 +0530] [510042] [INFO] Worker exiting (pid: 510042)
+[2023-01-08 16:44:57 +0530] [510041] [INFO] Worker exiting (pid: 510041)
+[2023-01-08 16:44:58 +0530] [510027] [INFO] Shutting down: Master
+[2023-01-08 16:44:59 +0530] [510857] [INFO] Starting gunicorn 20.1.0
+[2023-01-08 16:44:59 +0530] [510857] [INFO] Listening at: http://0.0.0.0:8080 (510857)
+[2023-01-08 16:44:59 +0530] [510857] [INFO] Using worker: sync
+[2023-01-08 16:44:59 +0530] [510873] [INFO] Booting worker with pid: 510873
+[2023-01-08 16:44:59 +0530] [510874] [INFO] Booting worker with pid: 510874
+[2023-01-08 16:44:59 +0530] [510875] [INFO] Booting worker with pid: 510875
+[2023-01-08 16:45:00 +0530] [510876] [INFO] Booting worker with pid: 510876
+[2023-01-08 16:53:24 +0530] [510857] [INFO] Handling signal: term
+[2023-01-08 16:53:24 +0530] [510873] [INFO] Worker exiting (pid: 510873)
+[2023-01-08 16:53:24 +0530] [510876] [INFO] Worker exiting (pid: 510876)
+[2023-01-08 16:53:24 +0530] [510875] [INFO] Worker exiting (pid: 510875)
+[2023-01-08 16:53:24 +0530] [510874] [INFO] Worker exiting (pid: 510874)
+[2023-01-08 16:53:24 +0530] [510857] [INFO] Shutting down: Master
+[2023-01-08 16:53:26 +0530] [512356] [INFO] Starting gunicorn 20.1.0
+[2023-01-08 16:53:26 +0530] [512356] [INFO] Listening at: http://0.0.0.0:8080 (512356)
+[2023-01-08 16:53:26 +0530] [512356] [INFO] Using worker: sync
+[2023-01-08 16:53:26 +0530] [512369] [INFO] Booting worker with pid: 512369
+[2023-01-08 16:53:26 +0530] [512371] [INFO] Booting worker with pid: 512371
+[2023-01-08 16:53:26 +0530] [512372] [INFO] Booting worker with pid: 512372
+[2023-01-08 16:53:26 +0530] [512374] [INFO] Booting worker with pid: 512374
