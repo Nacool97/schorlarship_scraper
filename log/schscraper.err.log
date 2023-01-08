@@ -25983,3 +25983,55 @@ Traceback (most recent call last):
   File "/home/nacool/Desktop/Projects/scholarship_scraper/app.py", line 150, in index
     current = int(page)
 ValueError: invalid literal for int() with base 10: 'shell'
+[2023-01-08 16:22:29 +0530] [500875] [INFO] Handling signal: term
+[2023-01-08 16:22:29 +0530] [500886] [INFO] Worker exiting (pid: 500886)
+[2023-01-08 16:22:29 +0530] [500896] [INFO] Worker exiting (pid: 500896)
+[2023-01-08 16:22:29 +0530] [500889] [INFO] Worker exiting (pid: 500889)
+[2023-01-08 16:22:29 +0530] [500890] [INFO] Worker exiting (pid: 500890)
+[2023-01-08 16:22:29 +0530] [500875] [INFO] Shutting down: Master
+[2023-01-08 16:22:30 +0530] [506063] [INFO] Starting gunicorn 20.1.0
+[2023-01-08 16:22:30 +0530] [506063] [INFO] Listening at: http://0.0.0.0:8080 (506063)
+[2023-01-08 16:22:30 +0530] [506063] [INFO] Using worker: sync
+[2023-01-08 16:22:30 +0530] [506069] [INFO] Booting worker with pid: 506069
+[2023-01-08 16:22:31 +0530] [506070] [INFO] Booting worker with pid: 506070
+[2023-01-08 16:22:31 +0530] [506071] [INFO] Booting worker with pid: 506071
+[2023-01-08 16:22:31 +0530] [506076] [INFO] Booting worker with pid: 506076
+[2023-01-08 16:25:23 +0530] [506063] [INFO] Handling signal: term
+[2023-01-08 16:25:23 +0530] [506069] [INFO] Worker exiting (pid: 506069)
+[2023-01-08 16:25:23 +0530] [506070] [INFO] Worker exiting (pid: 506070)
+[2023-01-08 16:25:23 +0530] [506071] [INFO] Worker exiting (pid: 506071)
+[2023-01-08 16:25:23 +0530] [506076] [INFO] Worker exiting (pid: 506076)
+[2023-01-08 16:25:24 +0530] [506063] [INFO] Shutting down: Master
+[2023-01-08 16:25:25 +0530] [506597] [INFO] Starting gunicorn 20.1.0
+[2023-01-08 16:25:25 +0530] [506597] [INFO] Listening at: http://0.0.0.0:8080 (506597)
+[2023-01-08 16:25:25 +0530] [506597] [INFO] Using worker: sync
+[2023-01-08 16:25:25 +0530] [506609] [INFO] Booting worker with pid: 506609
+[2023-01-08 16:25:25 +0530] [506611] [INFO] Booting worker with pid: 506611
+[2023-01-08 16:25:25 +0530] [506612] [INFO] Booting worker with pid: 506612
+[2023-01-08 16:25:25 +0530] [506613] [INFO] Booting worker with pid: 506613
+[2023-01-08 16:34:58 +0530] [506597] [INFO] Handling signal: term
+[2023-01-08 16:34:58 +0530] [506612] [INFO] Worker exiting (pid: 506612)
+[2023-01-08 16:34:58 +0530] [506609] [INFO] Worker exiting (pid: 506609)
+[2023-01-08 16:34:58 +0530] [506613] [INFO] Worker exiting (pid: 506613)
+[2023-01-08 16:34:58 +0530] [506611] [INFO] Worker exiting (pid: 506611)
+[2023-01-08 16:34:59 +0530] [506597] [INFO] Shutting down: Master
+[2023-01-08 16:35:00 +0530] [509577] [INFO] Starting gunicorn 20.1.0
+[2023-01-08 16:35:00 +0530] [509577] [INFO] Listening at: http://0.0.0.0:8080 (509577)
+[2023-01-08 16:35:00 +0530] [509577] [INFO] Using worker: sync
+[2023-01-08 16:35:00 +0530] [509586] [INFO] Booting worker with pid: 509586
+[2023-01-08 16:35:00 +0530] [509593] [INFO] Booting worker with pid: 509593
+[2023-01-08 16:35:00 +0530] [509595] [INFO] Booting worker with pid: 509595
+[2023-01-08 16:35:00 +0530] [509596] [INFO] Booting worker with pid: 509596
+[2023-01-08 16:37:08 +0530] [509577] [INFO] Handling signal: term
+[2023-01-08 16:37:08 +0530] [509595] [INFO] Worker exiting (pid: 509595)
+[2023-01-08 16:37:08 +0530] [509586] [INFO] Worker exiting (pid: 509586)
+[2023-01-08 16:37:08 +0530] [509593] [INFO] Worker exiting (pid: 509593)
+[2023-01-08 16:37:08 +0530] [509596] [INFO] Worker exiting (pid: 509596)
+[2023-01-08 16:37:09 +0530] [509577] [INFO] Shutting down: Master
+[2023-01-08 16:37:26 +0530] [510027] [INFO] Starting gunicorn 20.1.0
+[2023-01-08 16:37:26 +0530] [510027] [INFO] Listening at: http://0.0.0.0:8080 (510027)
+[2023-01-08 16:37:26 +0530] [510027] [INFO] Using worker: sync
+[2023-01-08 16:37:26 +0530] [510038] [INFO] Booting worker with pid: 510038
+[2023-01-08 16:37:26 +0530] [510040] [INFO] Booting worker with pid: 510040
+[2023-01-08 16:37:26 +0530] [510041] [INFO] Booting worker with pid: 510041
+[2023-01-08 16:37:26 +0530] [510042] [INFO] Booting worker with pid: 510042

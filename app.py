@@ -44,13 +44,13 @@ def get_scholars(email, scholarship_id):
         f"SELECT * from scholars_subs where scholarship_id = '{scholarship_id}' and email = '{email}'")
         result = cursor.fetchall()
         print(result)
-        if result:
+        if len(result)>0:
             return result 
     cursor.execute(f"SELECT password FROM scholars where email = '{email}'")
     result = cursor.fetchone()
     if result:
         return result[0]
-    return
+    return None
 
 
 def insert_scholars(email, password):
