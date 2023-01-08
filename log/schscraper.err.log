@@ -25678,3 +25678,68 @@ Traceback (most recent call last):
   File "/home/nacool/Desktop/Projects/scholarship_scraper/app.py", line 150, in index
     current = int(page)
 ValueError: invalid literal for int() with base 10: '.env'
+[2023-01-08 12:24:31 +0530] [421348] [INFO] Handling signal: term
+[2023-01-08 12:24:31 +0530] [421359] [INFO] Worker exiting (pid: 421359)
+[2023-01-08 12:24:31 +0530] [459785] [INFO] Worker exiting (pid: 459785)
+[2023-01-08 12:24:31 +0530] [421368] [INFO] Worker exiting (pid: 421368)
+[2023-01-08 12:24:31 +0530] [421370] [INFO] Worker exiting (pid: 421370)
+[2023-01-08 12:24:31 +0530] [421348] [INFO] Shutting down: Master
+[2023-01-08 12:24:34 +0530] [481683] [INFO] Starting gunicorn 20.1.0
+[2023-01-08 12:24:34 +0530] [481683] [INFO] Listening at: http://0.0.0.0:8080 (481683)
+[2023-01-08 12:24:34 +0530] [481683] [INFO] Using worker: sync
+[2023-01-08 12:24:34 +0530] [481697] [INFO] Booting worker with pid: 481697
+[2023-01-08 12:24:34 +0530] [481698] [INFO] Booting worker with pid: 481698
+[2023-01-08 12:24:34 +0530] [481699] [INFO] Booting worker with pid: 481699
+[2023-01-08 12:24:34 +0530] [481706] [INFO] Booting worker with pid: 481706
+[2023-01-08 12:24:38,372] ERROR in app: Exception on /robots.txt [GET]
+Traceback (most recent call last):
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/flask/app.py", line 1519, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/flask/app.py", line 1517, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/flask/app.py", line 1503, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/app.py", line 150, in index
+    current = int(page)
+ValueError: invalid literal for int() with base 10: 'robots.txt'
+[2023-01-08 12:24:38,862] ERROR in app: Exception on /favicon.ico [GET]
+Traceback (most recent call last):
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/flask/app.py", line 1519, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/flask/app.py", line 1517, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/flask/app.py", line 1503, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/app.py", line 150, in index
+    current = int(page)
+ValueError: invalid literal for int() with base 10: 'favicon.ico'
+[2023-01-08 12:25:06,860] ERROR in app: Exception on /robots.txt [GET]
+Traceback (most recent call last):
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/flask/app.py", line 1519, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/flask/app.py", line 1517, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/flask/app.py", line 1503, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/app.py", line 150, in index
+    current = int(page)
+ValueError: invalid literal for int() with base 10: 'robots.txt'
+[2023-01-08 12:25:06,976] ERROR in app: Exception on /favicon.ico [GET]
+Traceback (most recent call last):
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/flask/app.py", line 1519, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/flask/app.py", line 1517, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/flask/app.py", line 1503, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/app.py", line 150, in index
+    current = int(page)
+ValueError: invalid literal for int() with base 10: 'favicon.ico'

@@ -1,7 +1,7 @@
 from datetime import datetime
 from email.policy import default
 from bson import ObjectId
-from flask import Flask, render_template, request, session, redirect, url_for
+from flask import Flask, render_template, request, session, redirect, url_for, send_file
 from flask_mail import Mail, Message
 import mysql.connector
 from pymongo import MongoClient
@@ -235,6 +235,9 @@ def send_email(sch_id, recipient):
     mail.send(message)
     return 'Sent'
 
+@app.route('/robots.txt')
+def sitemap():
+    return send_file("robots.txt")
 
 if __name__ == '__main__':
     app.run('0.0.0.0', port=5080, threaded=True)
