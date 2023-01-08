@@ -1851,3 +1851,10 @@ ValueError: invalid literal for int() with base 10: 'robots.txt'
 [2023-01-08 12:24:34 +0530] [481686] [INFO] Listening at: http://0.0.0.0:5080 (481686)
 [2023-01-08 12:24:34 +0530] [481686] [INFO] Using worker: sync
 [2023-01-08 12:24:34 +0530] [481696] [INFO] Booting worker with pid: 481696
+[2023-01-08 12:28:00 +0530] [481686] [INFO] Handling signal: term
+[2023-01-08 12:28:00 +0530] [481696] [INFO] Worker exiting (pid: 481696)
+[2023-01-08 12:28:01 +0530] [481686] [INFO] Shutting down: Master
+[2023-01-08 12:28:02 +0530] [482318] [INFO] Starting gunicorn 20.1.0
+[2023-01-08 12:28:02 +0530] [482318] [INFO] Listening at: http://0.0.0.0:5080 (482318)
+[2023-01-08 12:28:02 +0530] [482318] [INFO] Using worker: sync
+[2023-01-08 12:28:02 +0530] [482326] [INFO] Booting worker with pid: 482326
