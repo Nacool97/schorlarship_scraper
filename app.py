@@ -5,7 +5,7 @@ from flask import Flask, render_template, request, session, redirect, url_for, s
 from flask_mail import Mail, Message
 import mysql.connector
 from pymongo import MongoClient
-import os
+import json,os
 app = Flask(__name__)
 app.secret_key = "any@random#string"
 
@@ -104,7 +104,7 @@ def login():
             db_password = get_scholars(name)
             if db_password and db_password == password:
                 session['email'] = name
-                return redirect(url_for('index'))
+                return redirect(url_for('home'))
             else:
                 return render_template('login.html', error='Invalid credentials')
         except Exception as e:
@@ -144,10 +144,15 @@ def logout():
 # default page
 
 
-@app.route('/', defaults={'page': 1})
-@app.route('/<page>')
-def index(page):
-    current = int(page)
+@app.route('/')
+def home():
+    return index(1)
+
+
+@app.route('/page<pages>',defaults={"pages":1})
+def index(pages):
+    print(len(data))
+    current = int(pages)
     next_page = current+1
     previous_page = current-1
     if current < 1:
@@ -161,7 +166,7 @@ def index(page):
     # get the last 5 entires i.e. recent 5 scraped enterirs which are not expired
     recent_data = list(collection.find(
         {'expired': False}).sort('_id', -1).limit(5))
-    #recent_data = data
+    #recent_data = data[:-5]
     if session.get('email'):
         return render_template('logged_index.html', data=data, from_page=from_page, to_page=to_page, current=current, next=next_page, previous=previous_page, recent_data=recent_data, session=session)
     return render_template('index.html', data=data, from_page=from_page, to_page=to_page, current=current, next=next_page, previous=previous_page, recent_data=recent_data, session=session)
@@ -217,6 +222,12 @@ def unalert_me():
         delete_scholars_subs(session['email'], sch_id)
     return redirect(url_for('index'))
 
+@app.route("/edit/<post_id>")
+def edit_blog(post_id):
+    if not session or session and session["email"] == "nacoolthedj@gmail.com":
+        return "Invalid Request", 415
+        
+    return post_id
 
 def send_email(sch_id, recipient):
     #sch_id = request.args.get('sch_id')
