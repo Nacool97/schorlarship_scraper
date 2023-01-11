@@ -193,13 +193,21 @@
                             </div>
 
                             <div class="entry-content">
+                                <p>
+                                    {% if data[x]['metadata'] and data[x]['metadata'][0]['brief-description'] %}
+                                    {{ data[x]['metadata'][0]['brief-description'] }}
+                                    {% endif %}
+                                    {% if data[x]['metadata'] and data[x]['metadata'][0]['description'] %}
+                                    {{ data[x]['metadata'][0]['description'] }}
+                                    {% endif %}
+                                  </p>
                                 <div class="read-more">
                                     <!--<form method="POST" action="/alert_me">
                                         <input type="hidden" name="sch_id" value="{{ data[x]['_id'] }}">
                                         <button class="custom_btn">Alert Me</button>
                                         <a href="{{ url }}">Read More</a>
                                     </form>-->
-                                    <a href="{{ url }}">Read More</a>
+                                    <a href="/view/{{ scholarship_id }}">Read More</a>
                                 </div>
                             </div>
 
@@ -208,11 +216,11 @@
                         <div class="blog-pagination">
                             <ul class="justify-content-center">
                                 {% if previous %}
-                                <li><a href="/{{ previous }}">Previous</a></li>
+                                <li><a href="/page{{ previous }}">Previous</a></li>
                                 {% endif %}
                                 <li class="active"><a href="#">{{ current }}</a></li>
                                 {% if next %}
-                                <li><a href="/{{ next }}">Next</a></li>
+                                <li><a href="/page{{ next }}">Next</a></li>
                                 {% endif %}
                             </ul>
                         </div>
