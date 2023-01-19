@@ -26087,3 +26087,1756 @@ ValueError: invalid literal for int() with base 10: 'shell'
 [2023-01-08 17:14:43 +0530] [514337] [INFO] Booting worker with pid: 514337
 [2023-01-08 17:14:43 +0530] [514339] [INFO] Booting worker with pid: 514339
 [2023-01-08 17:14:43 +0530] [514340] [INFO] Booting worker with pid: 514340
+[2023-01-08 17:17:07 +0530] [514324] [INFO] Handling signal: term
+[2023-01-08 17:17:07 +0530] [514337] [INFO] Worker exiting (pid: 514337)
+[2023-01-08 17:17:07 +0530] [514340] [INFO] Worker exiting (pid: 514340)
+[2023-01-08 17:17:07 +0530] [514336] [INFO] Worker exiting (pid: 514336)
+[2023-01-08 17:17:07 +0530] [514339] [INFO] Worker exiting (pid: 514339)
+[2023-01-08 17:17:08 +0530] [514324] [INFO] Shutting down: Master
+[2023-01-08 17:17:09 +0530] [514756] [INFO] Starting gunicorn 20.1.0
+[2023-01-08 17:17:09 +0530] [514756] [INFO] Listening at: http://0.0.0.0:8080 (514756)
+[2023-01-08 17:17:09 +0530] [514756] [INFO] Using worker: sync
+[2023-01-08 17:17:09 +0530] [514768] [INFO] Booting worker with pid: 514768
+[2023-01-08 17:17:09 +0530] [514769] [INFO] Booting worker with pid: 514769
+[2023-01-08 17:17:09 +0530] [514771] [INFO] Booting worker with pid: 514771
+[2023-01-08 17:17:09 +0530] [514772] [INFO] Booting worker with pid: 514772
+[2023-01-08 17:19:15 +0530] [514756] [INFO] Handling signal: term
+[2023-01-08 17:19:15 +0530] [514771] [INFO] Worker exiting (pid: 514771)
+[2023-01-08 17:19:15 +0530] [514769] [INFO] Worker exiting (pid: 514769)
+[2023-01-08 17:19:15 +0530] [514768] [INFO] Worker exiting (pid: 514768)
+[2023-01-08 17:19:15 +0530] [514772] [INFO] Worker exiting (pid: 514772)
+[2023-01-08 17:19:15 +0530] [514756] [INFO] Shutting down: Master
+[2023-01-08 17:24:37 +0530] [1943] [INFO] Starting gunicorn 20.1.0
+[2023-01-08 17:24:37 +0530] [1943] [INFO] Listening at: http://0.0.0.0:8080 (1943)
+[2023-01-08 17:24:37 +0530] [1943] [INFO] Using worker: sync
+[2023-01-08 17:24:37 +0530] [2068] [INFO] Booting worker with pid: 2068
+[2023-01-08 17:24:37 +0530] [2069] [INFO] Booting worker with pid: 2069
+[2023-01-08 17:24:38 +0530] [2070] [INFO] Booting worker with pid: 2070
+[2023-01-08 17:24:38 +0530] [2071] [INFO] Booting worker with pid: 2071
+[2023-01-08 17:25:08 +0530] [1943] [CRITICAL] WORKER TIMEOUT (pid:2068)
+[2023-01-08 17:25:08 +0530] [1943] [CRITICAL] WORKER TIMEOUT (pid:2069)
+[2023-01-08 17:25:08 +0530] [1943] [CRITICAL] WORKER TIMEOUT (pid:2070)
+[2023-01-08 17:25:08 +0530] [2068] [INFO] Worker exiting (pid: 2068)
+[2023-01-08 17:25:08 +0530] [1943] [CRITICAL] WORKER TIMEOUT (pid:2071)
+[2023-01-08 17:25:08 +0530] [2069] [INFO] Worker exiting (pid: 2069)
+[2023-01-08 17:25:08 +0530] [2070] [INFO] Worker exiting (pid: 2070)
+[2023-01-08 17:25:08 +0530] [2071] [INFO] Worker exiting (pid: 2071)
+[2023-01-08 17:25:08 +0530] [2486] [INFO] Booting worker with pid: 2486
+[2023-01-08 17:25:08 +0530] [1943] [WARNING] Worker with pid 2068 was terminated due to signal 9
+[2023-01-08 17:25:08 +0530] [1943] [WARNING] Worker with pid 2069 was terminated due to signal 9
+[2023-01-08 17:25:08 +0530] [1943] [WARNING] Worker with pid 2071 was terminated due to signal 9
+[2023-01-08 17:25:08 +0530] [2493] [INFO] Booting worker with pid: 2493
+[2023-01-08 17:25:08 +0530] [2494] [INFO] Booting worker with pid: 2494
+[2023-01-08 17:25:08 +0530] [2497] [INFO] Booting worker with pid: 2497
+[2023-01-08 17:25:38 +0530] [2486] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/gunicorn/arbiter.py", line 589, in spawn_worker
+    worker.init_process()
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/gunicorn/workers/base.py", line 134, in init_process
+    self.load_wsgi()
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/gunicorn/workers/base.py", line 146, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/gunicorn/app/wsgiapp.py", line 58, in load
+    return self.load_wsgiapp()
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/gunicorn/app/wsgiapp.py", line 48, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/gunicorn/util.py", line 359, in import_app
+    mod = importlib.import_module(module)
+  File "/usr/lib/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/app.py", line 24, in <module>
+    data = list(collection.find({'expired': False}).sort('days_left', 1))
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/pymongo/cursor.py", line 1248, in next
+    if len(self.__data) or self._refresh():
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/pymongo/cursor.py", line 1139, in _refresh
+    self.__session = self.__collection.database.client._ensure_session()
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/pymongo/mongo_client.py", line 1712, in _ensure_session
+    return self.__start_session(True, causal_consistency=False)
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/pymongo/mongo_client.py", line 1657, in __start_session
+    self._topology._check_implicit_session_support()
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/pymongo/topology.py", line 538, in _check_implicit_session_support
+    self._check_session_support()
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/pymongo/topology.py", line 554, in _check_session_support
+    self._select_servers_loop(
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/pymongo/topology.py", line 238, in _select_servers_loop
+    raise ServerSelectionTimeoutError(
+pymongo.errors.ServerSelectionTimeoutError: localhost:27017: [Errno 111] Connection refused, Timeout: 30s, Topology Description: <TopologyDescription id: 63baaf1c313a00ca08fd5a0f, topology_type: Unknown, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('localhost:27017: [Errno 111] Connection refused')>]>
+[2023-01-08 17:25:38 +0530] [2486] [INFO] Worker exiting (pid: 2486)
+[2023-01-08 17:25:38 +0530] [1943] [CRITICAL] WORKER TIMEOUT (pid:2486)
+[2023-01-08 17:25:38 +0530] [1943] [CRITICAL] WORKER TIMEOUT (pid:2493)
+[2023-01-08 17:25:38 +0530] [1943] [CRITICAL] WORKER TIMEOUT (pid:2494)
+[2023-01-08 17:25:38 +0530] [1943] [CRITICAL] WORKER TIMEOUT (pid:2497)
+[2023-01-08 17:25:38 +0530] [2493] [INFO] Worker exiting (pid: 2493)
+[2023-01-08 17:25:38 +0530] [2497] [INFO] Worker exiting (pid: 2497)
+[2023-01-08 17:25:38 +0530] [2494] [INFO] Worker exiting (pid: 2494)
+[2023-01-08 17:25:39 +0530] [1943] [INFO] Shutting down: Master
+[2023-01-08 17:25:39 +0530] [1943] [INFO] Reason: Worker failed to boot.
+[2023-01-08 17:25:40 +0530] [2580] [INFO] Starting gunicorn 20.1.0
+[2023-01-08 17:25:40 +0530] [2580] [INFO] Listening at: http://0.0.0.0:8080 (2580)
+[2023-01-08 17:25:40 +0530] [2580] [INFO] Using worker: sync
+[2023-01-08 17:25:40 +0530] [2581] [INFO] Booting worker with pid: 2581
+[2023-01-08 17:25:40 +0530] [2586] [INFO] Booting worker with pid: 2586
+[2023-01-08 17:25:40 +0530] [2587] [INFO] Booting worker with pid: 2587
+[2023-01-08 17:25:40 +0530] [2588] [INFO] Booting worker with pid: 2588
+[2023-01-08 17:26:10 +0530] [2580] [CRITICAL] WORKER TIMEOUT (pid:2581)
+[2023-01-08 17:26:10 +0530] [2580] [CRITICAL] WORKER TIMEOUT (pid:2586)
+[2023-01-08 17:26:10 +0530] [2580] [CRITICAL] WORKER TIMEOUT (pid:2587)
+[2023-01-08 17:26:10 +0530] [2580] [CRITICAL] WORKER TIMEOUT (pid:2588)
+[2023-01-08 17:26:10 +0530] [2581] [INFO] Worker exiting (pid: 2581)
+[2023-01-08 17:26:10 +0530] [2586] [INFO] Worker exiting (pid: 2586)
+[2023-01-08 17:26:10 +0530] [2588] [INFO] Worker exiting (pid: 2588)
+[2023-01-08 17:26:10 +0530] [2587] [INFO] Worker exiting (pid: 2587)
+[2023-01-08 17:26:10 +0530] [2606] [INFO] Booting worker with pid: 2606
+[2023-01-08 17:26:10 +0530] [2580] [WARNING] Worker with pid 2586 was terminated due to signal 9
+[2023-01-08 17:26:10 +0530] [2580] [WARNING] Worker with pid 2587 was terminated due to signal 9
+[2023-01-08 17:26:10 +0530] [2580] [WARNING] Worker with pid 2588 was terminated due to signal 9
+[2023-01-08 17:26:11 +0530] [2607] [INFO] Booting worker with pid: 2607
+[2023-01-08 17:26:11 +0530] [2608] [INFO] Booting worker with pid: 2608
+[2023-01-08 17:26:11 +0530] [2609] [INFO] Booting worker with pid: 2609
+[2023-01-08 17:26:41 +0530] [2580] [CRITICAL] WORKER TIMEOUT (pid:2606)
+[2023-01-08 17:26:41 +0530] [2580] [CRITICAL] WORKER TIMEOUT (pid:2607)
+[2023-01-08 17:26:41 +0530] [2580] [CRITICAL] WORKER TIMEOUT (pid:2608)
+[2023-01-08 17:26:41 +0530] [2606] [INFO] Worker exiting (pid: 2606)
+[2023-01-08 17:26:41 +0530] [2607] [INFO] Worker exiting (pid: 2607)
+[2023-01-08 17:26:41 +0530] [2608] [INFO] Worker exiting (pid: 2608)
+[2023-01-08 17:26:41 +0530] [2580] [CRITICAL] WORKER TIMEOUT (pid:2609)
+[2023-01-08 17:26:41 +0530] [2609] [INFO] Worker exiting (pid: 2609)
+[2023-01-08 17:26:41 +0530] [2658] [INFO] Booting worker with pid: 2658
+[2023-01-08 17:26:41 +0530] [2580] [WARNING] Worker with pid 2609 was terminated due to signal 9
+[2023-01-08 17:26:41 +0530] [2580] [WARNING] Worker with pid 2608 was terminated due to signal 9
+[2023-01-08 17:26:41 +0530] [2580] [WARNING] Worker with pid 2607 was terminated due to signal 9
+[2023-01-08 17:26:41 +0530] [2659] [INFO] Booting worker with pid: 2659
+[2023-01-08 17:26:41 +0530] [2660] [INFO] Booting worker with pid: 2660
+[2023-01-08 17:26:41 +0530] [2663] [INFO] Booting worker with pid: 2663
+[2023-01-08 17:27:11 +0530] [2580] [CRITICAL] WORKER TIMEOUT (pid:2658)
+[2023-01-08 17:27:11 +0530] [2580] [CRITICAL] WORKER TIMEOUT (pid:2659)
+[2023-01-08 17:27:11 +0530] [2580] [CRITICAL] WORKER TIMEOUT (pid:2660)
+[2023-01-08 17:27:11 +0530] [2580] [CRITICAL] WORKER TIMEOUT (pid:2663)
+[2023-01-08 17:27:11 +0530] [2658] [INFO] Worker exiting (pid: 2658)
+[2023-01-08 17:27:11 +0530] [2659] [INFO] Worker exiting (pid: 2659)
+[2023-01-08 17:27:11 +0530] [2660] [INFO] Worker exiting (pid: 2660)
+[2023-01-08 17:27:11 +0530] [2663] [INFO] Worker exiting (pid: 2663)
+[2023-01-08 17:27:11 +0530] [2677] [INFO] Booting worker with pid: 2677
+[2023-01-08 17:27:11 +0530] [2580] [WARNING] Worker with pid 2660 was terminated due to signal 9
+[2023-01-08 17:27:11 +0530] [2580] [WARNING] Worker with pid 2663 was terminated due to signal 9
+[2023-01-08 17:27:11 +0530] [2580] [WARNING] Worker with pid 2658 was terminated due to signal 9
+[2023-01-08 17:27:11 +0530] [2678] [INFO] Booting worker with pid: 2678
+[2023-01-08 17:27:11 +0530] [2679] [INFO] Booting worker with pid: 2679
+[2023-01-08 17:27:11 +0530] [2680] [INFO] Booting worker with pid: 2680
+[2023-01-08 17:27:41 +0530] [2580] [CRITICAL] WORKER TIMEOUT (pid:2677)
+[2023-01-08 17:27:41 +0530] [2580] [CRITICAL] WORKER TIMEOUT (pid:2678)
+[2023-01-08 17:27:41 +0530] [2580] [CRITICAL] WORKER TIMEOUT (pid:2679)
+[2023-01-08 17:27:41 +0530] [2580] [CRITICAL] WORKER TIMEOUT (pid:2680)
+[2023-01-08 17:27:41 +0530] [2677] [INFO] Worker exiting (pid: 2677)
+[2023-01-08 17:27:41 +0530] [2678] [INFO] Worker exiting (pid: 2678)
+[2023-01-08 17:27:41 +0530] [2679] [INFO] Worker exiting (pid: 2679)
+[2023-01-08 17:27:41 +0530] [2680] [INFO] Worker exiting (pid: 2680)
+[2023-01-08 17:27:42 +0530] [2729] [INFO] Booting worker with pid: 2729
+[2023-01-08 17:27:42 +0530] [2580] [WARNING] Worker with pid 2678 was terminated due to signal 9
+[2023-01-08 17:27:42 +0530] [2580] [WARNING] Worker with pid 2680 was terminated due to signal 9
+[2023-01-08 17:27:42 +0530] [2580] [WARNING] Worker with pid 2679 was terminated due to signal 9
+[2023-01-08 17:27:42 +0530] [2730] [INFO] Booting worker with pid: 2730
+[2023-01-08 17:27:42 +0530] [2731] [INFO] Booting worker with pid: 2731
+[2023-01-08 17:27:42 +0530] [2732] [INFO] Booting worker with pid: 2732
+[2023-01-08 17:28:12 +0530] [2580] [CRITICAL] WORKER TIMEOUT (pid:2729)
+[2023-01-08 17:28:12 +0530] [2580] [CRITICAL] WORKER TIMEOUT (pid:2730)
+[2023-01-08 17:28:12 +0530] [2580] [CRITICAL] WORKER TIMEOUT (pid:2731)
+[2023-01-08 17:28:12 +0530] [2580] [CRITICAL] WORKER TIMEOUT (pid:2732)
+[2023-01-08 17:28:12 +0530] [2729] [INFO] Worker exiting (pid: 2729)
+[2023-01-08 17:28:12 +0530] [2730] [INFO] Worker exiting (pid: 2730)
+[2023-01-08 17:28:12 +0530] [2732] [INFO] Worker exiting (pid: 2732)
+[2023-01-08 17:28:12 +0530] [2731] [INFO] Worker exiting (pid: 2731)
+[2023-01-08 17:28:12 +0530] [2750] [INFO] Booting worker with pid: 2750
+[2023-01-08 17:28:12 +0530] [2580] [WARNING] Worker with pid 2729 was terminated due to signal 9
+[2023-01-08 17:28:12 +0530] [2580] [WARNING] Worker with pid 2731 was terminated due to signal 9
+[2023-01-08 17:28:12 +0530] [2580] [WARNING] Worker with pid 2732 was terminated due to signal 9
+[2023-01-08 17:28:12 +0530] [2751] [INFO] Booting worker with pid: 2751
+[2023-01-08 17:28:12 +0530] [2752] [INFO] Booting worker with pid: 2752
+[2023-01-08 17:28:12 +0530] [2753] [INFO] Booting worker with pid: 2753
+[2023-01-08 17:28:43 +0530] [2750] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/gunicorn/arbiter.py", line 589, in spawn_worker
+    worker.init_process()
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/gunicorn/workers/base.py", line 134, in init_process
+    self.load_wsgi()
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/gunicorn/workers/base.py", line 146, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/gunicorn/app/wsgiapp.py", line 58, in load
+    return self.load_wsgiapp()
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/gunicorn/app/wsgiapp.py", line 48, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/gunicorn/util.py", line 359, in import_app
+    mod = importlib.import_module(module)
+  File "/usr/lib/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/app.py", line 24, in <module>
+    data = list(collection.find({'expired': False}).sort('days_left', 1))
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/pymongo/cursor.py", line 1248, in next
+    if len(self.__data) or self._refresh():
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/pymongo/cursor.py", line 1139, in _refresh
+    self.__session = self.__collection.database.client._ensure_session()
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/pymongo/mongo_client.py", line 1712, in _ensure_session
+    return self.__start_session(True, causal_consistency=False)
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/pymongo/mongo_client.py", line 1657, in __start_session
+    self._topology._check_implicit_session_support()
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/pymongo/topology.py", line 538, in _check_implicit_session_support
+    self._check_session_support()
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/pymongo/topology.py", line 554, in _check_session_support
+    self._select_servers_loop(
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/pymongo/topology.py", line 238, in _select_servers_loop
+    raise ServerSelectionTimeoutError(
+pymongo.errors.ServerSelectionTimeoutError: localhost:27017: [Errno 111] Connection refused, Timeout: 30s, Topology Description: <TopologyDescription id: 63baafd412135771cb758646, topology_type: Unknown, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('localhost:27017: [Errno 111] Connection refused')>]>
+[2023-01-08 17:28:43 +0530] [2750] [INFO] Worker exiting (pid: 2750)
+[2023-01-08 17:28:43 +0530] [2580] [CRITICAL] WORKER TIMEOUT (pid:2750)
+[2023-01-08 17:28:43 +0530] [2580] [CRITICAL] WORKER TIMEOUT (pid:2751)
+[2023-01-08 17:28:43 +0530] [2580] [CRITICAL] WORKER TIMEOUT (pid:2752)
+[2023-01-08 17:28:43 +0530] [2580] [CRITICAL] WORKER TIMEOUT (pid:2753)
+[2023-01-08 17:28:43 +0530] [2751] [INFO] Worker exiting (pid: 2751)
+[2023-01-08 17:28:43 +0530] [2752] [INFO] Worker exiting (pid: 2752)
+[2023-01-08 17:28:43 +0530] [2753] [INFO] Worker exiting (pid: 2753)
+[2023-01-08 17:28:43 +0530] [2580] [INFO] Shutting down: Master
+[2023-01-08 17:28:43 +0530] [2580] [INFO] Reason: Worker failed to boot.
+[2023-01-08 17:28:44 +0530] [2802] [INFO] Starting gunicorn 20.1.0
+[2023-01-08 17:28:44 +0530] [2802] [INFO] Listening at: http://0.0.0.0:8080 (2802)
+[2023-01-08 17:28:44 +0530] [2802] [INFO] Using worker: sync
+[2023-01-08 17:28:44 +0530] [2803] [INFO] Booting worker with pid: 2803
+[2023-01-08 17:28:44 +0530] [2804] [INFO] Booting worker with pid: 2804
+[2023-01-08 17:28:44 +0530] [2805] [INFO] Booting worker with pid: 2805
+[2023-01-08 17:28:44 +0530] [2806] [INFO] Booting worker with pid: 2806
+[2023-01-08 17:29:14 +0530] [2802] [CRITICAL] WORKER TIMEOUT (pid:2803)
+[2023-01-08 17:29:14 +0530] [2802] [CRITICAL] WORKER TIMEOUT (pid:2804)
+[2023-01-08 17:29:14 +0530] [2802] [CRITICAL] WORKER TIMEOUT (pid:2805)
+[2023-01-08 17:29:14 +0530] [2802] [CRITICAL] WORKER TIMEOUT (pid:2806)
+[2023-01-08 17:29:14 +0530] [2803] [INFO] Worker exiting (pid: 2803)
+[2023-01-08 17:29:14 +0530] [2804] [INFO] Worker exiting (pid: 2804)
+[2023-01-08 17:29:14 +0530] [2805] [INFO] Worker exiting (pid: 2805)
+[2023-01-08 17:29:14 +0530] [2806] [INFO] Worker exiting (pid: 2806)
+[2023-01-08 17:29:15 +0530] [2823] [INFO] Booting worker with pid: 2823
+[2023-01-08 17:29:15 +0530] [2802] [WARNING] Worker with pid 2805 was terminated due to signal 9
+[2023-01-08 17:29:15 +0530] [2802] [WARNING] Worker with pid 2806 was terminated due to signal 9
+[2023-01-08 17:29:15 +0530] [2802] [WARNING] Worker with pid 2803 was terminated due to signal 9
+[2023-01-08 17:29:15 +0530] [2824] [INFO] Booting worker with pid: 2824
+[2023-01-08 17:29:15 +0530] [2825] [INFO] Booting worker with pid: 2825
+[2023-01-08 17:29:15 +0530] [2826] [INFO] Booting worker with pid: 2826
+[2023-01-08 17:29:45 +0530] [2802] [CRITICAL] WORKER TIMEOUT (pid:2823)
+[2023-01-08 17:29:45 +0530] [2802] [CRITICAL] WORKER TIMEOUT (pid:2824)
+[2023-01-08 17:29:45 +0530] [2802] [CRITICAL] WORKER TIMEOUT (pid:2825)
+[2023-01-08 17:29:45 +0530] [2802] [CRITICAL] WORKER TIMEOUT (pid:2826)
+[2023-01-08 17:29:45 +0530] [2823] [INFO] Worker exiting (pid: 2823)
+[2023-01-08 17:29:45 +0530] [2824] [INFO] Worker exiting (pid: 2824)
+[2023-01-08 17:29:45 +0530] [2825] [INFO] Worker exiting (pid: 2825)
+[2023-01-08 17:29:45 +0530] [2826] [INFO] Worker exiting (pid: 2826)
+[2023-01-08 17:29:45 +0530] [2875] [INFO] Booting worker with pid: 2875
+[2023-01-08 17:29:45 +0530] [2802] [WARNING] Worker with pid 2824 was terminated due to signal 9
+[2023-01-08 17:29:45 +0530] [2802] [WARNING] Worker with pid 2825 was terminated due to signal 9
+[2023-01-08 17:29:45 +0530] [2802] [WARNING] Worker with pid 2826 was terminated due to signal 9
+[2023-01-08 17:29:45 +0530] [2876] [INFO] Booting worker with pid: 2876
+[2023-01-08 17:29:45 +0530] [2877] [INFO] Booting worker with pid: 2877
+[2023-01-08 17:29:45 +0530] [2878] [INFO] Booting worker with pid: 2878
+[2023-01-08 17:30:15 +0530] [2802] [CRITICAL] WORKER TIMEOUT (pid:2875)
+[2023-01-08 17:30:15 +0530] [2802] [CRITICAL] WORKER TIMEOUT (pid:2876)
+[2023-01-08 17:30:15 +0530] [2802] [CRITICAL] WORKER TIMEOUT (pid:2877)
+[2023-01-08 17:30:15 +0530] [2802] [CRITICAL] WORKER TIMEOUT (pid:2878)
+[2023-01-08 17:30:15 +0530] [2875] [INFO] Worker exiting (pid: 2875)
+[2023-01-08 17:30:15 +0530] [2876] [INFO] Worker exiting (pid: 2876)
+[2023-01-08 17:30:15 +0530] [2878] [INFO] Worker exiting (pid: 2878)
+[2023-01-08 17:30:15 +0530] [2877] [INFO] Worker exiting (pid: 2877)
+[2023-01-08 17:30:15 +0530] [2936] [INFO] Booting worker with pid: 2936
+[2023-01-08 17:30:15 +0530] [2802] [WARNING] Worker with pid 2876 was terminated due to signal 9
+[2023-01-08 17:30:15 +0530] [2802] [WARNING] Worker with pid 2878 was terminated due to signal 9
+[2023-01-08 17:30:15 +0530] [2802] [WARNING] Worker with pid 2877 was terminated due to signal 9
+[2023-01-08 17:30:15 +0530] [2937] [INFO] Booting worker with pid: 2937
+[2023-01-08 17:30:16 +0530] [2938] [INFO] Booting worker with pid: 2938
+[2023-01-08 17:30:16 +0530] [2939] [INFO] Booting worker with pid: 2939
+[2023-01-08 17:30:46 +0530] [2802] [CRITICAL] WORKER TIMEOUT (pid:2936)
+[2023-01-08 17:30:46 +0530] [2802] [CRITICAL] WORKER TIMEOUT (pid:2937)
+[2023-01-08 17:30:46 +0530] [2802] [CRITICAL] WORKER TIMEOUT (pid:2938)
+[2023-01-08 17:30:46 +0530] [2802] [CRITICAL] WORKER TIMEOUT (pid:2939)
+[2023-01-08 17:30:46 +0530] [2936] [INFO] Worker exiting (pid: 2936)
+[2023-01-08 17:30:46 +0530] [2937] [INFO] Worker exiting (pid: 2937)
+[2023-01-08 17:30:46 +0530] [2938] [INFO] Worker exiting (pid: 2938)
+[2023-01-08 17:30:46 +0530] [2939] [INFO] Worker exiting (pid: 2939)
+[2023-01-08 17:30:46 +0530] [2988] [INFO] Booting worker with pid: 2988
+[2023-01-08 17:30:46 +0530] [2802] [WARNING] Worker with pid 2937 was terminated due to signal 9
+[2023-01-08 17:30:46 +0530] [2802] [WARNING] Worker with pid 2938 was terminated due to signal 9
+[2023-01-08 17:30:46 +0530] [2802] [WARNING] Worker with pid 2939 was terminated due to signal 9
+[2023-01-08 17:30:46 +0530] [2989] [INFO] Booting worker with pid: 2989
+[2023-01-08 17:30:46 +0530] [2990] [INFO] Booting worker with pid: 2990
+[2023-01-08 17:30:46 +0530] [2991] [INFO] Booting worker with pid: 2991
+[2023-01-08 17:31:16 +0530] [2802] [CRITICAL] WORKER TIMEOUT (pid:2988)
+[2023-01-08 17:31:16 +0530] [2802] [CRITICAL] WORKER TIMEOUT (pid:2989)
+[2023-01-08 17:31:16 +0530] [2802] [CRITICAL] WORKER TIMEOUT (pid:2990)
+[2023-01-08 17:31:16 +0530] [2802] [CRITICAL] WORKER TIMEOUT (pid:2991)
+[2023-01-08 17:31:16 +0530] [2988] [INFO] Worker exiting (pid: 2988)
+[2023-01-08 17:31:16 +0530] [2989] [INFO] Worker exiting (pid: 2989)
+[2023-01-08 17:31:16 +0530] [2991] [INFO] Worker exiting (pid: 2991)
+[2023-01-08 17:31:16 +0530] [2990] [INFO] Worker exiting (pid: 2990)
+[2023-01-08 17:31:16 +0530] [3007] [INFO] Booting worker with pid: 3007
+[2023-01-08 17:31:16 +0530] [2802] [WARNING] Worker with pid 2989 was terminated due to signal 9
+[2023-01-08 17:31:16 +0530] [2802] [WARNING] Worker with pid 2991 was terminated due to signal 9
+[2023-01-08 17:31:16 +0530] [2802] [WARNING] Worker with pid 2990 was terminated due to signal 9
+[2023-01-08 17:31:16 +0530] [3008] [INFO] Booting worker with pid: 3008
+[2023-01-08 17:31:16 +0530] [3009] [INFO] Booting worker with pid: 3009
+[2023-01-08 17:31:16 +0530] [3010] [INFO] Booting worker with pid: 3010
+[2023-01-08 17:31:46 +0530] [2802] [CRITICAL] WORKER TIMEOUT (pid:3007)
+[2023-01-08 17:31:46 +0530] [2802] [CRITICAL] WORKER TIMEOUT (pid:3008)
+[2023-01-08 17:31:46 +0530] [2802] [CRITICAL] WORKER TIMEOUT (pid:3009)
+[2023-01-08 17:31:46 +0530] [2802] [CRITICAL] WORKER TIMEOUT (pid:3010)
+[2023-01-08 17:31:46 +0530] [3007] [INFO] Worker exiting (pid: 3007)
+[2023-01-08 17:31:46 +0530] [3008] [INFO] Worker exiting (pid: 3008)
+[2023-01-08 17:31:46 +0530] [3009] [INFO] Worker exiting (pid: 3009)
+[2023-01-08 17:31:46 +0530] [3010] [INFO] Worker exiting (pid: 3010)
+[2023-01-08 17:31:47 +0530] [3059] [INFO] Booting worker with pid: 3059
+[2023-01-08 17:31:47 +0530] [2802] [WARNING] Worker with pid 3009 was terminated due to signal 9
+[2023-01-08 17:31:47 +0530] [2802] [WARNING] Worker with pid 3010 was terminated due to signal 9
+[2023-01-08 17:31:47 +0530] [2802] [WARNING] Worker with pid 3008 was terminated due to signal 9
+[2023-01-08 17:31:47 +0530] [3060] [INFO] Booting worker with pid: 3060
+[2023-01-08 17:31:47 +0530] [3061] [INFO] Booting worker with pid: 3061
+[2023-01-08 17:31:47 +0530] [3062] [INFO] Booting worker with pid: 3062
+[2023-01-08 17:32:17 +0530] [2802] [CRITICAL] WORKER TIMEOUT (pid:3059)
+[2023-01-08 17:32:17 +0530] [2802] [CRITICAL] WORKER TIMEOUT (pid:3060)
+[2023-01-08 17:32:17 +0530] [2802] [CRITICAL] WORKER TIMEOUT (pid:3061)
+[2023-01-08 17:32:17 +0530] [2802] [CRITICAL] WORKER TIMEOUT (pid:3062)
+[2023-01-08 17:32:17 +0530] [3059] [INFO] Worker exiting (pid: 3059)
+[2023-01-08 17:32:17 +0530] [3060] [INFO] Worker exiting (pid: 3060)
+[2023-01-08 17:32:17 +0530] [3061] [INFO] Worker exiting (pid: 3061)
+[2023-01-08 17:32:17 +0530] [3062] [INFO] Worker exiting (pid: 3062)
+[2023-01-08 17:32:17 +0530] [3078] [INFO] Booting worker with pid: 3078
+[2023-01-08 17:32:17 +0530] [2802] [WARNING] Worker with pid 3060 was terminated due to signal 9
+[2023-01-08 17:32:17 +0530] [2802] [WARNING] Worker with pid 3061 was terminated due to signal 9
+[2023-01-08 17:32:17 +0530] [2802] [WARNING] Worker with pid 3062 was terminated due to signal 9
+[2023-01-08 17:32:17 +0530] [3079] [INFO] Booting worker with pid: 3079
+[2023-01-08 17:32:17 +0530] [3080] [INFO] Booting worker with pid: 3080
+[2023-01-08 17:32:17 +0530] [3081] [INFO] Booting worker with pid: 3081
+[2023-01-08 17:32:47 +0530] [2802] [CRITICAL] WORKER TIMEOUT (pid:3078)
+[2023-01-08 17:32:47 +0530] [2802] [CRITICAL] WORKER TIMEOUT (pid:3079)
+[2023-01-08 17:32:47 +0530] [2802] [CRITICAL] WORKER TIMEOUT (pid:3080)
+[2023-01-08 17:32:47 +0530] [2802] [CRITICAL] WORKER TIMEOUT (pid:3081)
+[2023-01-08 17:32:47 +0530] [3078] [INFO] Worker exiting (pid: 3078)
+[2023-01-08 17:32:47 +0530] [3081] [INFO] Worker exiting (pid: 3081)
+[2023-01-08 17:32:47 +0530] [3080] [INFO] Worker exiting (pid: 3080)
+[2023-01-08 17:32:47 +0530] [3079] [INFO] Worker exiting (pid: 3079)
+[2023-01-08 17:32:47 +0530] [2802] [WARNING] Worker with pid 3081 was terminated due to signal 9
+[2023-01-08 17:32:47 +0530] [2802] [WARNING] Worker with pid 3079 was terminated due to signal 9
+[2023-01-08 17:32:47 +0530] [2802] [WARNING] Worker with pid 3080 was terminated due to signal 9
+[2023-01-08 17:32:47 +0530] [3454] [INFO] Booting worker with pid: 3454
+[2023-01-08 17:32:47 +0530] [3455] [INFO] Booting worker with pid: 3455
+[2023-01-08 17:32:48 +0530] [3456] [INFO] Booting worker with pid: 3456
+[2023-01-08 17:32:48 +0530] [3457] [INFO] Booting worker with pid: 3457
+[2023-01-08 17:33:18 +0530] [2802] [CRITICAL] WORKER TIMEOUT (pid:3454)
+[2023-01-08 17:33:18 +0530] [2802] [CRITICAL] WORKER TIMEOUT (pid:3455)
+[2023-01-08 17:33:18 +0530] [2802] [CRITICAL] WORKER TIMEOUT (pid:3456)
+[2023-01-08 17:33:18 +0530] [2802] [CRITICAL] WORKER TIMEOUT (pid:3457)
+[2023-01-08 17:33:18 +0530] [3454] [INFO] Worker exiting (pid: 3454)
+[2023-01-08 17:33:18 +0530] [3455] [INFO] Worker exiting (pid: 3455)
+[2023-01-08 17:33:18 +0530] [3456] [INFO] Worker exiting (pid: 3456)
+[2023-01-08 17:33:18 +0530] [3457] [INFO] Worker exiting (pid: 3457)
+[2023-01-08 17:33:18 +0530] [4245] [INFO] Booting worker with pid: 4245
+[2023-01-08 17:33:18 +0530] [2802] [WARNING] Worker with pid 3457 was terminated due to signal 9
+[2023-01-08 17:33:18 +0530] [2802] [WARNING] Worker with pid 3454 was terminated due to signal 9
+[2023-01-08 17:33:18 +0530] [2802] [WARNING] Worker with pid 3456 was terminated due to signal 9
+[2023-01-08 17:33:18 +0530] [4246] [INFO] Booting worker with pid: 4246
+[2023-01-08 17:33:18 +0530] [4248] [INFO] Booting worker with pid: 4248
+[2023-01-08 17:33:18 +0530] [4249] [INFO] Booting worker with pid: 4249
+[2023-01-08 17:33:48 +0530] [2802] [CRITICAL] WORKER TIMEOUT (pid:4245)
+[2023-01-08 17:33:48 +0530] [2802] [CRITICAL] WORKER TIMEOUT (pid:4246)
+[2023-01-08 17:33:48 +0530] [2802] [CRITICAL] WORKER TIMEOUT (pid:4248)
+[2023-01-08 17:33:48 +0530] [2802] [CRITICAL] WORKER TIMEOUT (pid:4249)
+[2023-01-08 17:33:48 +0530] [4245] [INFO] Worker exiting (pid: 4245)
+[2023-01-08 17:33:48 +0530] [4248] [INFO] Worker exiting (pid: 4248)
+[2023-01-08 17:33:48 +0530] [4246] [INFO] Worker exiting (pid: 4246)
+[2023-01-08 17:33:48 +0530] [4249] [INFO] Worker exiting (pid: 4249)
+[2023-01-08 17:33:48 +0530] [5382] [INFO] Booting worker with pid: 5382
+[2023-01-08 17:33:48 +0530] [2802] [WARNING] Worker with pid 4249 was terminated due to signal 9
+[2023-01-08 17:33:48 +0530] [2802] [WARNING] Worker with pid 4246 was terminated due to signal 9
+[2023-01-08 17:33:48 +0530] [2802] [WARNING] Worker with pid 4248 was terminated due to signal 9
+[2023-01-08 17:33:48 +0530] [5383] [INFO] Booting worker with pid: 5383
+[2023-01-08 17:33:48 +0530] [5384] [INFO] Booting worker with pid: 5384
+[2023-01-08 17:33:48 +0530] [5385] [INFO] Booting worker with pid: 5385
+[2023-01-08 17:34:19 +0530] [2802] [CRITICAL] WORKER TIMEOUT (pid:5382)
+[2023-01-08 17:34:19 +0530] [2802] [CRITICAL] WORKER TIMEOUT (pid:5383)
+[2023-01-08 17:34:19 +0530] [2802] [CRITICAL] WORKER TIMEOUT (pid:5384)
+[2023-01-08 17:34:19 +0530] [2802] [CRITICAL] WORKER TIMEOUT (pid:5385)
+[2023-01-08 17:34:19 +0530] [5382] [INFO] Worker exiting (pid: 5382)
+[2023-01-08 17:34:19 +0530] [5383] [INFO] Worker exiting (pid: 5383)
+[2023-01-08 17:34:19 +0530] [5384] [INFO] Worker exiting (pid: 5384)
+[2023-01-08 17:34:19 +0530] [5385] [INFO] Worker exiting (pid: 5385)
+[2023-01-08 17:34:19 +0530] [5493] [INFO] Booting worker with pid: 5493
+[2023-01-08 17:34:19 +0530] [2802] [WARNING] Worker with pid 5383 was terminated due to signal 9
+[2023-01-08 17:34:19 +0530] [2802] [WARNING] Worker with pid 5385 was terminated due to signal 9
+[2023-01-08 17:34:19 +0530] [2802] [WARNING] Worker with pid 5384 was terminated due to signal 9
+[2023-01-08 17:34:19 +0530] [5494] [INFO] Booting worker with pid: 5494
+[2023-01-08 17:34:19 +0530] [5495] [INFO] Booting worker with pid: 5495
+[2023-01-08 17:34:19 +0530] [5496] [INFO] Booting worker with pid: 5496
+[2023-01-08 18:02:13 +0530] [2802] [INFO] Handling signal: term
+[2023-01-08 18:02:13 +0530] [5496] [INFO] Worker exiting (pid: 5496)
+[2023-01-08 18:02:13 +0530] [5494] [INFO] Worker exiting (pid: 5494)
+[2023-01-08 18:02:13 +0530] [5493] [INFO] Worker exiting (pid: 5493)
+[2023-01-08 18:02:13 +0530] [5495] [INFO] Worker exiting (pid: 5495)
+[2023-01-08 18:02:14 +0530] [2802] [INFO] Shutting down: Master
+[2023-01-08 18:02:15 +0530] [9497] [INFO] Starting gunicorn 20.1.0
+[2023-01-08 18:02:15 +0530] [9497] [INFO] Listening at: http://0.0.0.0:8080 (9497)
+[2023-01-08 18:02:15 +0530] [9497] [INFO] Using worker: sync
+[2023-01-08 18:02:15 +0530] [9509] [INFO] Booting worker with pid: 9509
+[2023-01-08 18:02:15 +0530] [9510] [INFO] Booting worker with pid: 9510
+[2023-01-08 18:02:15 +0530] [9512] [INFO] Booting worker with pid: 9512
+[2023-01-08 18:02:16 +0530] [9513] [INFO] Booting worker with pid: 9513
+[2023-01-08 19:04:42,407] ERROR in app: Exception on /favicon.ico [GET]
+Traceback (most recent call last):
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/flask/app.py", line 1519, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/flask/app.py", line 1517, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/flask/app.py", line 1503, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/app.py", line 150, in index
+    current = int(page)
+ValueError: invalid literal for int() with base 10: 'favicon.ico'
+[2023-01-08 20:05:50 +0530] [9497] [CRITICAL] WORKER TIMEOUT (pid:9512)
+[2023-01-08 20:05:50 +0530] [9512] [INFO] Worker exiting (pid: 9512)
+[2023-01-08 20:05:50 +0530] [19633] [INFO] Booting worker with pid: 19633
+[2023-01-08 22:50:50,063] ERROR in app: Exception on /wp-login.php [GET]
+Traceback (most recent call last):
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/flask/app.py", line 1519, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/flask/app.py", line 1517, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/flask/app.py", line 1503, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/app.py", line 150, in index
+    current = int(page)
+ValueError: invalid literal for int() with base 10: 'wp-login.php'
+[2023-01-08 23:49:01,565] ERROR in app: Exception on /shell [GET]
+Traceback (most recent call last):
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/flask/app.py", line 1519, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/flask/app.py", line 1517, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/flask/app.py", line 1503, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/app.py", line 150, in index
+    current = int(page)
+ValueError: invalid literal for int() with base 10: 'shell'
+[2023-01-09 00:27:22,340] ERROR in app: Exception on /setup.cgi [GET]
+Traceback (most recent call last):
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/flask/app.py", line 1519, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/flask/app.py", line 1517, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/flask/app.py", line 1503, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/app.py", line 150, in index
+    current = int(page)
+ValueError: invalid literal for int() with base 10: 'setup.cgi'
+[2023-01-09 01:34:56,472] ERROR in app: Exception on /hudson [GET]
+Traceback (most recent call last):
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/flask/app.py", line 1519, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/flask/app.py", line 1517, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/flask/app.py", line 1503, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/app.py", line 150, in index
+    current = int(page)
+ValueError: invalid literal for int() with base 10: 'hudson'
+[2023-01-09 01:43:07,681] ERROR in app: Exception on /favicon.ico [GET]
+Traceback (most recent call last):
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/flask/app.py", line 1519, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/flask/app.py", line 1517, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/flask/app.py", line 1503, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/app.py", line 150, in index
+    current = int(page)
+ValueError: invalid literal for int() with base 10: 'favicon.ico'
+[2023-01-09 08:36:50,389] ERROR in app: Exception on /shell [GET]
+Traceback (most recent call last):
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/flask/app.py", line 1519, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/flask/app.py", line 1517, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/flask/app.py", line 1503, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/app.py", line 150, in index
+    current = int(page)
+ValueError: invalid literal for int() with base 10: 'shell'
+[2023-01-09 09:16:47,123] ERROR in app: Exception on /shell [GET]
+Traceback (most recent call last):
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/flask/app.py", line 1519, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/flask/app.py", line 1517, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/flask/app.py", line 1503, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/app.py", line 150, in index
+    current = int(page)
+ValueError: invalid literal for int() with base 10: 'shell'
+[2023-01-09 09:44:24,744] ERROR in app: Exception on /favicon.ico [GET]
+Traceback (most recent call last):
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/flask/app.py", line 1519, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/flask/app.py", line 1517, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/flask/app.py", line 1503, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/app.py", line 150, in index
+    current = int(page)
+ValueError: invalid literal for int() with base 10: 'favicon.ico'
+[2023-01-09 09:56:34,391] ERROR in app: Exception on /.env [GET]
+Traceback (most recent call last):
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/flask/app.py", line 1519, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/flask/app.py", line 1517, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/flask/app.py", line 1503, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/app.py", line 150, in index
+    current = int(page)
+ValueError: invalid literal for int() with base 10: '.env'
+[2023-01-09 10:58:06,651] ERROR in app: Exception on /.env [GET]
+Traceback (most recent call last):
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/flask/app.py", line 1519, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/flask/app.py", line 1517, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/flask/app.py", line 1503, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/app.py", line 150, in index
+    current = int(page)
+ValueError: invalid literal for int() with base 10: '.env'
+[2023-01-09 13:45:54,410] ERROR in app: Exception on /favicon.ico [GET]
+Traceback (most recent call last):
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/flask/app.py", line 1519, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/flask/app.py", line 1517, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/flask/app.py", line 1503, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/app.py", line 150, in index
+    current = int(page)
+ValueError: invalid literal for int() with base 10: 'favicon.ico'
+[2023-01-09 15:05:44 +0530] [9497] [CRITICAL] WORKER TIMEOUT (pid:9513)
+[2023-01-09 15:05:44 +0530] [9513] [INFO] Worker exiting (pid: 9513)
+[2023-01-09 15:05:45 +0530] [93865] [INFO] Booting worker with pid: 93865
+[2023-01-09 16:57:48,511] ERROR in app: Exception on /favicon.ico [GET]
+Traceback (most recent call last):
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/flask/app.py", line 1519, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/flask/app.py", line 1517, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/flask/app.py", line 1503, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/app.py", line 150, in index
+    current = int(page)
+ValueError: invalid literal for int() with base 10: 'favicon.ico'
+[2023-01-09 18:47:38,170] ERROR in app: Exception on /home.asp [GET]
+Traceback (most recent call last):
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/flask/app.py", line 1519, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/flask/app.py", line 1517, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/flask/app.py", line 1503, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/app.py", line 150, in index
+    current = int(page)
+ValueError: invalid literal for int() with base 10: 'home.asp'
+[2023-01-09 19:43:39,290] ERROR in app: Exception on /favicon.ico [GET]
+Traceback (most recent call last):
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/flask/app.py", line 1519, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/flask/app.py", line 1517, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/flask/app.py", line 1503, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/app.py", line 150, in index
+    current = int(page)
+ValueError: invalid literal for int() with base 10: 'favicon.ico'
+[2023-01-09 19:46:12 +0530] [9497] [CRITICAL] WORKER TIMEOUT (pid:9510)
+[2023-01-09 19:46:12 +0530] [9510] [INFO] Worker exiting (pid: 9510)
+[2023-01-09 19:46:12 +0530] [111375] [INFO] Booting worker with pid: 111375
+[2023-01-10 02:43:08,879] ERROR in app: Exception on /Telerik.Web.UI.WebResource.axd [GET]
+Traceback (most recent call last):
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/flask/app.py", line 1519, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/flask/app.py", line 1517, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/flask/app.py", line 1503, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/app.py", line 150, in index
+    current = int(page)
+ValueError: invalid literal for int() with base 10: 'Telerik.Web.UI.WebResource.axd'
+[2023-01-10 03:42:05,169] ERROR in app: Exception on /favicon.ico [GET]
+Traceback (most recent call last):
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/flask/app.py", line 1519, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/flask/app.py", line 1517, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/flask/app.py", line 1503, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/app.py", line 150, in index
+    current = int(page)
+ValueError: invalid literal for int() with base 10: 'favicon.ico'
+[2023-01-10 03:42:08 +0530] [9497] [CRITICAL] WORKER TIMEOUT (pid:9509)
+[2023-01-10 03:42:08 +0530] [9509] [INFO] Worker exiting (pid: 9509)
+[2023-01-10 03:42:09 +0530] [140975] [INFO] Booting worker with pid: 140975
+[2023-01-10 05:44:11,020] ERROR in app: Exception on /ip.php [GET]
+Traceback (most recent call last):
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/flask/app.py", line 1519, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/flask/app.py", line 1517, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/flask/app.py", line 1503, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/app.py", line 150, in index
+    current = int(page)
+ValueError: invalid literal for int() with base 10: 'ip.php'
+[2023-01-10 07:29:09,726] ERROR in app: Exception on /home.asp [GET]
+Traceback (most recent call last):
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/flask/app.py", line 1519, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/flask/app.py", line 1517, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/flask/app.py", line 1503, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/app.py", line 150, in index
+    current = int(page)
+ValueError: invalid literal for int() with base 10: 'home.asp'
+[2023-01-10 07:41:11 +0530] [9497] [CRITICAL] WORKER TIMEOUT (pid:19633)
+[2023-01-10 07:41:11 +0530] [19633] [INFO] Worker exiting (pid: 19633)
+[2023-01-10 07:41:12 +0530] [160903] [INFO] Booting worker with pid: 160903
+[2023-01-10 08:41:38,763] ERROR in app: Exception on /sitemap.xml [GET]
+Traceback (most recent call last):
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/flask/app.py", line 1519, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/flask/app.py", line 1517, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/flask/app.py", line 1503, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/app.py", line 150, in index
+    current = int(page)
+ValueError: invalid literal for int() with base 10: 'sitemap.xml'
+[2023-01-10 13:42:35 +0530] [9497] [CRITICAL] WORKER TIMEOUT (pid:140975)
+[2023-01-10 13:42:35 +0530] [140975] [INFO] Worker exiting (pid: 140975)
+[2023-01-10 13:42:35 +0530] [184406] [INFO] Booting worker with pid: 184406
+[2023-01-10 16:44:23,727] ERROR in app: Exception on /shell [GET]
+Traceback (most recent call last):
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/flask/app.py", line 1519, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/flask/app.py", line 1517, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/flask/app.py", line 1503, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/app.py", line 150, in index
+    current = int(page)
+ValueError: invalid literal for int() with base 10: 'shell'
+[2023-01-10 16:49:34,187] ERROR in app: Exception on /favicon.ico [GET]
+Traceback (most recent call last):
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/flask/app.py", line 1519, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/flask/app.py", line 1517, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/flask/app.py", line 1503, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/app.py", line 150, in index
+    current = int(page)
+ValueError: invalid literal for int() with base 10: 'favicon.ico'
+[2023-01-10 18:53:09,286] ERROR in app: Exception on /shell [GET]
+Traceback (most recent call last):
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/flask/app.py", line 1519, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/flask/app.py", line 1517, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/flask/app.py", line 1503, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/app.py", line 150, in index
+    current = int(page)
+ValueError: invalid literal for int() with base 10: 'shell'
+[2023-01-10 19:40:44 +0530] [9497] [CRITICAL] WORKER TIMEOUT (pid:111375)
+[2023-01-10 19:40:44 +0530] [111375] [INFO] Worker exiting (pid: 111375)
+[2023-01-10 19:40:44 +0530] [207681] [INFO] Booting worker with pid: 207681
+[2023-01-10 20:20:29,430] ERROR in app: Exception on /.env [GET]
+Traceback (most recent call last):
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/flask/app.py", line 1519, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/flask/app.py", line 1517, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/flask/app.py", line 1503, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/app.py", line 150, in index
+    current = int(page)
+ValueError: invalid literal for int() with base 10: '.env'
+[2023-01-10 21:36:04,167] ERROR in app: Exception on /wp-login.php [GET]
+Traceback (most recent call last):
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/flask/app.py", line 1519, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/flask/app.py", line 1517, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/flask/app.py", line 1503, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/app.py", line 150, in index
+    current = int(page)
+ValueError: invalid literal for int() with base 10: 'wp-login.php'
+[2023-01-10 23:26:17,277] ERROR in app: Exception on /favicon.ico [GET]
+Traceback (most recent call last):
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/flask/app.py", line 1519, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/flask/app.py", line 1517, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/flask/app.py", line 1503, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/app.py", line 150, in index
+    current = int(page)
+ValueError: invalid literal for int() with base 10: 'favicon.ico'
+[2023-01-11 02:50:50,983] ERROR in app: Exception on /favicon.ico [GET]
+Traceback (most recent call last):
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/flask/app.py", line 1519, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/flask/app.py", line 1517, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/flask/app.py", line 1503, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/app.py", line 150, in index
+    current = int(page)
+ValueError: invalid literal for int() with base 10: 'favicon.ico'
+[2023-01-11 05:40:56,140] ERROR in app: Exception on /.env [GET]
+Traceback (most recent call last):
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/flask/app.py", line 1519, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/flask/app.py", line 1517, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/flask/app.py", line 1503, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/app.py", line 150, in index
+    current = int(page)
+ValueError: invalid literal for int() with base 10: '.env'
+[2023-01-11 07:37:51,177] ERROR in app: Exception on /.env [GET]
+Traceback (most recent call last):
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/flask/app.py", line 1519, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/flask/app.py", line 1517, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/flask/app.py", line 1503, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/app.py", line 150, in index
+    current = int(page)
+ValueError: invalid literal for int() with base 10: '.env'
+[2023-01-11 07:37:51,663] ERROR in app: Exception on /.env.prod [GET]
+Traceback (most recent call last):
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/flask/app.py", line 1519, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/flask/app.py", line 1517, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/flask/app.py", line 1503, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/app.py", line 150, in index
+    current = int(page)
+ValueError: invalid literal for int() with base 10: '.env.prod'
+[2023-01-11 07:37:52,149] ERROR in app: Exception on /.env.dev [GET]
+Traceback (most recent call last):
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/flask/app.py", line 1519, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/flask/app.py", line 1517, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/flask/app.py", line 1503, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/app.py", line 150, in index
+    current = int(page)
+ValueError: invalid literal for int() with base 10: '.env.dev'
+[2023-01-11 07:37:56,901] ERROR in app: Exception on /.git [GET]
+Traceback (most recent call last):
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/flask/app.py", line 1519, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/flask/app.py", line 1517, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/flask/app.py", line 1503, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/app.py", line 150, in index
+    current = int(page)
+ValueError: invalid literal for int() with base 10: '.git'
+[2023-01-11 09:28:51,741] ERROR in app: Exception on /setup.cgi [GET]
+Traceback (most recent call last):
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/flask/app.py", line 1519, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/flask/app.py", line 1517, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/flask/app.py", line 1503, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/app.py", line 150, in index
+    current = int(page)
+ValueError: invalid literal for int() with base 10: 'setup.cgi'
+[2023-01-11 13:03:32 +0530] [9497] [CRITICAL] WORKER TIMEOUT (pid:160903)
+[2023-01-11 13:03:32 +0530] [160903] [INFO] Worker exiting (pid: 160903)
+[2023-01-11 13:03:32 +0530] [279755] [INFO] Booting worker with pid: 279755
+[2023-01-11 13:03:40 +0530] [9497] [CRITICAL] WORKER TIMEOUT (pid:184406)
+[2023-01-11 13:03:40 +0530] [184406] [INFO] Worker exiting (pid: 184406)
+[2023-01-11 13:03:41 +0530] [279763] [INFO] Booting worker with pid: 279763
+[2023-01-11 13:15:31,006] ERROR in app: Exception on /favicon.ico [GET]
+Traceback (most recent call last):
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/flask/app.py", line 1519, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/flask/app.py", line 1517, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/flask/app.py", line 1503, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/app.py", line 150, in index
+    current = int(page)
+ValueError: invalid literal for int() with base 10: 'favicon.ico'
+[2023-01-11 13:15:33,376] ERROR in app: Exception on /favicon.ico [GET]
+Traceback (most recent call last):
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/flask/app.py", line 1519, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/flask/app.py", line 1517, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/flask/app.py", line 1503, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/app.py", line 150, in index
+    current = int(page)
+ValueError: invalid literal for int() with base 10: 'favicon.ico'
+[2023-01-11 14:59:03,501] ERROR in app: Exception on /shell [GET]
+Traceback (most recent call last):
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/flask/app.py", line 1519, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/flask/app.py", line 1517, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/flask/app.py", line 1503, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/app.py", line 150, in index
+    current = int(page)
+ValueError: invalid literal for int() with base 10: 'shell'
+[2023-01-11 17:18:11,578] ERROR in app: Exception on /readme.html [GET]
+Traceback (most recent call last):
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/flask/app.py", line 1519, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/flask/app.py", line 1517, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/flask/app.py", line 1503, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/app.py", line 150, in index
+    current = int(page)
+ValueError: invalid literal for int() with base 10: 'readme.html'
+[2023-01-11 17:18:12,070] ERROR in app: Exception on /license.txt [GET]
+Traceback (most recent call last):
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/flask/app.py", line 1519, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/flask/app.py", line 1517, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/flask/app.py", line 1503, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/app.py", line 150, in index
+    current = int(page)
+ValueError: invalid literal for int() with base 10: 'license.txt'
+[2023-01-11 17:25:34 +0530] [9497] [CRITICAL] WORKER TIMEOUT (pid:93865)
+[2023-01-11 17:25:34 +0530] [93865] [INFO] Worker exiting (pid: 93865)
+[2023-01-11 17:25:34 +0530] [296170] [INFO] Booting worker with pid: 296170
+[2023-01-11 18:53:52,889] ERROR in app: Exception on /favicon.ico [GET]
+Traceback (most recent call last):
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/flask/app.py", line 1519, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/flask/app.py", line 1517, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/flask/app.py", line 1503, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/app.py", line 150, in index
+    current = int(page)
+ValueError: invalid literal for int() with base 10: 'favicon.ico'
+[2023-01-11 19:32:16 +0530] [9497] [CRITICAL] WORKER TIMEOUT (pid:279763)
+[2023-01-11 19:32:16 +0530] [279763] [INFO] Worker exiting (pid: 279763)
+[2023-01-11 19:32:17 +0530] [304041] [INFO] Booting worker with pid: 304041
+[2023-01-11 21:12:01 +0530] [9497] [INFO] Handling signal: term
+[2023-01-11 21:12:01 +0530] [279755] [INFO] Worker exiting (pid: 279755)
+[2023-01-11 21:12:01 +0530] [207681] [INFO] Worker exiting (pid: 207681)
+[2023-01-11 21:12:01 +0530] [296170] [INFO] Worker exiting (pid: 296170)
+[2023-01-11 21:12:01 +0530] [304041] [INFO] Worker exiting (pid: 304041)
+[2023-01-11 21:12:02 +0530] [9497] [INFO] Shutting down: Master
+[2023-01-11 21:12:03 +0530] [311796] [INFO] Starting gunicorn 20.1.0
+[2023-01-11 21:12:03 +0530] [311796] [INFO] Listening at: http://0.0.0.0:8080 (311796)
+[2023-01-11 21:12:03 +0530] [311796] [INFO] Using worker: sync
+[2023-01-11 21:12:03 +0530] [311816] [INFO] Booting worker with pid: 311816
+[2023-01-11 21:12:03 +0530] [311818] [INFO] Booting worker with pid: 311818
+[2023-01-11 21:12:03 +0530] [311819] [INFO] Booting worker with pid: 311819
+[2023-01-11 21:12:03 +0530] [311820] [INFO] Booting worker with pid: 311820
+[2023-01-12 20:05:07 +0530] [311796] [CRITICAL] WORKER TIMEOUT (pid:311816)
+[2023-01-12 20:05:07 +0530] [311816] [INFO] Worker exiting (pid: 311816)
+[2023-01-12 20:05:07 +0530] [421244] [INFO] Booting worker with pid: 421244
+[2023-01-13 10:57:55 +0530] [311796] [CRITICAL] WORKER TIMEOUT (pid:421244)
+[2023-01-13 10:57:55 +0530] [421244] [INFO] Worker exiting (pid: 421244)
+[2023-01-13 10:57:56 +0530] [505148] [INFO] Booting worker with pid: 505148
+[2023-01-13 19:57:29 +0530] [311796] [CRITICAL] WORKER TIMEOUT (pid:311818)
+[2023-01-13 19:57:29 +0530] [311818] [INFO] Worker exiting (pid: 311818)
+[2023-01-13 19:57:30 +0530] [547621] [INFO] Booting worker with pid: 547621
+[2023-01-14 12:52:55 +0530] [311796] [CRITICAL] WORKER TIMEOUT (pid:505148)
+[2023-01-14 12:52:55 +0530] [505148] [INFO] Worker exiting (pid: 505148)
+[2023-01-14 12:52:55 +0530] [627734] [INFO] Booting worker with pid: 627734
+[2023-01-14 19:35:20 +0530] [311796] [CRITICAL] WORKER TIMEOUT (pid:311819)
+[2023-01-14 19:35:20 +0530] [311819] [INFO] Worker exiting (pid: 311819)
+[2023-01-14 19:35:20 +0530] [659886] [INFO] Booting worker with pid: 659886
+[2023-01-16 07:18:31 +0530] [311796] [CRITICAL] WORKER TIMEOUT (pid:659886)
+[2023-01-16 07:18:31 +0530] [659886] [INFO] Worker exiting (pid: 659886)
+[2023-01-16 07:18:32 +0530] [830276] [INFO] Booting worker with pid: 830276
+[2023-01-16 10:54:07 +0530] [311796] [INFO] Handling signal: term
+[2023-01-16 10:54:07 +0530] [547621] [INFO] Worker exiting (pid: 547621)
+[2023-01-16 10:54:07 +0530] [627734] [INFO] Worker exiting (pid: 627734)
+[2023-01-16 10:54:07 +0530] [830276] [INFO] Worker exiting (pid: 830276)
+[2023-01-16 10:54:07 +0530] [311820] [INFO] Worker exiting (pid: 311820)
+[2023-01-16 10:54:08 +0530] [311796] [INFO] Shutting down: Master
+[2023-01-16 10:54:11 +0530] [847462] [INFO] Starting gunicorn 20.1.0
+[2023-01-16 10:54:11 +0530] [847462] [INFO] Listening at: http://0.0.0.0:8080 (847462)
+[2023-01-16 10:54:11 +0530] [847462] [INFO] Using worker: sync
+[2023-01-16 10:54:11 +0530] [847468] [INFO] Booting worker with pid: 847468
+[2023-01-16 10:54:11 +0530] [847467] [INFO] Booting worker with pid: 847467
+[2023-01-16 10:54:11 +0530] [847475] [INFO] Booting worker with pid: 847475
+[2023-01-16 10:54:11 +0530] [847477] [INFO] Booting worker with pid: 847477
+[2023-01-17 16:26:19 +0530] [847462] [CRITICAL] WORKER TIMEOUT (pid:847477)
+[2023-01-17 16:26:19 +0530] [847477] [INFO] Worker exiting (pid: 847477)
+[2023-01-17 16:26:20 +0530] [987424] [INFO] Booting worker with pid: 987424
+[2023-01-18 07:38:33 +0530] [847462] [CRITICAL] WORKER TIMEOUT (pid:847468)
+[2023-01-18 07:38:33 +0530] [847468] [INFO] Worker exiting (pid: 847468)
+[2023-01-18 07:38:34 +0530] [1061154] [INFO] Booting worker with pid: 1061154
+[2023-01-19 10:29:12 +0530] [847462] [INFO] Handling signal: term
+[2023-01-19 10:29:12 +0530] [847467] [INFO] Worker exiting (pid: 847467)
+[2023-01-19 10:29:12 +0530] [1061154] [INFO] Worker exiting (pid: 1061154)
+[2023-01-19 10:29:12 +0530] [987424] [INFO] Worker exiting (pid: 987424)
+[2023-01-19 10:29:12 +0530] [847475] [INFO] Worker exiting (pid: 847475)
+[2023-01-19 10:29:13 +0530] [847462] [INFO] Shutting down: Master
+[2023-01-19 10:29:17 +0530] [1190559] [INFO] Starting gunicorn 20.1.0
+[2023-01-19 10:29:17 +0530] [1190559] [INFO] Listening at: http://0.0.0.0:8080 (1190559)
+[2023-01-19 10:29:17 +0530] [1190559] [INFO] Using worker: sync
+[2023-01-19 10:29:17 +0530] [1190564] [INFO] Booting worker with pid: 1190564
+[2023-01-19 10:29:17 +0530] [1190565] [INFO] Booting worker with pid: 1190565
+[2023-01-19 10:29:17 +0530] [1190566] [INFO] Booting worker with pid: 1190566
+[2023-01-19 10:29:17 +0530] [1190567] [INFO] Booting worker with pid: 1190567
+[2023-01-19 20:14:17 +0530] [1990] [INFO] Starting gunicorn 20.1.0
+[2023-01-19 20:14:17 +0530] [1990] [INFO] Listening at: http://0.0.0.0:8080 (1990)
+[2023-01-19 20:14:17 +0530] [1990] [INFO] Using worker: sync
+[2023-01-19 20:14:17 +0530] [2097] [INFO] Booting worker with pid: 2097
+[2023-01-19 20:14:17 +0530] [2102] [INFO] Booting worker with pid: 2102
+[2023-01-19 20:14:17 +0530] [2103] [INFO] Booting worker with pid: 2103
+[2023-01-19 20:14:18 +0530] [2106] [INFO] Booting worker with pid: 2106
+[2023-01-19 20:14:48 +0530] [1990] [CRITICAL] WORKER TIMEOUT (pid:2097)
+[2023-01-19 20:14:48 +0530] [1990] [CRITICAL] WORKER TIMEOUT (pid:2102)
+[2023-01-19 20:14:48 +0530] [1990] [CRITICAL] WORKER TIMEOUT (pid:2103)
+[2023-01-19 20:14:48 +0530] [1990] [CRITICAL] WORKER TIMEOUT (pid:2106)
+[2023-01-19 20:14:48 +0530] [2097] [INFO] Worker exiting (pid: 2097)
+[2023-01-19 20:14:48 +0530] [2102] [INFO] Worker exiting (pid: 2102)
+[2023-01-19 20:14:48 +0530] [2103] [INFO] Worker exiting (pid: 2103)
+[2023-01-19 20:14:48 +0530] [2106] [INFO] Worker exiting (pid: 2106)
+[2023-01-19 20:14:48 +0530] [2146] [INFO] Booting worker with pid: 2146
+[2023-01-19 20:14:48 +0530] [1990] [WARNING] Worker with pid 2097 was terminated due to signal 9
+[2023-01-19 20:14:48 +0530] [2147] [INFO] Booting worker with pid: 2147
+[2023-01-19 20:14:49 +0530] [2148] [INFO] Booting worker with pid: 2148
+[2023-01-19 20:14:49 +0530] [2154] [INFO] Booting worker with pid: 2154
+[2023-01-19 20:15:19 +0530] [2146] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/gunicorn/arbiter.py", line 589, in spawn_worker
+    worker.init_process()
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/gunicorn/workers/base.py", line 134, in init_process
+    self.load_wsgi()
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/gunicorn/workers/base.py", line 146, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/gunicorn/app/wsgiapp.py", line 58, in load
+    return self.load_wsgiapp()
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/gunicorn/app/wsgiapp.py", line 48, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/gunicorn/util.py", line 359, in import_app
+    mod = importlib.import_module(module)
+  File "/usr/lib/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/app.py", line 24, in <module>
+    data = list(collection.find({'expired': False}).sort('days_left', 1))
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/pymongo/cursor.py", line 1248, in next
+    if len(self.__data) or self._refresh():
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/pymongo/cursor.py", line 1139, in _refresh
+    self.__session = self.__collection.database.client._ensure_session()
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/pymongo/mongo_client.py", line 1712, in _ensure_session
+    return self.__start_session(True, causal_consistency=False)
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/pymongo/mongo_client.py", line 1657, in __start_session
+    self._topology._check_implicit_session_support()
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/pymongo/topology.py", line 538, in _check_implicit_session_support
+    self._check_session_support()
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/pymongo/topology.py", line 554, in _check_session_support
+    self._select_servers_loop(
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/pymongo/topology.py", line 238, in _select_servers_loop
+    raise ServerSelectionTimeoutError(
+pymongo.errors.ServerSelectionTimeoutError: localhost:27017: [Errno 111] Connection refused, Timeout: 30s, Topology Description: <TopologyDescription id: 63c95761b989298ae4874fc4, topology_type: Unknown, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('localhost:27017: [Errno 111] Connection refused')>]>
+[2023-01-19 20:15:19 +0530] [2146] [INFO] Worker exiting (pid: 2146)
+[2023-01-19 20:15:19 +0530] [1990] [CRITICAL] WORKER TIMEOUT (pid:2146)
+[2023-01-19 20:15:19 +0530] [1990] [CRITICAL] WORKER TIMEOUT (pid:2147)
+[2023-01-19 20:15:19 +0530] [1990] [CRITICAL] WORKER TIMEOUT (pid:2148)
+[2023-01-19 20:15:19 +0530] [1990] [CRITICAL] WORKER TIMEOUT (pid:2154)
+[2023-01-19 20:15:19 +0530] [2147] [INFO] Worker exiting (pid: 2147)
+[2023-01-19 20:15:19 +0530] [2148] [INFO] Worker exiting (pid: 2148)
+[2023-01-19 20:15:19 +0530] [2154] [INFO] Worker exiting (pid: 2154)
+[2023-01-19 20:15:19 +0530] [1990] [INFO] Shutting down: Master
+[2023-01-19 20:15:19 +0530] [1990] [INFO] Reason: Worker failed to boot.
+[2023-01-19 20:15:20 +0530] [2374] [INFO] Starting gunicorn 20.1.0
+[2023-01-19 20:15:20 +0530] [2374] [INFO] Listening at: http://0.0.0.0:8080 (2374)
+[2023-01-19 20:15:20 +0530] [2374] [INFO] Using worker: sync
+[2023-01-19 20:15:21 +0530] [2375] [INFO] Booting worker with pid: 2375
+[2023-01-19 20:15:21 +0530] [2376] [INFO] Booting worker with pid: 2376
+[2023-01-19 20:15:21 +0530] [2377] [INFO] Booting worker with pid: 2377
+[2023-01-19 20:15:21 +0530] [2378] [INFO] Booting worker with pid: 2378
+[2023-01-19 20:15:51 +0530] [2374] [CRITICAL] WORKER TIMEOUT (pid:2375)
+[2023-01-19 20:15:51 +0530] [2374] [CRITICAL] WORKER TIMEOUT (pid:2376)
+[2023-01-19 20:15:51 +0530] [2374] [CRITICAL] WORKER TIMEOUT (pid:2377)
+[2023-01-19 20:15:51 +0530] [2374] [CRITICAL] WORKER TIMEOUT (pid:2378)
+[2023-01-19 20:15:51 +0530] [2377] [INFO] Worker exiting (pid: 2377)
+[2023-01-19 20:15:51 +0530] [2376] [INFO] Worker exiting (pid: 2376)
+[2023-01-19 20:15:51 +0530] [2375] [INFO] Worker exiting (pid: 2375)
+[2023-01-19 20:15:51 +0530] [2378] [INFO] Worker exiting (pid: 2378)
+[2023-01-19 20:15:51 +0530] [2553] [INFO] Booting worker with pid: 2553
+[2023-01-19 20:15:51 +0530] [2374] [WARNING] Worker with pid 2377 was terminated due to signal 9
+[2023-01-19 20:15:51 +0530] [2374] [WARNING] Worker with pid 2378 was terminated due to signal 9
+[2023-01-19 20:15:51 +0530] [2374] [WARNING] Worker with pid 2376 was terminated due to signal 9
+[2023-01-19 20:15:51 +0530] [2554] [INFO] Booting worker with pid: 2554
+[2023-01-19 20:15:51 +0530] [2555] [INFO] Booting worker with pid: 2555
+[2023-01-19 20:15:51 +0530] [2556] [INFO] Booting worker with pid: 2556
+[2023-01-19 20:16:21 +0530] [2374] [CRITICAL] WORKER TIMEOUT (pid:2553)
+[2023-01-19 20:16:21 +0530] [2374] [CRITICAL] WORKER TIMEOUT (pid:2554)
+[2023-01-19 20:16:21 +0530] [2374] [CRITICAL] WORKER TIMEOUT (pid:2555)
+[2023-01-19 20:16:21 +0530] [2374] [CRITICAL] WORKER TIMEOUT (pid:2556)
+[2023-01-19 20:16:21 +0530] [2553] [INFO] Worker exiting (pid: 2553)
+[2023-01-19 20:16:21 +0530] [2554] [INFO] Worker exiting (pid: 2554)
+[2023-01-19 20:16:21 +0530] [2555] [INFO] Worker exiting (pid: 2555)
+[2023-01-19 20:16:21 +0530] [2556] [INFO] Worker exiting (pid: 2556)
+[2023-01-19 20:16:22 +0530] [2374] [WARNING] Worker with pid 2554 was terminated due to signal 9
+[2023-01-19 20:16:22 +0530] [2374] [WARNING] Worker with pid 2555 was terminated due to signal 9
+[2023-01-19 20:16:22 +0530] [2374] [WARNING] Worker with pid 2556 was terminated due to signal 9
+[2023-01-19 20:16:22 +0530] [2853] [INFO] Booting worker with pid: 2853
+[2023-01-19 20:16:22 +0530] [2854] [INFO] Booting worker with pid: 2854
+[2023-01-19 20:16:22 +0530] [2855] [INFO] Booting worker with pid: 2855
+[2023-01-19 20:16:22 +0530] [2856] [INFO] Booting worker with pid: 2856
+[2023-01-19 20:16:52 +0530] [2374] [CRITICAL] WORKER TIMEOUT (pid:2853)
+[2023-01-19 20:16:52 +0530] [2374] [CRITICAL] WORKER TIMEOUT (pid:2854)
+[2023-01-19 20:16:52 +0530] [2374] [CRITICAL] WORKER TIMEOUT (pid:2855)
+[2023-01-19 20:16:52 +0530] [2374] [CRITICAL] WORKER TIMEOUT (pid:2856)
+[2023-01-19 20:16:52 +0530] [2853] [INFO] Worker exiting (pid: 2853)
+[2023-01-19 20:16:52 +0530] [2854] [INFO] Worker exiting (pid: 2854)
+[2023-01-19 20:16:52 +0530] [2855] [INFO] Worker exiting (pid: 2855)
+[2023-01-19 20:16:52 +0530] [2856] [INFO] Worker exiting (pid: 2856)
+[2023-01-19 20:16:52 +0530] [2912] [INFO] Booting worker with pid: 2912
+[2023-01-19 20:16:52 +0530] [2374] [WARNING] Worker with pid 2855 was terminated due to signal 9
+[2023-01-19 20:16:52 +0530] [2374] [WARNING] Worker with pid 2856 was terminated due to signal 9
+[2023-01-19 20:16:52 +0530] [2374] [WARNING] Worker with pid 2854 was terminated due to signal 9
+[2023-01-19 20:16:52 +0530] [2913] [INFO] Booting worker with pid: 2913
+[2023-01-19 20:16:52 +0530] [2914] [INFO] Booting worker with pid: 2914
+[2023-01-19 20:16:52 +0530] [2915] [INFO] Booting worker with pid: 2915
+[2023-01-19 20:17:22 +0530] [2374] [CRITICAL] WORKER TIMEOUT (pid:2912)
+[2023-01-19 20:17:22 +0530] [2374] [CRITICAL] WORKER TIMEOUT (pid:2913)
+[2023-01-19 20:17:22 +0530] [2374] [CRITICAL] WORKER TIMEOUT (pid:2914)
+[2023-01-19 20:17:22 +0530] [2374] [CRITICAL] WORKER TIMEOUT (pid:2915)
+[2023-01-19 20:17:22 +0530] [2912] [INFO] Worker exiting (pid: 2912)
+[2023-01-19 20:17:22 +0530] [2913] [INFO] Worker exiting (pid: 2913)
+[2023-01-19 20:17:22 +0530] [2914] [INFO] Worker exiting (pid: 2914)
+[2023-01-19 20:17:22 +0530] [2915] [INFO] Worker exiting (pid: 2915)
+[2023-01-19 20:17:22 +0530] [3010] [INFO] Booting worker with pid: 3010
+[2023-01-19 20:17:22 +0530] [2374] [WARNING] Worker with pid 2915 was terminated due to signal 9
+[2023-01-19 20:17:22 +0530] [2374] [WARNING] Worker with pid 2914 was terminated due to signal 9
+[2023-01-19 20:17:22 +0530] [2374] [WARNING] Worker with pid 2913 was terminated due to signal 9
+[2023-01-19 20:17:22 +0530] [3011] [INFO] Booting worker with pid: 3011
+[2023-01-19 20:17:22 +0530] [3012] [INFO] Booting worker with pid: 3012
+[2023-01-19 20:17:22 +0530] [3013] [INFO] Booting worker with pid: 3013
+[2023-01-19 20:17:53 +0530] [2374] [CRITICAL] WORKER TIMEOUT (pid:3010)
+[2023-01-19 20:17:53 +0530] [2374] [CRITICAL] WORKER TIMEOUT (pid:3011)
+[2023-01-19 20:17:53 +0530] [2374] [CRITICAL] WORKER TIMEOUT (pid:3012)
+[2023-01-19 20:17:53 +0530] [2374] [CRITICAL] WORKER TIMEOUT (pid:3013)
+[2023-01-19 20:17:53 +0530] [3010] [INFO] Worker exiting (pid: 3010)
+[2023-01-19 20:17:53 +0530] [3011] [INFO] Worker exiting (pid: 3011)
+[2023-01-19 20:17:53 +0530] [3012] [INFO] Worker exiting (pid: 3012)
+[2023-01-19 20:17:53 +0530] [3013] [INFO] Worker exiting (pid: 3013)
+[2023-01-19 20:17:53 +0530] [3062] [INFO] Booting worker with pid: 3062
+[2023-01-19 20:17:53 +0530] [2374] [WARNING] Worker with pid 3012 was terminated due to signal 9
+[2023-01-19 20:17:53 +0530] [2374] [WARNING] Worker with pid 3013 was terminated due to signal 9
+[2023-01-19 20:17:53 +0530] [2374] [WARNING] Worker with pid 3011 was terminated due to signal 9
+[2023-01-19 20:17:53 +0530] [3063] [INFO] Booting worker with pid: 3063
+[2023-01-19 20:17:53 +0530] [3064] [INFO] Booting worker with pid: 3064
+[2023-01-19 20:17:53 +0530] [3065] [INFO] Booting worker with pid: 3065
+[2023-01-19 20:18:23 +0530] [2374] [CRITICAL] WORKER TIMEOUT (pid:3062)
+[2023-01-19 20:18:23 +0530] [2374] [CRITICAL] WORKER TIMEOUT (pid:3063)
+[2023-01-19 20:18:23 +0530] [2374] [CRITICAL] WORKER TIMEOUT (pid:3064)
+[2023-01-19 20:18:23 +0530] [2374] [CRITICAL] WORKER TIMEOUT (pid:3065)
+[2023-01-19 20:18:23 +0530] [3063] [INFO] Worker exiting (pid: 3063)
+[2023-01-19 20:18:23 +0530] [3065] [INFO] Worker exiting (pid: 3065)
+[2023-01-19 20:18:23 +0530] [3064] [INFO] Worker exiting (pid: 3064)
+[2023-01-19 20:18:23 +0530] [3062] [INFO] Worker exiting (pid: 3062)
+[2023-01-19 20:18:23 +0530] [3083] [INFO] Booting worker with pid: 3083
+[2023-01-19 20:18:23 +0530] [2374] [WARNING] Worker with pid 3065 was terminated due to signal 9
+[2023-01-19 20:18:23 +0530] [2374] [WARNING] Worker with pid 3063 was terminated due to signal 9
+[2023-01-19 20:18:23 +0530] [2374] [WARNING] Worker with pid 3064 was terminated due to signal 9
+[2023-01-19 20:18:23 +0530] [3084] [INFO] Booting worker with pid: 3084
+[2023-01-19 20:18:23 +0530] [3085] [INFO] Booting worker with pid: 3085
+[2023-01-19 20:18:23 +0530] [3086] [INFO] Booting worker with pid: 3086
+[2023-01-19 20:18:53 +0530] [2374] [CRITICAL] WORKER TIMEOUT (pid:3083)
+[2023-01-19 20:18:53 +0530] [2374] [CRITICAL] WORKER TIMEOUT (pid:3084)
+[2023-01-19 20:18:53 +0530] [2374] [CRITICAL] WORKER TIMEOUT (pid:3085)
+[2023-01-19 20:18:53 +0530] [2374] [CRITICAL] WORKER TIMEOUT (pid:3086)
+[2023-01-19 20:18:53 +0530] [3083] [INFO] Worker exiting (pid: 3083)
+[2023-01-19 20:18:53 +0530] [3084] [INFO] Worker exiting (pid: 3084)
+[2023-01-19 20:18:53 +0530] [3085] [INFO] Worker exiting (pid: 3085)
+[2023-01-19 20:18:53 +0530] [3086] [INFO] Worker exiting (pid: 3086)
+[2023-01-19 20:18:54 +0530] [3135] [INFO] Booting worker with pid: 3135
+[2023-01-19 20:18:54 +0530] [2374] [WARNING] Worker with pid 3084 was terminated due to signal 9
+[2023-01-19 20:18:54 +0530] [2374] [WARNING] Worker with pid 3086 was terminated due to signal 9
+[2023-01-19 20:18:54 +0530] [2374] [WARNING] Worker with pid 3085 was terminated due to signal 9
+[2023-01-19 20:18:54 +0530] [3136] [INFO] Booting worker with pid: 3136
+[2023-01-19 20:18:54 +0530] [3137] [INFO] Booting worker with pid: 3137
+[2023-01-19 20:18:54 +0530] [3138] [INFO] Booting worker with pid: 3138
+[2023-01-19 20:19:24 +0530] [2374] [CRITICAL] WORKER TIMEOUT (pid:3135)
+[2023-01-19 20:19:24 +0530] [2374] [CRITICAL] WORKER TIMEOUT (pid:3136)
+[2023-01-19 20:19:24 +0530] [2374] [CRITICAL] WORKER TIMEOUT (pid:3137)
+[2023-01-19 20:19:24 +0530] [2374] [CRITICAL] WORKER TIMEOUT (pid:3138)
+[2023-01-19 20:19:24 +0530] [3135] [INFO] Worker exiting (pid: 3135)
+[2023-01-19 20:19:24 +0530] [3136] [INFO] Worker exiting (pid: 3136)
+[2023-01-19 20:19:24 +0530] [3138] [INFO] Worker exiting (pid: 3138)
+[2023-01-19 20:19:24 +0530] [3137] [INFO] Worker exiting (pid: 3137)
+[2023-01-19 20:19:24 +0530] [3153] [INFO] Booting worker with pid: 3153
+[2023-01-19 20:19:24 +0530] [2374] [WARNING] Worker with pid 3137 was terminated due to signal 9
+[2023-01-19 20:19:24 +0530] [2374] [WARNING] Worker with pid 3136 was terminated due to signal 9
+[2023-01-19 20:19:24 +0530] [2374] [WARNING] Worker with pid 3138 was terminated due to signal 9
+[2023-01-19 20:19:24 +0530] [3154] [INFO] Booting worker with pid: 3154
+[2023-01-19 20:19:24 +0530] [3155] [INFO] Booting worker with pid: 3155
+[2023-01-19 20:19:24 +0530] [3156] [INFO] Booting worker with pid: 3156
+[2023-01-19 20:19:54 +0530] [2374] [CRITICAL] WORKER TIMEOUT (pid:3153)
+[2023-01-19 20:19:54 +0530] [2374] [CRITICAL] WORKER TIMEOUT (pid:3154)
+[2023-01-19 20:19:54 +0530] [2374] [CRITICAL] WORKER TIMEOUT (pid:3155)
+[2023-01-19 20:19:54 +0530] [2374] [CRITICAL] WORKER TIMEOUT (pid:3156)
+[2023-01-19 20:19:54 +0530] [3153] [INFO] Worker exiting (pid: 3153)
+[2023-01-19 20:19:54 +0530] [3154] [INFO] Worker exiting (pid: 3154)
+[2023-01-19 20:19:54 +0530] [3156] [INFO] Worker exiting (pid: 3156)
+[2023-01-19 20:19:54 +0530] [3155] [INFO] Worker exiting (pid: 3155)
+[2023-01-19 20:19:54 +0530] [3205] [INFO] Booting worker with pid: 3205
+[2023-01-19 20:19:54 +0530] [2374] [WARNING] Worker with pid 3155 was terminated due to signal 9
+[2023-01-19 20:19:54 +0530] [2374] [WARNING] Worker with pid 3156 was terminated due to signal 9
+[2023-01-19 20:19:54 +0530] [2374] [WARNING] Worker with pid 3154 was terminated due to signal 9
+[2023-01-19 20:19:54 +0530] [3206] [INFO] Booting worker with pid: 3206
+[2023-01-19 20:19:54 +0530] [3207] [INFO] Booting worker with pid: 3207
+[2023-01-19 20:19:55 +0530] [3208] [INFO] Booting worker with pid: 3208
+[2023-01-19 20:20:25 +0530] [2374] [CRITICAL] WORKER TIMEOUT (pid:3205)
+[2023-01-19 20:20:25 +0530] [2374] [CRITICAL] WORKER TIMEOUT (pid:3206)
+[2023-01-19 20:20:25 +0530] [2374] [CRITICAL] WORKER TIMEOUT (pid:3207)
+[2023-01-19 20:20:25 +0530] [2374] [CRITICAL] WORKER TIMEOUT (pid:3208)
+[2023-01-19 20:20:25 +0530] [3205] [INFO] Worker exiting (pid: 3205)
+[2023-01-19 20:20:25 +0530] [3206] [INFO] Worker exiting (pid: 3206)
+[2023-01-19 20:20:25 +0530] [3207] [INFO] Worker exiting (pid: 3207)
+[2023-01-19 20:20:25 +0530] [3208] [INFO] Worker exiting (pid: 3208)
+[2023-01-19 20:20:25 +0530] [3258] [INFO] Booting worker with pid: 3258
+[2023-01-19 20:20:25 +0530] [2374] [WARNING] Worker with pid 3207 was terminated due to signal 9
+[2023-01-19 20:20:25 +0530] [2374] [WARNING] Worker with pid 3208 was terminated due to signal 9
+[2023-01-19 20:20:25 +0530] [2374] [WARNING] Worker with pid 3205 was terminated due to signal 9
+[2023-01-19 20:20:25 +0530] [3259] [INFO] Booting worker with pid: 3259
+[2023-01-19 20:20:25 +0530] [3260] [INFO] Booting worker with pid: 3260
+[2023-01-19 20:20:25 +0530] [3261] [INFO] Booting worker with pid: 3261
+[2023-01-19 20:20:55 +0530] [2374] [CRITICAL] WORKER TIMEOUT (pid:3258)
+[2023-01-19 20:20:55 +0530] [2374] [CRITICAL] WORKER TIMEOUT (pid:3259)
+[2023-01-19 20:20:55 +0530] [2374] [CRITICAL] WORKER TIMEOUT (pid:3260)
+[2023-01-19 20:20:55 +0530] [2374] [CRITICAL] WORKER TIMEOUT (pid:3261)
+[2023-01-19 20:20:55 +0530] [3258] [INFO] Worker exiting (pid: 3258)
+[2023-01-19 20:20:55 +0530] [3259] [INFO] Worker exiting (pid: 3259)
+[2023-01-19 20:20:55 +0530] [3261] [INFO] Worker exiting (pid: 3261)
+[2023-01-19 20:20:55 +0530] [3260] [INFO] Worker exiting (pid: 3260)
+[2023-01-19 20:20:55 +0530] [3311] [INFO] Booting worker with pid: 3311
+[2023-01-19 20:20:55 +0530] [2374] [WARNING] Worker with pid 3259 was terminated due to signal 9
+[2023-01-19 20:20:55 +0530] [2374] [WARNING] Worker with pid 3260 was terminated due to signal 9
+[2023-01-19 20:20:55 +0530] [2374] [WARNING] Worker with pid 3261 was terminated due to signal 9
+[2023-01-19 20:20:55 +0530] [3312] [INFO] Booting worker with pid: 3312
+[2023-01-19 20:20:55 +0530] [3313] [INFO] Booting worker with pid: 3313
+[2023-01-19 20:20:55 +0530] [3314] [INFO] Booting worker with pid: 3314
+[2023-01-19 20:21:25 +0530] [2374] [CRITICAL] WORKER TIMEOUT (pid:3311)
+[2023-01-19 20:21:25 +0530] [2374] [CRITICAL] WORKER TIMEOUT (pid:3312)
+[2023-01-19 20:21:25 +0530] [2374] [CRITICAL] WORKER TIMEOUT (pid:3313)
+[2023-01-19 20:21:25 +0530] [2374] [CRITICAL] WORKER TIMEOUT (pid:3314)
+[2023-01-19 20:21:25 +0530] [3311] [INFO] Worker exiting (pid: 3311)
+[2023-01-19 20:21:25 +0530] [3312] [INFO] Worker exiting (pid: 3312)
+[2023-01-19 20:21:25 +0530] [3314] [INFO] Worker exiting (pid: 3314)
+[2023-01-19 20:21:25 +0530] [3313] [INFO] Worker exiting (pid: 3313)
+[2023-01-19 20:21:26 +0530] [3331] [INFO] Booting worker with pid: 3331
+[2023-01-19 20:21:26 +0530] [2374] [WARNING] Worker with pid 3313 was terminated due to signal 9
+[2023-01-19 20:21:26 +0530] [2374] [WARNING] Worker with pid 3312 was terminated due to signal 9
+[2023-01-19 20:21:26 +0530] [2374] [WARNING] Worker with pid 3314 was terminated due to signal 9
+[2023-01-19 20:21:26 +0530] [3332] [INFO] Booting worker with pid: 3332
+[2023-01-19 20:21:26 +0530] [3333] [INFO] Booting worker with pid: 3333
+[2023-01-19 20:21:26 +0530] [3334] [INFO] Booting worker with pid: 3334
+[2023-01-19 20:21:56 +0530] [2374] [CRITICAL] WORKER TIMEOUT (pid:3331)
+[2023-01-19 20:21:56 +0530] [2374] [CRITICAL] WORKER TIMEOUT (pid:3332)
+[2023-01-19 20:21:56 +0530] [2374] [CRITICAL] WORKER TIMEOUT (pid:3333)
+[2023-01-19 20:21:56 +0530] [2374] [CRITICAL] WORKER TIMEOUT (pid:3334)
+[2023-01-19 20:21:56 +0530] [3331] [INFO] Worker exiting (pid: 3331)
+[2023-01-19 20:21:56 +0530] [3332] [INFO] Worker exiting (pid: 3332)
+[2023-01-19 20:21:56 +0530] [3334] [INFO] Worker exiting (pid: 3334)
+[2023-01-19 20:21:56 +0530] [3333] [INFO] Worker exiting (pid: 3333)
+[2023-01-19 20:21:56 +0530] [3383] [INFO] Booting worker with pid: 3383
+[2023-01-19 20:21:56 +0530] [2374] [WARNING] Worker with pid 3334 was terminated due to signal 9
+[2023-01-19 20:21:56 +0530] [2374] [WARNING] Worker with pid 3331 was terminated due to signal 9
+[2023-01-19 20:21:56 +0530] [2374] [WARNING] Worker with pid 3333 was terminated due to signal 9
+[2023-01-19 20:21:56 +0530] [3384] [INFO] Booting worker with pid: 3384
+[2023-01-19 20:21:56 +0530] [3385] [INFO] Booting worker with pid: 3385
+[2023-01-19 20:21:56 +0530] [3388] [INFO] Booting worker with pid: 3388
+[2023-01-19 20:22:26 +0530] [3383] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/gunicorn/arbiter.py", line 589, in spawn_worker
+    worker.init_process()
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/gunicorn/workers/base.py", line 134, in init_process
+    self.load_wsgi()
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/gunicorn/workers/base.py", line 146, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/gunicorn/app/wsgiapp.py", line 58, in load
+    return self.load_wsgiapp()
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/gunicorn/app/wsgiapp.py", line 48, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/gunicorn/util.py", line 359, in import_app
+    mod = importlib.import_module(module)
+  File "/usr/lib/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/app.py", line 24, in <module>
+    data = list(collection.find({'expired': False}).sort('days_left', 1))
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/pymongo/cursor.py", line 1248, in next
+    if len(self.__data) or self._refresh():
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/pymongo/cursor.py", line 1139, in _refresh
+    self.__session = self.__collection.database.client._ensure_session()
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/pymongo/mongo_client.py", line 1712, in _ensure_session
+    return self.__start_session(True, causal_consistency=False)
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/pymongo/mongo_client.py", line 1657, in __start_session
+    self._topology._check_implicit_session_support()
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/pymongo/topology.py", line 538, in _check_implicit_session_support
+    self._check_session_support()
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/pymongo/topology.py", line 554, in _check_session_support
+    self._select_servers_loop(
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/pymongo/topology.py", line 238, in _select_servers_loop
+    raise ServerSelectionTimeoutError(
+pymongo.errors.ServerSelectionTimeoutError: localhost:27017: [Errno 111] Connection refused, Timeout: 30s, Topology Description: <TopologyDescription id: 63c9590c34a382c1931de378, topology_type: Unknown, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('localhost:27017: [Errno 111] Connection refused')>]>
+[2023-01-19 20:22:26 +0530] [3383] [INFO] Worker exiting (pid: 3383)
+[2023-01-19 20:22:26 +0530] [2374] [CRITICAL] WORKER TIMEOUT (pid:3383)
+[2023-01-19 20:22:26 +0530] [2374] [CRITICAL] WORKER TIMEOUT (pid:3384)
+[2023-01-19 20:22:26 +0530] [2374] [CRITICAL] WORKER TIMEOUT (pid:3385)
+[2023-01-19 20:22:26 +0530] [2374] [CRITICAL] WORKER TIMEOUT (pid:3388)
+[2023-01-19 20:22:26 +0530] [3384] [INFO] Worker exiting (pid: 3384)
+[2023-01-19 20:22:26 +0530] [3385] [INFO] Worker exiting (pid: 3385)
+[2023-01-19 20:22:26 +0530] [3388] [INFO] Worker exiting (pid: 3388)
+[2023-01-19 20:22:27 +0530] [2374] [INFO] Shutting down: Master
+[2023-01-19 20:22:27 +0530] [2374] [INFO] Reason: Worker failed to boot.
+[2023-01-19 20:22:28 +0530] [3403] [INFO] Starting gunicorn 20.1.0
+[2023-01-19 20:22:28 +0530] [3403] [INFO] Listening at: http://0.0.0.0:8080 (3403)
+[2023-01-19 20:22:28 +0530] [3403] [INFO] Using worker: sync
+[2023-01-19 20:22:28 +0530] [3404] [INFO] Booting worker with pid: 3404
+[2023-01-19 20:22:28 +0530] [3405] [INFO] Booting worker with pid: 3405
+[2023-01-19 20:22:28 +0530] [3406] [INFO] Booting worker with pid: 3406
+[2023-01-19 20:22:28 +0530] [3407] [INFO] Booting worker with pid: 3407
+[2023-01-19 20:22:58 +0530] [3403] [CRITICAL] WORKER TIMEOUT (pid:3404)
+[2023-01-19 20:22:58 +0530] [3403] [CRITICAL] WORKER TIMEOUT (pid:3405)
+[2023-01-19 20:22:58 +0530] [3403] [CRITICAL] WORKER TIMEOUT (pid:3406)
+[2023-01-19 20:22:58 +0530] [3403] [CRITICAL] WORKER TIMEOUT (pid:3407)
+[2023-01-19 20:22:58 +0530] [3404] [INFO] Worker exiting (pid: 3404)
+[2023-01-19 20:22:58 +0530] [3405] [INFO] Worker exiting (pid: 3405)
+[2023-01-19 20:22:58 +0530] [3406] [INFO] Worker exiting (pid: 3406)
+[2023-01-19 20:22:58 +0530] [3407] [INFO] Worker exiting (pid: 3407)
+[2023-01-19 20:22:59 +0530] [3456] [INFO] Booting worker with pid: 3456
+[2023-01-19 20:22:59 +0530] [3403] [WARNING] Worker with pid 3405 was terminated due to signal 9
+--- Logging error ---
+[2023-01-19 20:22:59 +0530] [3403] [WARNING] Worker with pid 3406 was terminated due to signal 9
+Traceback (most recent call last):
+  File "/usr/lib/python3.9/logging/__init__.py", line 1086, in emit
+    stream.write(msg + self.terminator)
+RuntimeError: reentrant call inside <_io.BufferedWriter name='<stderr>'>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.9/logging/__init__.py", line 1086, in emit
+    stream.write(msg + self.terminator)
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/gunicorn/arbiter.py", line 242, in handle_chld
+    self.reap_workers()
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/gunicorn/arbiter.py", line 530, in reap_workers
+    self.log.warning(
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/gunicorn/glogging.py", line 261, in warning
+    self.error_log.warning(msg, *args, **kwargs)
+  File "/usr/lib/python3.9/logging/__init__.py", line 1458, in warning
+    self._log(WARNING, msg, args, **kwargs)
+  File "/usr/lib/python3.9/logging/__init__.py", line 1589, in _log
+    self.handle(record)
+  File "/usr/lib/python3.9/logging/__init__.py", line 1599, in handle
+    self.callHandlers(record)
+  File "/usr/lib/python3.9/logging/__init__.py", line 1661, in callHandlers
+    hdlr.handle(record)
+  File "/usr/lib/python3.9/logging/__init__.py", line 952, in handle
+    self.emit(record)
+  File "/usr/lib/python3.9/logging/__init__.py", line 1091, in emit
+    self.handleError(record)
+  File "/usr/lib/python3.9/logging/__init__.py", line 1004, in handleError
+    sys.stderr.write('--- Logging error ---\n')
+RuntimeError: reentrant call inside <_io.BufferedWriter name='<stderr>'>
+Call stack:
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/bin/gunicorn", line 8, in <module>
+    sys.exit(run())
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/gunicorn/app/wsgiapp.py", line 67, in run
+    WSGIApplication("%(prog)s [OPTIONS] [APP_MODULE]").run()
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/gunicorn/app/base.py", line 231, in run
+    super().run()
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/gunicorn/app/base.py", line 72, in run
+    Arbiter(self).run()
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/gunicorn/arbiter.py", line 211, in run
+    self.manage_workers()
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/gunicorn/arbiter.py", line 551, in manage_workers
+    self.spawn_workers()
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/gunicorn/arbiter.py", line 623, in spawn_workers
+    time.sleep(0.1 * random.random())
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/gunicorn/arbiter.py", line 242, in handle_chld
+    self.reap_workers()
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/gunicorn/arbiter.py", line 530, in reap_workers
+    self.log.warning(
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/gunicorn/glogging.py", line 261, in warning
+    self.error_log.warning(msg, *args, **kwargs)
+Message: 'Worker with pid %s was terminated due to signal %s'
+Arguments: (3405, 9)
+[2023-01-19 20:22:59 +0530] [3457] [INFO] Booting worker with pid: 3457
+[2023-01-19 20:22:59 +0530] [3458] [INFO] Booting worker with pid: 3458
+[2023-01-19 20:22:59 +0530] [3459] [INFO] Booting worker with pid: 3459
+[2023-01-19 20:23:29 +0530] [3403] [CRITICAL] WORKER TIMEOUT (pid:3456)
+[2023-01-19 20:23:29 +0530] [3403] [CRITICAL] WORKER TIMEOUT (pid:3457)
+[2023-01-19 20:23:29 +0530] [3403] [CRITICAL] WORKER TIMEOUT (pid:3458)
+[2023-01-19 20:23:29 +0530] [3403] [CRITICAL] WORKER TIMEOUT (pid:3459)
+[2023-01-19 20:23:29 +0530] [3456] [INFO] Worker exiting (pid: 3456)
+[2023-01-19 20:23:29 +0530] [3457] [INFO] Worker exiting (pid: 3457)
+[2023-01-19 20:23:29 +0530] [3458] [INFO] Worker exiting (pid: 3458)
+[2023-01-19 20:23:29 +0530] [3459] [INFO] Worker exiting (pid: 3459)
+[2023-01-19 20:23:29 +0530] [3475] [INFO] Booting worker with pid: 3475
+[2023-01-19 20:23:29 +0530] [3403] [WARNING] Worker with pid 3457 was terminated due to signal 9
+[2023-01-19 20:23:29 +0530] [3403] [WARNING] Worker with pid 3459 was terminated due to signal 9
+[2023-01-19 20:23:29 +0530] [3403] [WARNING] Worker with pid 3458 was terminated due to signal 9
+[2023-01-19 20:23:29 +0530] [3476] [INFO] Booting worker with pid: 3476
+[2023-01-19 20:23:29 +0530] [3479] [INFO] Booting worker with pid: 3479
+[2023-01-19 20:23:29 +0530] [3480] [INFO] Booting worker with pid: 3480
+[2023-01-19 20:23:59 +0530] [3403] [CRITICAL] WORKER TIMEOUT (pid:3475)
+[2023-01-19 20:23:59 +0530] [3403] [CRITICAL] WORKER TIMEOUT (pid:3476)
+[2023-01-19 20:23:59 +0530] [3403] [CRITICAL] WORKER TIMEOUT (pid:3479)
+[2023-01-19 20:23:59 +0530] [3403] [CRITICAL] WORKER TIMEOUT (pid:3480)
+[2023-01-19 20:23:59 +0530] [3475] [INFO] Worker exiting (pid: 3475)
+[2023-01-19 20:23:59 +0530] [3476] [INFO] Worker exiting (pid: 3476)
+[2023-01-19 20:23:59 +0530] [3479] [INFO] Worker exiting (pid: 3479)
+[2023-01-19 20:23:59 +0530] [3480] [INFO] Worker exiting (pid: 3480)
+[2023-01-19 20:23:59 +0530] [3527] [INFO] Booting worker with pid: 3527
+[2023-01-19 20:23:59 +0530] [3403] [WARNING] Worker with pid 3480 was terminated due to signal 9
+[2023-01-19 20:23:59 +0530] [3403] [WARNING] Worker with pid 3475 was terminated due to signal 9
+[2023-01-19 20:23:59 +0530] [3403] [WARNING] Worker with pid 3479 was terminated due to signal 9
+[2023-01-19 20:24:00 +0530] [3528] [INFO] Booting worker with pid: 3528
+[2023-01-19 20:24:00 +0530] [3529] [INFO] Booting worker with pid: 3529
+[2023-01-19 20:24:00 +0530] [3530] [INFO] Booting worker with pid: 3530
+[2023-01-19 20:24:30 +0530] [3403] [CRITICAL] WORKER TIMEOUT (pid:3527)
+[2023-01-19 20:24:30 +0530] [3403] [CRITICAL] WORKER TIMEOUT (pid:3528)
+[2023-01-19 20:24:30 +0530] [3403] [CRITICAL] WORKER TIMEOUT (pid:3529)
+[2023-01-19 20:24:30 +0530] [3403] [CRITICAL] WORKER TIMEOUT (pid:3530)
+[2023-01-19 20:24:30 +0530] [3527] [INFO] Worker exiting (pid: 3527)
+[2023-01-19 20:24:30 +0530] [3528] [INFO] Worker exiting (pid: 3528)
+[2023-01-19 20:24:30 +0530] [3529] [INFO] Worker exiting (pid: 3529)
+[2023-01-19 20:24:30 +0530] [3530] [INFO] Worker exiting (pid: 3530)
+[2023-01-19 20:24:30 +0530] [3545] [INFO] Booting worker with pid: 3545
+[2023-01-19 20:24:30 +0530] [3403] [WARNING] Worker with pid 3530 was terminated due to signal 9
+[2023-01-19 20:24:30 +0530] [3403] [WARNING] Worker with pid 3527 was terminated due to signal 9
+[2023-01-19 20:24:30 +0530] [3546] [INFO] Booting worker with pid: 3546
+[2023-01-19 20:24:30 +0530] [3547] [INFO] Booting worker with pid: 3547
+[2023-01-19 20:24:30 +0530] [3548] [INFO] Booting worker with pid: 3548
+[2023-01-19 20:25:00 +0530] [3403] [CRITICAL] WORKER TIMEOUT (pid:3545)
+[2023-01-19 20:25:00 +0530] [3403] [CRITICAL] WORKER TIMEOUT (pid:3546)
+[2023-01-19 20:25:00 +0530] [3403] [CRITICAL] WORKER TIMEOUT (pid:3547)
+[2023-01-19 20:25:00 +0530] [3403] [CRITICAL] WORKER TIMEOUT (pid:3548)
+[2023-01-19 20:25:00 +0530] [3545] [INFO] Worker exiting (pid: 3545)
+[2023-01-19 20:25:00 +0530] [3546] [INFO] Worker exiting (pid: 3546)
+[2023-01-19 20:25:00 +0530] [3547] [INFO] Worker exiting (pid: 3547)
+[2023-01-19 20:25:00 +0530] [3548] [INFO] Worker exiting (pid: 3548)
+[2023-01-19 20:25:00 +0530] [3597] [INFO] Booting worker with pid: 3597
+[2023-01-19 20:25:00 +0530] [3403] [WARNING] Worker with pid 3547 was terminated due to signal 9
+[2023-01-19 20:25:00 +0530] [3403] [WARNING] Worker with pid 3548 was terminated due to signal 9
+[2023-01-19 20:25:00 +0530] [3403] [WARNING] Worker with pid 3545 was terminated due to signal 9
+[2023-01-19 20:25:01 +0530] [3598] [INFO] Booting worker with pid: 3598
+[2023-01-19 20:25:01 +0530] [3599] [INFO] Booting worker with pid: 3599
+[2023-01-19 20:25:01 +0530] [3600] [INFO] Booting worker with pid: 3600
+[2023-01-19 20:25:31 +0530] [3403] [CRITICAL] WORKER TIMEOUT (pid:3597)
+[2023-01-19 20:25:31 +0530] [3403] [CRITICAL] WORKER TIMEOUT (pid:3598)
+[2023-01-19 20:25:31 +0530] [3403] [CRITICAL] WORKER TIMEOUT (pid:3599)
+[2023-01-19 20:25:31 +0530] [3403] [CRITICAL] WORKER TIMEOUT (pid:3600)
+[2023-01-19 20:25:31 +0530] [3597] [INFO] Worker exiting (pid: 3597)
+[2023-01-19 20:25:31 +0530] [3598] [INFO] Worker exiting (pid: 3598)
+[2023-01-19 20:25:31 +0530] [3599] [INFO] Worker exiting (pid: 3599)
+[2023-01-19 20:25:31 +0530] [3600] [INFO] Worker exiting (pid: 3600)
+[2023-01-19 20:25:31 +0530] [3653] [INFO] Booting worker with pid: 3653
+[2023-01-19 20:25:31 +0530] [3403] [WARNING] Worker with pid 3600 was terminated due to signal 9
+[2023-01-19 20:25:31 +0530] [3403] [WARNING] Worker with pid 3599 was terminated due to signal 9
+[2023-01-19 20:25:31 +0530] [3403] [WARNING] Worker with pid 3598 was terminated due to signal 9
+[2023-01-19 20:25:31 +0530] [3654] [INFO] Booting worker with pid: 3654
+[2023-01-19 20:25:31 +0530] [3655] [INFO] Booting worker with pid: 3655
+[2023-01-19 20:25:31 +0530] [3658] [INFO] Booting worker with pid: 3658
+[2023-01-19 20:26:01 +0530] [3403] [CRITICAL] WORKER TIMEOUT (pid:3653)
+[2023-01-19 20:26:01 +0530] [3403] [CRITICAL] WORKER TIMEOUT (pid:3654)
+[2023-01-19 20:26:01 +0530] [3403] [CRITICAL] WORKER TIMEOUT (pid:3655)
+[2023-01-19 20:26:01 +0530] [3403] [CRITICAL] WORKER TIMEOUT (pid:3658)
+[2023-01-19 20:26:01 +0530] [3653] [INFO] Worker exiting (pid: 3653)
+[2023-01-19 20:26:01 +0530] [3654] [INFO] Worker exiting (pid: 3654)
+[2023-01-19 20:26:01 +0530] [3658] [INFO] Worker exiting (pid: 3658)
+[2023-01-19 20:26:01 +0530] [3655] [INFO] Worker exiting (pid: 3655)
+[2023-01-19 20:26:01 +0530] [3705] [INFO] Booting worker with pid: 3705
+[2023-01-19 20:26:01 +0530] [3403] [WARNING] Worker with pid 3655 was terminated due to signal 9
+[2023-01-19 20:26:01 +0530] [3403] [WARNING] Worker with pid 3658 was terminated due to signal 9
+[2023-01-19 20:26:01 +0530] [3403] [WARNING] Worker with pid 3653 was terminated due to signal 9
+[2023-01-19 20:26:01 +0530] [3706] [INFO] Booting worker with pid: 3706
+[2023-01-19 20:26:02 +0530] [3707] [INFO] Booting worker with pid: 3707
+[2023-01-19 20:26:02 +0530] [3710] [INFO] Booting worker with pid: 3710
+[2023-01-19 20:26:32 +0530] [3705] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/gunicorn/arbiter.py", line 589, in spawn_worker
+    worker.init_process()
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/gunicorn/workers/base.py", line 134, in init_process
+    self.load_wsgi()
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/gunicorn/workers/base.py", line 146, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/gunicorn/app/wsgiapp.py", line 58, in load
+    return self.load_wsgiapp()
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/gunicorn/app/wsgiapp.py", line 48, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/gunicorn/util.py", line 359, in import_app
+    mod = importlib.import_module(module)
+  File "/usr/lib/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/app.py", line 24, in <module>
+    data = list(collection.find({'expired': False}).sort('days_left', 1))
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/pymongo/cursor.py", line 1248, in next
+    if len(self.__data) or self._refresh():
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/pymongo/cursor.py", line 1139, in _refresh
+    self.__session = self.__collection.database.client._ensure_session()
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/pymongo/mongo_client.py", line 1712, in _ensure_session
+    return self.__start_session(True, causal_consistency=False)
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/pymongo/mongo_client.py", line 1657, in __start_session
+    self._topology._check_implicit_session_support()
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/pymongo/topology.py", line 538, in _check_implicit_session_support
+    self._check_session_support()
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/pymongo/topology.py", line 554, in _check_session_support
+    self._select_servers_loop(
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/pymongo/topology.py", line 238, in _select_servers_loop
+    raise ServerSelectionTimeoutError(
+pymongo.errors.ServerSelectionTimeoutError: localhost:27017: [Errno 111] Connection refused, Timeout: 30s, Topology Description: <TopologyDescription id: 63c95a02ad995e13042fe60b, topology_type: Unknown, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('localhost:27017: [Errno 111] Connection refused')>]>
+[2023-01-19 20:26:32 +0530] [3705] [INFO] Worker exiting (pid: 3705)
+[2023-01-19 20:26:32 +0530] [3403] [CRITICAL] WORKER TIMEOUT (pid:3705)
+[2023-01-19 20:26:32 +0530] [3403] [CRITICAL] WORKER TIMEOUT (pid:3706)
+[2023-01-19 20:26:32 +0530] [3403] [CRITICAL] WORKER TIMEOUT (pid:3707)
+[2023-01-19 20:26:32 +0530] [3403] [CRITICAL] WORKER TIMEOUT (pid:3710)
+[2023-01-19 20:26:32 +0530] [3706] [INFO] Worker exiting (pid: 3706)
+[2023-01-19 20:26:32 +0530] [3710] [INFO] Worker exiting (pid: 3710)
+[2023-01-19 20:26:32 +0530] [3707] [INFO] Worker exiting (pid: 3707)
+[2023-01-19 20:26:32 +0530] [3403] [INFO] Shutting down: Master
+[2023-01-19 20:26:32 +0530] [3403] [INFO] Reason: Worker failed to boot.
+[2023-01-19 20:26:33 +0530] [3723] [INFO] Starting gunicorn 20.1.0
+[2023-01-19 20:26:33 +0530] [3723] [INFO] Listening at: http://0.0.0.0:8080 (3723)
+[2023-01-19 20:26:33 +0530] [3723] [INFO] Using worker: sync
+[2023-01-19 20:26:33 +0530] [3724] [INFO] Booting worker with pid: 3724
+[2023-01-19 20:26:33 +0530] [3725] [INFO] Booting worker with pid: 3725
+[2023-01-19 20:26:33 +0530] [3726] [INFO] Booting worker with pid: 3726
+[2023-01-19 20:26:33 +0530] [3727] [INFO] Booting worker with pid: 3727
+[2023-01-19 20:27:03 +0530] [3723] [CRITICAL] WORKER TIMEOUT (pid:3724)
+[2023-01-19 20:27:03 +0530] [3723] [CRITICAL] WORKER TIMEOUT (pid:3725)
+[2023-01-19 20:27:03 +0530] [3723] [CRITICAL] WORKER TIMEOUT (pid:3726)
+[2023-01-19 20:27:03 +0530] [3723] [CRITICAL] WORKER TIMEOUT (pid:3727)
+[2023-01-19 20:27:03 +0530] [3724] [INFO] Worker exiting (pid: 3724)
+[2023-01-19 20:27:03 +0530] [3725] [INFO] Worker exiting (pid: 3725)
+[2023-01-19 20:27:03 +0530] [3726] [INFO] Worker exiting (pid: 3726)
+[2023-01-19 20:27:03 +0530] [3727] [INFO] Worker exiting (pid: 3727)
+[2023-01-19 20:27:04 +0530] [3778] [INFO] Booting worker with pid: 3778
+[2023-01-19 20:27:04 +0530] [3723] [WARNING] Worker with pid 3725 was terminated due to signal 9
+[2023-01-19 20:27:04 +0530] [3723] [WARNING] Worker with pid 3727 was terminated due to signal 9
+[2023-01-19 20:27:04 +0530] [3723] [WARNING] Worker with pid 3726 was terminated due to signal 9
+[2023-01-19 20:27:04 +0530] [3779] [INFO] Booting worker with pid: 3779
+[2023-01-19 20:27:04 +0530] [3780] [INFO] Booting worker with pid: 3780
+[2023-01-19 20:27:04 +0530] [3781] [INFO] Booting worker with pid: 3781
+[2023-01-19 20:27:34 +0530] [3723] [CRITICAL] WORKER TIMEOUT (pid:3778)
+[2023-01-19 20:27:34 +0530] [3723] [CRITICAL] WORKER TIMEOUT (pid:3779)
+[2023-01-19 20:27:34 +0530] [3723] [CRITICAL] WORKER TIMEOUT (pid:3780)
+[2023-01-19 20:27:34 +0530] [3723] [CRITICAL] WORKER TIMEOUT (pid:3781)
+[2023-01-19 20:27:34 +0530] [3778] [INFO] Worker exiting (pid: 3778)
+[2023-01-19 20:27:34 +0530] [3779] [INFO] Worker exiting (pid: 3779)
+[2023-01-19 20:27:34 +0530] [3781] [INFO] Worker exiting (pid: 3781)
+[2023-01-19 20:27:34 +0530] [3780] [INFO] Worker exiting (pid: 3780)
+[2023-01-19 20:27:34 +0530] [3801] [INFO] Booting worker with pid: 3801
+[2023-01-19 20:27:34 +0530] [3723] [WARNING] Worker with pid 3779 was terminated due to signal 9
+[2023-01-19 20:27:34 +0530] [3723] [WARNING] Worker with pid 3781 was terminated due to signal 9
+[2023-01-19 20:27:34 +0530] [3723] [WARNING] Worker with pid 3780 was terminated due to signal 9
+[2023-01-19 20:27:34 +0530] [3802] [INFO] Booting worker with pid: 3802
+[2023-01-19 20:27:34 +0530] [3803] [INFO] Booting worker with pid: 3803
+[2023-01-19 20:27:34 +0530] [3804] [INFO] Booting worker with pid: 3804
+[2023-01-19 20:28:04 +0530] [3723] [CRITICAL] WORKER TIMEOUT (pid:3801)
+[2023-01-19 20:28:04 +0530] [3723] [CRITICAL] WORKER TIMEOUT (pid:3802)
+[2023-01-19 20:28:04 +0530] [3723] [CRITICAL] WORKER TIMEOUT (pid:3803)
+[2023-01-19 20:28:04 +0530] [3723] [CRITICAL] WORKER TIMEOUT (pid:3804)
+[2023-01-19 20:28:04 +0530] [3801] [INFO] Worker exiting (pid: 3801)
+[2023-01-19 20:28:04 +0530] [3802] [INFO] Worker exiting (pid: 3802)
+[2023-01-19 20:28:04 +0530] [3804] [INFO] Worker exiting (pid: 3804)
+[2023-01-19 20:28:04 +0530] [3803] [INFO] Worker exiting (pid: 3803)
+[2023-01-19 20:28:04 +0530] [3856] [INFO] Booting worker with pid: 3856
+[2023-01-19 20:28:04 +0530] [3723] [WARNING] Worker with pid 3803 was terminated due to signal 9
+[2023-01-19 20:28:04 +0530] [3723] [WARNING] Worker with pid 3802 was terminated due to signal 9
+[2023-01-19 20:28:04 +0530] [3723] [WARNING] Worker with pid 3804 was terminated due to signal 9
+[2023-01-19 20:28:05 +0530] [3857] [INFO] Booting worker with pid: 3857
+[2023-01-19 20:28:05 +0530] [3858] [INFO] Booting worker with pid: 3858
+[2023-01-19 20:28:05 +0530] [3859] [INFO] Booting worker with pid: 3859
+[2023-01-19 20:28:35 +0530] [3723] [CRITICAL] WORKER TIMEOUT (pid:3856)
+[2023-01-19 20:28:35 +0530] [3723] [CRITICAL] WORKER TIMEOUT (pid:3857)
+[2023-01-19 20:28:35 +0530] [3723] [CRITICAL] WORKER TIMEOUT (pid:3858)
+[2023-01-19 20:28:35 +0530] [3723] [CRITICAL] WORKER TIMEOUT (pid:3859)
+[2023-01-19 20:28:35 +0530] [3856] [INFO] Worker exiting (pid: 3856)
+[2023-01-19 20:28:35 +0530] [3857] [INFO] Worker exiting (pid: 3857)
+[2023-01-19 20:28:35 +0530] [3858] [INFO] Worker exiting (pid: 3858)
+[2023-01-19 20:28:35 +0530] [3859] [INFO] Worker exiting (pid: 3859)
+[2023-01-19 20:28:35 +0530] [3874] [INFO] Booting worker with pid: 3874
+[2023-01-19 20:28:35 +0530] [3723] [WARNING] Worker with pid 3857 was terminated due to signal 9
+[2023-01-19 20:28:35 +0530] [3723] [WARNING] Worker with pid 3858 was terminated due to signal 9
+[2023-01-19 20:28:35 +0530] [3723] [WARNING] Worker with pid 3859 was terminated due to signal 9
+[2023-01-19 20:28:35 +0530] [3875] [INFO] Booting worker with pid: 3875
+[2023-01-19 20:28:35 +0530] [3876] [INFO] Booting worker with pid: 3876
+[2023-01-19 20:28:35 +0530] [3877] [INFO] Booting worker with pid: 3877
+[2023-01-19 20:29:05 +0530] [3723] [CRITICAL] WORKER TIMEOUT (pid:3874)
+[2023-01-19 20:29:05 +0530] [3723] [CRITICAL] WORKER TIMEOUT (pid:3875)
+[2023-01-19 20:29:05 +0530] [3723] [CRITICAL] WORKER TIMEOUT (pid:3876)
+[2023-01-19 20:29:05 +0530] [3723] [CRITICAL] WORKER TIMEOUT (pid:3877)
+[2023-01-19 20:29:05 +0530] [3874] [INFO] Worker exiting (pid: 3874)
+[2023-01-19 20:29:05 +0530] [3875] [INFO] Worker exiting (pid: 3875)
+[2023-01-19 20:29:05 +0530] [3877] [INFO] Worker exiting (pid: 3877)
+[2023-01-19 20:29:05 +0530] [3876] [INFO] Worker exiting (pid: 3876)
+[2023-01-19 20:29:05 +0530] [3926] [INFO] Booting worker with pid: 3926
+[2023-01-19 20:29:05 +0530] [3723] [WARNING] Worker with pid 3877 was terminated due to signal 9
+[2023-01-19 20:29:05 +0530] [3723] [WARNING] Worker with pid 3876 was terminated due to signal 9
+[2023-01-19 20:29:05 +0530] [3723] [WARNING] Worker with pid 3875 was terminated due to signal 9
+[2023-01-19 20:29:05 +0530] [3927] [INFO] Booting worker with pid: 3927
+[2023-01-19 20:29:05 +0530] [3928] [INFO] Booting worker with pid: 3928
+[2023-01-19 20:29:05 +0530] [3931] [INFO] Booting worker with pid: 3931
+[2023-01-19 20:29:35 +0530] [3926] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/gunicorn/arbiter.py", line 589, in spawn_worker
+    worker.init_process()
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/gunicorn/workers/base.py", line 134, in init_process
+    self.load_wsgi()
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/gunicorn/workers/base.py", line 146, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/gunicorn/app/wsgiapp.py", line 58, in load
+    return self.load_wsgiapp()
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/gunicorn/app/wsgiapp.py", line 48, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/gunicorn/util.py", line 359, in import_app
+    mod = importlib.import_module(module)
+  File "/usr/lib/python3.9/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1030, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1007, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 986, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 680, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 850, in exec_module
+  File "<frozen importlib._bootstrap>", line 228, in _call_with_frames_removed
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/app.py", line 24, in <module>
+    data = list(collection.find({'expired': False}).sort('days_left', 1))
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/pymongo/cursor.py", line 1248, in next
+    if len(self.__data) or self._refresh():
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/pymongo/cursor.py", line 1139, in _refresh
+    self.__session = self.__collection.database.client._ensure_session()
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/pymongo/mongo_client.py", line 1712, in _ensure_session
+    return self.__start_session(True, causal_consistency=False)
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/pymongo/mongo_client.py", line 1657, in __start_session
+    self._topology._check_implicit_session_support()
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/pymongo/topology.py", line 538, in _check_implicit_session_support
+    self._check_session_support()
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/pymongo/topology.py", line 554, in _check_session_support
+    self._select_servers_loop(
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/pymongo/topology.py", line 238, in _select_servers_loop
+    raise ServerSelectionTimeoutError(
+pymongo.errors.ServerSelectionTimeoutError: localhost:27017: [Errno 111] Connection refused, Timeout: 30s, Topology Description: <TopologyDescription id: 63c95ab9dc1e6185b6587483, topology_type: Unknown, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('localhost:27017: [Errno 111] Connection refused')>]>
+[2023-01-19 20:29:36 +0530] [3926] [INFO] Worker exiting (pid: 3926)
+[2023-01-19 20:29:36 +0530] [3723] [CRITICAL] WORKER TIMEOUT (pid:3926)
+[2023-01-19 20:29:36 +0530] [3723] [CRITICAL] WORKER TIMEOUT (pid:3927)
+[2023-01-19 20:29:36 +0530] [3723] [CRITICAL] WORKER TIMEOUT (pid:3928)
+[2023-01-19 20:29:36 +0530] [3723] [CRITICAL] WORKER TIMEOUT (pid:3931)
+[2023-01-19 20:29:36 +0530] [3927] [INFO] Worker exiting (pid: 3927)
+[2023-01-19 20:29:36 +0530] [3928] [INFO] Worker exiting (pid: 3928)
+[2023-01-19 20:29:36 +0530] [3931] [INFO] Worker exiting (pid: 3931)
+[2023-01-19 20:29:36 +0530] [3723] [INFO] Shutting down: Master
+[2023-01-19 20:29:36 +0530] [3723] [INFO] Reason: Worker failed to boot.
+[2023-01-19 20:29:37 +0530] [3978] [INFO] Starting gunicorn 20.1.0
+[2023-01-19 20:29:37 +0530] [3978] [INFO] Listening at: http://0.0.0.0:8080 (3978)
+[2023-01-19 20:29:37 +0530] [3978] [INFO] Using worker: sync
+[2023-01-19 20:29:37 +0530] [3979] [INFO] Booting worker with pid: 3979
+[2023-01-19 20:29:37 +0530] [3980] [INFO] Booting worker with pid: 3980
+[2023-01-19 20:29:37 +0530] [3981] [INFO] Booting worker with pid: 3981
+[2023-01-19 20:29:37 +0530] [3982] [INFO] Booting worker with pid: 3982
+[2023-01-19 20:30:07 +0530] [3978] [CRITICAL] WORKER TIMEOUT (pid:3979)
+[2023-01-19 20:30:07 +0530] [3978] [CRITICAL] WORKER TIMEOUT (pid:3980)
+[2023-01-19 20:30:07 +0530] [3978] [CRITICAL] WORKER TIMEOUT (pid:3981)
+[2023-01-19 20:30:07 +0530] [3978] [CRITICAL] WORKER TIMEOUT (pid:3982)
+[2023-01-19 20:30:07 +0530] [3979] [INFO] Worker exiting (pid: 3979)
+[2023-01-19 20:30:07 +0530] [3980] [INFO] Worker exiting (pid: 3980)
+[2023-01-19 20:30:07 +0530] [3981] [INFO] Worker exiting (pid: 3981)
+[2023-01-19 20:30:07 +0530] [3982] [INFO] Worker exiting (pid: 3982)
+[2023-01-19 20:30:07 +0530] [3978] [WARNING] Worker with pid 3981 was terminated due to signal 9
+[2023-01-19 20:30:07 +0530] [3978] [WARNING] Worker with pid 3982 was terminated due to signal 9
+[2023-01-19 20:30:08 +0530] [3978] [WARNING] Worker with pid 3980 was terminated due to signal 9
+[2023-01-19 20:30:08 +0530] [4025] [INFO] Booting worker with pid: 4025
+[2023-01-19 20:30:08 +0530] [4026] [INFO] Booting worker with pid: 4026
+[2023-01-19 20:30:08 +0530] [4027] [INFO] Booting worker with pid: 4027
+[2023-01-19 20:30:08 +0530] [4028] [INFO] Booting worker with pid: 4028
+[2023-01-19 20:30:38 +0530] [3978] [CRITICAL] WORKER TIMEOUT (pid:4025)
+[2023-01-19 20:30:38 +0530] [3978] [CRITICAL] WORKER TIMEOUT (pid:4026)
+[2023-01-19 20:30:38 +0530] [3978] [CRITICAL] WORKER TIMEOUT (pid:4027)
+[2023-01-19 20:30:38 +0530] [3978] [CRITICAL] WORKER TIMEOUT (pid:4028)
+[2023-01-19 20:30:38 +0530] [4025] [INFO] Worker exiting (pid: 4025)
+[2023-01-19 20:30:38 +0530] [4026] [INFO] Worker exiting (pid: 4026)
+[2023-01-19 20:30:38 +0530] [4028] [INFO] Worker exiting (pid: 4028)
+[2023-01-19 20:30:38 +0530] [4027] [INFO] Worker exiting (pid: 4027)
+[2023-01-19 20:30:38 +0530] [3978] [WARNING] Worker with pid 4026 was terminated due to signal 9
+[2023-01-19 20:30:38 +0530] [3978] [WARNING] Worker with pid 4027 was terminated due to signal 9
+[2023-01-19 20:30:38 +0530] [3978] [WARNING] Worker with pid 4028 was terminated due to signal 9
+[2023-01-19 20:30:38 +0530] [4672] [INFO] Booting worker with pid: 4672
+[2023-01-19 20:30:38 +0530] [4677] [INFO] Booting worker with pid: 4677
+[2023-01-19 20:30:38 +0530] [4678] [INFO] Booting worker with pid: 4678
+[2023-01-19 20:30:38 +0530] [4679] [INFO] Booting worker with pid: 4679
+[2023-01-19 20:31:08 +0530] [3978] [CRITICAL] WORKER TIMEOUT (pid:4672)
+[2023-01-19 20:31:08 +0530] [3978] [CRITICAL] WORKER TIMEOUT (pid:4677)
+[2023-01-19 20:31:08 +0530] [3978] [CRITICAL] WORKER TIMEOUT (pid:4678)
+[2023-01-19 20:31:08 +0530] [3978] [CRITICAL] WORKER TIMEOUT (pid:4679)
+[2023-01-19 20:31:08 +0530] [4672] [INFO] Worker exiting (pid: 4672)
+[2023-01-19 20:31:08 +0530] [4677] [INFO] Worker exiting (pid: 4677)
+[2023-01-19 20:31:08 +0530] [4679] [INFO] Worker exiting (pid: 4679)
+[2023-01-19 20:31:08 +0530] [4678] [INFO] Worker exiting (pid: 4678)
+[2023-01-19 20:31:08 +0530] [4999] [INFO] Booting worker with pid: 4999
+[2023-01-19 20:31:08 +0530] [3978] [WARNING] Worker with pid 4678 was terminated due to signal 9
+[2023-01-19 20:31:08 +0530] [3978] [WARNING] Worker with pid 4679 was terminated due to signal 9
+[2023-01-19 20:31:08 +0530] [3978] [WARNING] Worker with pid 4677 was terminated due to signal 9
+[2023-01-19 20:31:08 +0530] [5000] [INFO] Booting worker with pid: 5000
+[2023-01-19 20:31:08 +0530] [5001] [INFO] Booting worker with pid: 5001
+[2023-01-19 20:31:08 +0530] [5002] [INFO] Booting worker with pid: 5002
+[2023-01-19 20:31:39 +0530] [3978] [CRITICAL] WORKER TIMEOUT (pid:4999)
+[2023-01-19 20:31:39 +0530] [3978] [CRITICAL] WORKER TIMEOUT (pid:5000)
+[2023-01-19 20:31:39 +0530] [3978] [CRITICAL] WORKER TIMEOUT (pid:5001)
+[2023-01-19 20:31:39 +0530] [3978] [CRITICAL] WORKER TIMEOUT (pid:5002)
+[2023-01-19 20:31:39 +0530] [5001] [INFO] Worker exiting (pid: 5001)
+[2023-01-19 20:31:39 +0530] [4999] [INFO] Worker exiting (pid: 4999)
+[2023-01-19 20:31:39 +0530] [5002] [INFO] Worker exiting (pid: 5002)
+[2023-01-19 20:31:39 +0530] [5000] [INFO] Worker exiting (pid: 5000)
+[2023-01-19 20:31:39 +0530] [6266] [INFO] Booting worker with pid: 6266
+[2023-01-19 20:31:39 +0530] [3978] [WARNING] Worker with pid 5000 was terminated due to signal 9
+[2023-01-19 20:31:39 +0530] [3978] [WARNING] Worker with pid 5002 was terminated due to signal 9
+[2023-01-19 20:31:39 +0530] [3978] [WARNING] Worker with pid 5001 was terminated due to signal 9
+[2023-01-19 20:31:39 +0530] [6267] [INFO] Booting worker with pid: 6267
+[2023-01-19 20:31:39 +0530] [6268] [INFO] Booting worker with pid: 6268
+[2023-01-19 20:31:39 +0530] [6269] [INFO] Booting worker with pid: 6269

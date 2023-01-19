@@ -149,7 +149,7 @@ def home():
     return index(1)
 
 
-@app.route('/page<pages>',defaults={"pages":1})
+@app.route('/page<pages>')
 def index(pages):
     print(len(data))
     current = int(pages)

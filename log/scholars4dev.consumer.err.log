@@ -378,3 +378,131 @@ Traceback (most recent call last):
   File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/pymongo/collection.py", line 691, in insert_many
     raise TypeError("documents must be a non-empty list")
 TypeError: documents must be a non-empty list
+Traceback (most recent call last):
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/parser/consumer_scholars4dev.py", line 2, in <module>
+    import parser_scholars4dev
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/parser/parser_scholars4dev.py", line 14, in <module>
+    scholarship_lists = list(collection.find())
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/pymongo/cursor.py", line 1248, in next
+    if len(self.__data) or self._refresh():
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/pymongo/cursor.py", line 1139, in _refresh
+    self.__session = self.__collection.database.client._ensure_session()
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/pymongo/mongo_client.py", line 1712, in _ensure_session
+    return self.__start_session(True, causal_consistency=False)
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/pymongo/mongo_client.py", line 1657, in __start_session
+    self._topology._check_implicit_session_support()
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/pymongo/topology.py", line 538, in _check_implicit_session_support
+    self._check_session_support()
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/pymongo/topology.py", line 554, in _check_session_support
+    self._select_servers_loop(
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/pymongo/topology.py", line 238, in _select_servers_loop
+    raise ServerSelectionTimeoutError(
+pymongo.errors.ServerSelectionTimeoutError: localhost:27017: [Errno 111] Connection refused, Timeout: 30s, Topology Description: <TopologyDescription id: 63baaf00aa19d69821dc7061, topology_type: Unknown, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('localhost:27017: [Errno 111] Connection refused')>]>
+Traceback (most recent call last):
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/parser/consumer_scholars4dev.py", line 13, in <module>
+    channel.start_consuming()
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/pika/adapters/blocking_connection.py", line 1880, in start_consuming
+    self._process_data_events(time_limit=None)
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/pika/adapters/blocking_connection.py", line 2041, in _process_data_events
+    self.connection.process_data_events(time_limit=time_limit)
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/pika/adapters/blocking_connection.py", line 848, in process_data_events
+    self._dispatch_channel_events()
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/pika/adapters/blocking_connection.py", line 567, in _dispatch_channel_events
+    impl_channel._get_cookie()._dispatch_events()
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/pika/adapters/blocking_connection.py", line 1507, in _dispatch_events
+    consumer_info.on_message_callback(self, evt.method,
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/parser/consumer_scholars4dev.py", line 10, in callback
+    parser_scholars4dev.parse_scholars4dev(body)
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/parser/parser_scholars4dev.py", line 73, in parse_scholars4dev
+    collection.insert_many(scholarship_list)
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/pymongo/_csot.py", line 105, in csot_wrapper
+    return func(self, *args, **kwargs)
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/pymongo/collection.py", line 691, in insert_many
+    raise TypeError("documents must be a non-empty list")
+TypeError: documents must be a non-empty list
+Traceback (most recent call last):
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/parser/consumer_scholars4dev.py", line 13, in <module>
+    channel.start_consuming()
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/pika/adapters/blocking_connection.py", line 1880, in start_consuming
+    self._process_data_events(time_limit=None)
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/pika/adapters/blocking_connection.py", line 2041, in _process_data_events
+    self.connection.process_data_events(time_limit=time_limit)
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/pika/adapters/blocking_connection.py", line 848, in process_data_events
+    self._dispatch_channel_events()
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/pika/adapters/blocking_connection.py", line 567, in _dispatch_channel_events
+    impl_channel._get_cookie()._dispatch_events()
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/pika/adapters/blocking_connection.py", line 1507, in _dispatch_events
+    consumer_info.on_message_callback(self, evt.method,
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/parser/consumer_scholars4dev.py", line 10, in callback
+    parser_scholars4dev.parse_scholars4dev(body)
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/parser/parser_scholars4dev.py", line 73, in parse_scholars4dev
+    collection.insert_many(scholarship_list)
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/pymongo/_csot.py", line 105, in csot_wrapper
+    return func(self, *args, **kwargs)
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/pymongo/collection.py", line 691, in insert_many
+    raise TypeError("documents must be a non-empty list")
+TypeError: documents must be a non-empty list
+Traceback (most recent call last):
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/parser/consumer_scholars4dev.py", line 13, in <module>
+    channel.start_consuming()
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/pika/adapters/blocking_connection.py", line 1880, in start_consuming
+    self._process_data_events(time_limit=None)
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/pika/adapters/blocking_connection.py", line 2041, in _process_data_events
+    self.connection.process_data_events(time_limit=time_limit)
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/pika/adapters/blocking_connection.py", line 848, in process_data_events
+    self._dispatch_channel_events()
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/pika/adapters/blocking_connection.py", line 567, in _dispatch_channel_events
+    impl_channel._get_cookie()._dispatch_events()
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/pika/adapters/blocking_connection.py", line 1507, in _dispatch_events
+    consumer_info.on_message_callback(self, evt.method,
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/parser/consumer_scholars4dev.py", line 10, in callback
+    parser_scholars4dev.parse_scholars4dev(body)
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/parser/parser_scholars4dev.py", line 73, in parse_scholars4dev
+    collection.insert_many(scholarship_list)
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/pymongo/_csot.py", line 105, in csot_wrapper
+    return func(self, *args, **kwargs)
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/pymongo/collection.py", line 691, in insert_many
+    raise TypeError("documents must be a non-empty list")
+TypeError: documents must be a non-empty list
+Traceback (most recent call last):
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/parser/consumer_scholars4dev.py", line 13, in <module>
+    channel.start_consuming()
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/pika/adapters/blocking_connection.py", line 1880, in start_consuming
+    self._process_data_events(time_limit=None)
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/pika/adapters/blocking_connection.py", line 2041, in _process_data_events
+    self.connection.process_data_events(time_limit=time_limit)
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/pika/adapters/blocking_connection.py", line 848, in process_data_events
+    self._dispatch_channel_events()
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/pika/adapters/blocking_connection.py", line 567, in _dispatch_channel_events
+    impl_channel._get_cookie()._dispatch_events()
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/pika/adapters/blocking_connection.py", line 1507, in _dispatch_events
+    consumer_info.on_message_callback(self, evt.method,
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/parser/consumer_scholars4dev.py", line 10, in callback
+    parser_scholars4dev.parse_scholars4dev(body)
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/parser/parser_scholars4dev.py", line 73, in parse_scholars4dev
+    collection.insert_many(scholarship_list)
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/pymongo/_csot.py", line 105, in csot_wrapper
+    return func(self, *args, **kwargs)
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/pymongo/collection.py", line 691, in insert_many
+    raise TypeError("documents must be a non-empty list")
+TypeError: documents must be a non-empty list
+Traceback (most recent call last):
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/parser/consumer_scholars4dev.py", line 2, in <module>
+    import parser_scholars4dev
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/parser/parser_scholars4dev.py", line 14, in <module>
+    scholarship_lists = list(collection.find())
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/pymongo/cursor.py", line 1248, in next
+    if len(self.__data) or self._refresh():
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/pymongo/cursor.py", line 1139, in _refresh
+    self.__session = self.__collection.database.client._ensure_session()
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/pymongo/mongo_client.py", line 1712, in _ensure_session
+    return self.__start_session(True, causal_consistency=False)
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/pymongo/mongo_client.py", line 1657, in __start_session
+    self._topology._check_implicit_session_support()
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/pymongo/topology.py", line 538, in _check_implicit_session_support
+    self._check_session_support()
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/pymongo/topology.py", line 554, in _check_session_support
+    self._select_servers_loop(
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/pymongo/topology.py", line 238, in _select_servers_loop
+    raise ServerSelectionTimeoutError(
+pymongo.errors.ServerSelectionTimeoutError: localhost:27017: [Errno 111] Connection refused, Timeout: 30s, Topology Description: <TopologyDescription id: 63c95747ce4f0ed7c94ff3bf, topology_type: Unknown, servers: [<ServerDescription ('localhost', 27017) server_type: Unknown, rtt: None, error=AutoReconnect('localhost:27017: [Errno 111] Connection refused')>]>

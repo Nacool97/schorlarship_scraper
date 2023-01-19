@@ -1949,3 +1949,77 @@ ValueError: invalid literal for int() with base 10: 'robots.txt'
 [2023-01-08 17:14:43 +0530] [514327] [INFO] Listening at: http://0.0.0.0:5080 (514327)
 [2023-01-08 17:14:43 +0530] [514327] [INFO] Using worker: sync
 [2023-01-08 17:14:43 +0530] [514338] [INFO] Booting worker with pid: 514338
+[2023-01-08 17:17:07 +0530] [514327] [INFO] Handling signal: term
+[2023-01-08 17:17:07 +0530] [514338] [INFO] Worker exiting (pid: 514338)
+[2023-01-08 17:17:08 +0530] [514327] [INFO] Shutting down: Master
+[2023-01-08 17:17:09 +0530] [514759] [INFO] Starting gunicorn 20.1.0
+[2023-01-08 17:17:09 +0530] [514759] [INFO] Listening at: http://0.0.0.0:5080 (514759)
+[2023-01-08 17:17:09 +0530] [514759] [INFO] Using worker: sync
+[2023-01-08 17:17:09 +0530] [514770] [INFO] Booting worker with pid: 514770
+[2023-01-08 17:19:14 +0530] [514759] [INFO] Handling signal: term
+[2023-01-08 17:19:14 +0530] [514770] [INFO] Worker exiting (pid: 514770)
+[2023-01-08 17:19:15 +0530] [514759] [INFO] Shutting down: Master
+[2023-01-08 18:02:15 +0530] [9500] [INFO] Starting gunicorn 20.1.0
+[2023-01-08 18:02:15 +0530] [9500] [INFO] Listening at: http://0.0.0.0:5080 (9500)
+[2023-01-08 18:02:15 +0530] [9500] [INFO] Using worker: sync
+[2023-01-08 18:02:15 +0530] [9511] [INFO] Booting worker with pid: 9511
+[2023-01-10 08:47:48,656] ERROR in app: Exception on /sitemap.xml [GET]
+Traceback (most recent call last):
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/flask/app.py", line 1519, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/flask/app.py", line 1517, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/flask/app.py", line 1503, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/test_app.py", line 150, in index
+    current = int(page)
+ValueError: invalid literal for int() with base 10: 'sitemap.xml'
+[2023-01-11 06:42:41,590] ERROR in app: Exception on /favicon.ico [GET]
+Traceback (most recent call last):
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/flask/app.py", line 1519, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/flask/app.py", line 1517, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/flask/app.py", line 1503, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/test_app.py", line 150, in index
+    current = int(page)
+ValueError: invalid literal for int() with base 10: 'favicon.ico'
+[2023-01-11 21:12:01 +0530] [9500] [INFO] Handling signal: term
+[2023-01-11 21:12:01 +0530] [9511] [INFO] Worker exiting (pid: 9511)
+[2023-01-11 21:12:02 +0530] [9500] [INFO] Shutting down: Master
+[2023-01-11 21:12:03 +0530] [311799] [INFO] Starting gunicorn 20.1.0
+[2023-01-11 21:12:03 +0530] [311799] [INFO] Listening at: http://0.0.0.0:5080 (311799)
+[2023-01-11 21:12:03 +0530] [311799] [INFO] Using worker: sync
+[2023-01-11 21:12:03 +0530] [311817] [INFO] Booting worker with pid: 311817
+[2023-01-16 10:54:07 +0530] [311799] [INFO] Handling signal: term
+[2023-01-16 10:54:07 +0530] [311817] [INFO] Worker exiting (pid: 311817)
+[2023-01-16 10:54:08 +0530] [311799] [INFO] Shutting down: Master
+[2023-01-16 10:54:11 +0530] [847465] [INFO] Starting gunicorn 20.1.0
+[2023-01-16 10:54:11 +0530] [847465] [INFO] Listening at: http://0.0.0.0:5080 (847465)
+[2023-01-16 10:54:11 +0530] [847465] [INFO] Using worker: sync
+[2023-01-16 10:54:11 +0530] [847476] [INFO] Booting worker with pid: 847476
+[2023-01-17 00:49:09,127] ERROR in app: Exception on /sitemap.xml [GET]
+Traceback (most recent call last):
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/flask/app.py", line 1519, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/flask/app.py", line 1517, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/flask/app.py", line 1503, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/test_app.py", line 150, in index
+    current = int(page)
+ValueError: invalid literal for int() with base 10: 'sitemap.xml'
+[2023-01-19 10:29:12 +0530] [847465] [INFO] Handling signal: term
+[2023-01-19 10:29:12 +0530] [847476] [INFO] Worker exiting (pid: 847476)
+[2023-01-19 10:29:13 +0530] [847465] [INFO] Shutting down: Master
+[2023-01-19 10:29:17 +0530] [1190562] [INFO] Starting gunicorn 20.1.0
+[2023-01-19 10:29:17 +0530] [1190562] [INFO] Listening at: http://0.0.0.0:5080 (1190562)
+[2023-01-19 10:29:17 +0530] [1190562] [INFO] Using worker: sync
+[2023-01-19 10:29:17 +0530] [1190569] [INFO] Booting worker with pid: 1190569
