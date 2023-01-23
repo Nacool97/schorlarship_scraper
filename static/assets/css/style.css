@@ -367,7 +367,7 @@ h6 {
   color: #fff;
   font-size: 28px;
   cursor: pointer;
-  display: none;
+  display: inline-block;
   line-height: 0;
   transition: 0.5s;
 }
@@ -382,7 +382,7 @@ h6 {
   }
 
   .navbar ul {
-    display: none;
+    display: flex;
   }
 }
 
@@ -418,6 +418,7 @@ h6 {
   transition: 0.3s;
 }
 
+
 .navbar-mobile>ul>li {
   padding: 0;
 }
@@ -448,7 +449,7 @@ h6 {
 
 .navbar-mobile .dropdown ul {
   position: static;
-  display: none;
+  display: inline-block;
   margin: 10px 20px;
   padding: 10px 0;
   z-index: 99;
@@ -479,6 +480,45 @@ h6 {
 .navbar-mobile .dropdown>.dropdown-active {
   display: block;
 }
+
+.navbar-mobile .cta {
+  display: block;
+}
+
+.navbar .cta {
+  background: transparent;
+}
+
+.navbar .cta a {
+  color: #fff;
+  background: #f6b024;
+  padding: 6px 24px 8px 24px;
+  display: inline-block;
+  transition: 0.3s;
+  border-radius: 50px;
+}
+
+.navbar .cta a:hover {
+  background: #f1a40a;
+}
+
+.navbar-mobile .cta {
+  background: transparent;
+}
+
+.navbar-mobile .cta a {
+  color: #fff;
+  background: #f6b024;
+  padding: 6px 24px 8px 24px;
+  display: inline-block;
+  transition: 0.3s;
+  border-radius: 50px;
+}
+
+.navbar-mobile .cta a:hover {
+  background: #f1a40a;
+}
+
 
 /*--------------------------------------------------------------
 # Hero Section

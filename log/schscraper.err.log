@@ -27840,3 +27840,306 @@ pymongo.errors.ServerSelectionTimeoutError: localhost:27017: [Errno 111] Connect
 [2023-01-19 20:31:39 +0530] [6267] [INFO] Booting worker with pid: 6267
 [2023-01-19 20:31:39 +0530] [6268] [INFO] Booting worker with pid: 6268
 [2023-01-19 20:31:39 +0530] [6269] [INFO] Booting worker with pid: 6269
+[2023-01-19 20:45:59 +0530] [3978] [INFO] Handling signal: term
+[2023-01-19 20:45:59 +0530] [6267] [INFO] Worker exiting (pid: 6267)
+[2023-01-19 20:45:59 +0530] [6266] [INFO] Worker exiting (pid: 6266)
+[2023-01-19 20:45:59 +0530] [6268] [INFO] Worker exiting (pid: 6268)
+[2023-01-19 20:45:59 +0530] [6269] [INFO] Worker exiting (pid: 6269)
+[2023-01-19 20:45:59 +0530] [3978] [INFO] Shutting down: Master
+[2023-01-19 20:46:01 +0530] [10537] [INFO] Starting gunicorn 20.1.0
+[2023-01-19 20:46:01 +0530] [10537] [INFO] Listening at: http://0.0.0.0:8080 (10537)
+[2023-01-19 20:46:01 +0530] [10537] [INFO] Using worker: sync
+[2023-01-19 20:46:01 +0530] [10555] [INFO] Booting worker with pid: 10555
+[2023-01-19 20:46:01 +0530] [10556] [INFO] Booting worker with pid: 10556
+[2023-01-19 20:46:01 +0530] [10557] [INFO] Booting worker with pid: 10557
+[2023-01-19 20:46:01 +0530] [10561] [INFO] Booting worker with pid: 10561
+[2023-01-19 21:05:02 +0530] [10537] [CRITICAL] WORKER TIMEOUT (pid:10561)
+[2023-01-19 21:05:02 +0530] [10561] [INFO] Worker exiting (pid: 10561)
+[2023-01-19 21:05:02 +0530] [14626] [INFO] Booting worker with pid: 14626
+[2023-01-20 02:47:45 +0530] [10537] [CRITICAL] WORKER TIMEOUT (pid:10555)
+[2023-01-20 02:47:45 +0530] [10555] [INFO] Worker exiting (pid: 10555)
+[2023-01-20 02:47:45 +0530] [37118] [INFO] Booting worker with pid: 37118
+[2023-01-20 02:47:46 +0530] [10537] [CRITICAL] WORKER TIMEOUT (pid:10556)
+[2023-01-20 02:47:46 +0530] [10537] [CRITICAL] WORKER TIMEOUT (pid:10557)
+[2023-01-20 02:47:46 +0530] [10537] [CRITICAL] WORKER TIMEOUT (pid:14626)
+[2023-01-20 02:47:46 +0530] [10556] [INFO] Worker exiting (pid: 10556)
+[2023-01-20 02:47:46 +0530] [10557] [INFO] Worker exiting (pid: 10557)
+[2023-01-20 02:47:46 +0530] [14626] [INFO] Worker exiting (pid: 14626)
+[2023-01-20 02:47:47 +0530] [37125] [INFO] Booting worker with pid: 37125
+[2023-01-20 02:47:47 +0530] [10537] [WARNING] Worker with pid 10557 was terminated due to signal 9
+[2023-01-20 02:47:47 +0530] [10537] [WARNING] Worker with pid 14626 was terminated due to signal 9
+[2023-01-20 02:47:47 +0530] [37126] [INFO] Booting worker with pid: 37126
+[2023-01-20 02:47:47 +0530] [37127] [INFO] Booting worker with pid: 37127
+[2023-01-20 02:48:16 +0530] [10537] [CRITICAL] WORKER TIMEOUT (pid:37118)
+[2023-01-20 02:48:16 +0530] [37118] [INFO] Worker exiting (pid: 37118)
+[2023-01-20 02:48:16 +0530] [37186] [INFO] Booting worker with pid: 37186
+[2023-01-20 02:48:17 +0530] [10537] [CRITICAL] WORKER TIMEOUT (pid:37125)
+[2023-01-20 02:48:17 +0530] [37125] [INFO] Worker exiting (pid: 37125)
+[2023-01-20 02:48:17 +0530] [10537] [CRITICAL] WORKER TIMEOUT (pid:37126)
+[2023-01-20 02:48:17 +0530] [10537] [CRITICAL] WORKER TIMEOUT (pid:37127)
+[2023-01-20 02:48:17 +0530] [37126] [INFO] Worker exiting (pid: 37126)
+[2023-01-20 02:48:17 +0530] [37127] [INFO] Worker exiting (pid: 37127)
+[2023-01-20 02:48:17 +0530] [37193] [INFO] Booting worker with pid: 37193
+[2023-01-20 02:48:18 +0530] [37194] [INFO] Booting worker with pid: 37194
+[2023-01-20 02:48:18 +0530] [10537] [WARNING] Worker with pid 37127 was terminated due to signal 9
+[2023-01-20 02:48:18 +0530] [37195] [INFO] Booting worker with pid: 37195
+[2023-01-20 02:48:47 +0530] [10537] [CRITICAL] WORKER TIMEOUT (pid:37186)
+[2023-01-20 02:48:47 +0530] [37186] [INFO] Worker exiting (pid: 37186)
+[2023-01-20 02:48:47 +0530] [37226] [INFO] Booting worker with pid: 37226
+[2023-01-20 02:48:48 +0530] [10537] [CRITICAL] WORKER TIMEOUT (pid:37193)
+[2023-01-20 02:48:48 +0530] [37193] [INFO] Worker exiting (pid: 37193)
+[2023-01-20 02:48:49 +0530] [37233] [INFO] Booting worker with pid: 37233
+[2023-01-20 05:47:48 +0530] [10537] [CRITICAL] WORKER TIMEOUT (pid:37226)
+[2023-01-20 05:47:48 +0530] [37226] [INFO] Worker exiting (pid: 37226)
+[2023-01-20 05:47:48 +0530] [47584] [INFO] Booting worker with pid: 47584
+[2023-01-20 07:32:31 +0530] [10537] [CRITICAL] WORKER TIMEOUT (pid:37233)
+[2023-01-20 07:32:31 +0530] [37233] [INFO] Worker exiting (pid: 37233)
+[2023-01-20 07:32:31 +0530] [56285] [INFO] Booting worker with pid: 56285
+[2023-01-20 10:57:48 +0530] [10537] [CRITICAL] WORKER TIMEOUT (pid:37194)
+[2023-01-20 10:57:48 +0530] [37194] [INFO] Worker exiting (pid: 37194)
+[2023-01-20 10:57:49 +0530] [68318] [INFO] Booting worker with pid: 68318
+[2023-01-20 12:58:23 +0530] [10537] [INFO] Handling signal: term
+[2023-01-20 12:58:23 +0530] [37195] [INFO] Worker exiting (pid: 37195)
+[2023-01-20 12:58:23 +0530] [47584] [INFO] Worker exiting (pid: 47584)
+[2023-01-20 12:58:23 +0530] [56285] [INFO] Worker exiting (pid: 56285)
+[2023-01-20 12:58:23 +0530] [68318] [INFO] Worker exiting (pid: 68318)
+[2023-01-20 12:58:23 +0530] [10537] [INFO] Shutting down: Master
+[2023-01-20 12:58:25 +0530] [75865] [INFO] Starting gunicorn 20.1.0
+[2023-01-20 12:58:25 +0530] [75865] [INFO] Listening at: http://0.0.0.0:8080 (75865)
+[2023-01-20 12:58:25 +0530] [75865] [INFO] Using worker: sync
+[2023-01-20 12:58:25 +0530] [75878] [INFO] Booting worker with pid: 75878
+[2023-01-20 12:58:25 +0530] [75885] [INFO] Booting worker with pid: 75885
+[2023-01-20 12:58:26 +0530] [75887] [INFO] Booting worker with pid: 75887
+[2023-01-20 12:58:26 +0530] [75888] [INFO] Booting worker with pid: 75888
+[2023-01-20 17:56:18 +0530] [75865] [CRITICAL] WORKER TIMEOUT (pid:75888)
+[2023-01-20 17:56:18 +0530] [75888] [INFO] Worker exiting (pid: 75888)
+[2023-01-20 17:56:19 +0530] [94814] [INFO] Booting worker with pid: 94814
+[2023-01-21 00:10:24 +0530] [75865] [CRITICAL] WORKER TIMEOUT (pid:75887)
+[2023-01-21 00:10:24 +0530] [75887] [INFO] Worker exiting (pid: 75887)
+[2023-01-21 00:10:25 +0530] [118366] [INFO] Booting worker with pid: 118366
+[2023-01-22 07:58:35 +0530] [75865] [CRITICAL] WORKER TIMEOUT (pid:75885)
+[2023-01-22 07:58:35 +0530] [75885] [INFO] Worker exiting (pid: 75885)
+[2023-01-22 07:58:35 +0530] [236842] [INFO] Booting worker with pid: 236842
+[2023-01-22 20:12:13 +0530] [1947] [INFO] Starting gunicorn 20.1.0
+[2023-01-22 20:12:13 +0530] [1947] [INFO] Listening at: http://0.0.0.0:8080 (1947)
+[2023-01-22 20:12:13 +0530] [1947] [INFO] Using worker: sync
+[2023-01-22 20:12:13 +0530] [2078] [INFO] Booting worker with pid: 2078
+[2023-01-22 20:12:13 +0530] [2080] [INFO] Booting worker with pid: 2080
+[2023-01-22 20:12:13 +0530] [2082] [INFO] Booting worker with pid: 2082
+[2023-01-22 20:12:14 +0530] [2083] [INFO] Booting worker with pid: 2083
+[2023-01-22 20:12:44 +0530] [1947] [CRITICAL] WORKER TIMEOUT (pid:2078)
+[2023-01-22 20:12:44 +0530] [1947] [CRITICAL] WORKER TIMEOUT (pid:2080)
+[2023-01-22 20:12:44 +0530] [1947] [CRITICAL] WORKER TIMEOUT (pid:2082)
+[2023-01-22 20:12:44 +0530] [1947] [CRITICAL] WORKER TIMEOUT (pid:2083)
+[2023-01-22 20:12:44 +0530] [2078] [INFO] Worker exiting (pid: 2078)
+[2023-01-22 20:12:44 +0530] [2080] [INFO] Worker exiting (pid: 2080)
+[2023-01-22 20:12:44 +0530] [2082] [INFO] Worker exiting (pid: 2082)
+[2023-01-22 20:12:44 +0530] [2083] [INFO] Worker exiting (pid: 2083)
+[2023-01-22 20:12:45 +0530] [2306] [INFO] Booting worker with pid: 2306
+[2023-01-22 20:12:45 +0530] [1947] [WARNING] Worker with pid 2080 was terminated due to signal 9
+[2023-01-22 20:12:45 +0530] [2307] [INFO] Booting worker with pid: 2307
+[2023-01-22 20:12:45 +0530] [2308] [INFO] Booting worker with pid: 2308
+[2023-01-22 20:12:45 +0530] [2309] [INFO] Booting worker with pid: 2309
+[2023-01-22 20:13:15 +0530] [1947] [CRITICAL] WORKER TIMEOUT (pid:2306)
+[2023-01-22 20:13:15 +0530] [1947] [CRITICAL] WORKER TIMEOUT (pid:2307)
+[2023-01-22 20:13:15 +0530] [1947] [CRITICAL] WORKER TIMEOUT (pid:2308)
+[2023-01-22 20:13:15 +0530] [1947] [CRITICAL] WORKER TIMEOUT (pid:2309)
+[2023-01-22 20:13:15 +0530] [2306] [INFO] Worker exiting (pid: 2306)
+[2023-01-22 20:13:15 +0530] [2307] [INFO] Worker exiting (pid: 2307)
+[2023-01-22 20:13:15 +0530] [2308] [INFO] Worker exiting (pid: 2308)
+[2023-01-22 20:13:15 +0530] [2309] [INFO] Worker exiting (pid: 2309)
+[2023-01-22 20:13:15 +0530] [2339] [INFO] Booting worker with pid: 2339
+[2023-01-22 20:13:15 +0530] [1947] [WARNING] Worker with pid 2307 was terminated due to signal 9
+[2023-01-22 20:13:15 +0530] [1947] [WARNING] Worker with pid 2309 was terminated due to signal 9
+[2023-01-22 20:13:15 +0530] [1947] [WARNING] Worker with pid 2308 was terminated due to signal 9
+[2023-01-22 20:13:15 +0530] [2340] [INFO] Booting worker with pid: 2340
+[2023-01-22 20:13:15 +0530] [2341] [INFO] Booting worker with pid: 2341
+[2023-01-22 20:13:15 +0530] [2342] [INFO] Booting worker with pid: 2342
+[2023-01-22 20:13:45 +0530] [1947] [CRITICAL] WORKER TIMEOUT (pid:2339)
+[2023-01-22 20:13:45 +0530] [1947] [CRITICAL] WORKER TIMEOUT (pid:2340)
+[2023-01-22 20:13:45 +0530] [1947] [CRITICAL] WORKER TIMEOUT (pid:2341)
+[2023-01-22 20:13:45 +0530] [2340] [INFO] Worker exiting (pid: 2340)
+[2023-01-22 20:13:45 +0530] [2339] [INFO] Worker exiting (pid: 2339)
+[2023-01-22 20:13:45 +0530] [2341] [INFO] Worker exiting (pid: 2341)
+[2023-01-22 20:13:45 +0530] [1947] [CRITICAL] WORKER TIMEOUT (pid:2342)
+[2023-01-22 20:13:45 +0530] [2342] [INFO] Worker exiting (pid: 2342)
+[2023-01-22 20:13:45 +0530] [1947] [WARNING] Worker with pid 2341 was terminated due to signal 9
+[2023-01-22 20:13:45 +0530] [1947] [WARNING] Worker with pid 2340 was terminated due to signal 9
+[2023-01-22 20:13:45 +0530] [1947] [WARNING] Worker with pid 2342 was terminated due to signal 9
+[2023-01-22 20:13:45 +0530] [2637] [INFO] Booting worker with pid: 2637
+[2023-01-22 20:13:45 +0530] [2638] [INFO] Booting worker with pid: 2638
+[2023-01-22 20:13:46 +0530] [2639] [INFO] Booting worker with pid: 2639
+[2023-01-22 20:13:46 +0530] [2640] [INFO] Booting worker with pid: 2640
+[2023-01-22 20:14:16 +0530] [1947] [CRITICAL] WORKER TIMEOUT (pid:2637)
+[2023-01-22 20:14:16 +0530] [1947] [CRITICAL] WORKER TIMEOUT (pid:2638)
+[2023-01-22 20:14:16 +0530] [1947] [CRITICAL] WORKER TIMEOUT (pid:2639)
+[2023-01-22 20:14:16 +0530] [1947] [CRITICAL] WORKER TIMEOUT (pid:2640)
+[2023-01-22 20:14:16 +0530] [2637] [INFO] Worker exiting (pid: 2637)
+[2023-01-22 20:14:16 +0530] [2638] [INFO] Worker exiting (pid: 2638)
+[2023-01-22 20:14:16 +0530] [2639] [INFO] Worker exiting (pid: 2639)
+[2023-01-22 20:14:16 +0530] [2640] [INFO] Worker exiting (pid: 2640)
+[2023-01-22 20:14:16 +0530] [3318] [INFO] Booting worker with pid: 3318
+[2023-01-22 20:14:16 +0530] [1947] [WARNING] Worker with pid 2638 was terminated due to signal 9
+[2023-01-22 20:14:16 +0530] [1947] [WARNING] Worker with pid 2639 was terminated due to signal 9
+[2023-01-22 20:14:16 +0530] [1947] [WARNING] Worker with pid 2640 was terminated due to signal 9
+[2023-01-22 20:14:16 +0530] [3320] [INFO] Booting worker with pid: 3320
+[2023-01-22 20:14:16 +0530] [3321] [INFO] Booting worker with pid: 3321
+[2023-01-22 20:14:16 +0530] [3322] [INFO] Booting worker with pid: 3322
+[2023-01-22 20:14:46 +0530] [1947] [CRITICAL] WORKER TIMEOUT (pid:3318)
+[2023-01-22 20:14:46 +0530] [1947] [CRITICAL] WORKER TIMEOUT (pid:3320)
+[2023-01-22 20:14:46 +0530] [1947] [CRITICAL] WORKER TIMEOUT (pid:3321)
+[2023-01-22 20:14:46 +0530] [1947] [CRITICAL] WORKER TIMEOUT (pid:3322)
+[2023-01-22 20:14:46 +0530] [3318] [INFO] Worker exiting (pid: 3318)
+[2023-01-22 20:14:46 +0530] [3320] [INFO] Worker exiting (pid: 3320)
+[2023-01-22 20:14:46 +0530] [3321] [INFO] Worker exiting (pid: 3321)
+[2023-01-22 20:14:46 +0530] [3322] [INFO] Worker exiting (pid: 3322)
+[2023-01-22 20:14:46 +0530] [3766] [INFO] Booting worker with pid: 3766
+[2023-01-22 20:14:46 +0530] [1947] [WARNING] Worker with pid 3322 was terminated due to signal 9
+--- Logging error ---
+[2023-01-22 20:14:46 +0530] [1947] [INFO] Unhandled exception in main loop
+Traceback (most recent call last):
+  File "/usr/lib/python3.9/logging/__init__.py", line 1086, in emit
+    stream.write(msg + self.terminator)
+RuntimeError: reentrant call inside <_io.BufferedWriter name='<stderr>'>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.9/logging/__init__.py", line 1086, in emit
+    stream.write(msg + self.terminator)
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/gunicorn/arbiter.py", line 242, in handle_chld
+    self.reap_workers()
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/gunicorn/arbiter.py", line 530, in reap_workers
+    self.log.warning(
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/gunicorn/glogging.py", line 261, in warning
+    self.error_log.warning(msg, *args, **kwargs)
+  File "/usr/lib/python3.9/logging/__init__.py", line 1458, in warning
+    self._log(WARNING, msg, args, **kwargs)
+  File "/usr/lib/python3.9/logging/__init__.py", line 1589, in _log
+    self.handle(record)
+  File "/usr/lib/python3.9/logging/__init__.py", line 1599, in handle
+    self.callHandlers(record)
+  File "/usr/lib/python3.9/logging/__init__.py", line 1661, in callHandlers
+    hdlr.handle(record)
+  File "/usr/lib/python3.9/logging/__init__.py", line 952, in handle
+    self.emit(record)
+  File "/usr/lib/python3.9/logging/__init__.py", line 1091, in emit
+    self.handleError(record)
+  File "/usr/lib/python3.9/logging/__init__.py", line 1004, in handleError
+    sys.stderr.write('--- Logging error ---\n')
+RuntimeError: reentrant call inside <_io.BufferedWriter name='<stderr>'>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/usr/lib/python3.9/logging/__init__.py", line 1086, in emit
+    stream.write(msg + self.terminator)
+RuntimeError: reentrant call inside <_io.BufferedWriter name='<stderr>'>
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/gunicorn/arbiter.py", line 211, in run
+    self.manage_workers()
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/gunicorn/arbiter.py", line 551, in manage_workers
+    self.spawn_workers()
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/gunicorn/arbiter.py", line 623, in spawn_workers
+    time.sleep(0.1 * random.random())
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/gunicorn/arbiter.py", line 242, in handle_chld
+    self.reap_workers()
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/gunicorn/arbiter.py", line 530, in reap_workers
+    self.log.warning(
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/gunicorn/glogging.py", line 261, in warning
+    self.error_log.warning(msg, *args, **kwargs)
+  File "/usr/lib/python3.9/logging/__init__.py", line 1458, in warning
+    self._log(WARNING, msg, args, **kwargs)
+  File "/usr/lib/python3.9/logging/__init__.py", line 1589, in _log
+    self.handle(record)
+  File "/usr/lib/python3.9/logging/__init__.py", line 1599, in handle
+    self.callHandlers(record)
+  File "/usr/lib/python3.9/logging/__init__.py", line 1661, in callHandlers
+    hdlr.handle(record)
+  File "/usr/lib/python3.9/logging/__init__.py", line 952, in handle
+    self.emit(record)
+  File "/usr/lib/python3.9/logging/__init__.py", line 1091, in emit
+    self.handleError(record)
+  File "/usr/lib/python3.9/logging/__init__.py", line 1004, in handleError
+    sys.stderr.write('--- Logging error ---\n')
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/gunicorn/arbiter.py", line 242, in handle_chld
+    self.reap_workers()
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/gunicorn/arbiter.py", line 530, in reap_workers
+    self.log.warning(
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/gunicorn/glogging.py", line 261, in warning
+    self.error_log.warning(msg, *args, **kwargs)
+  File "/usr/lib/python3.9/logging/__init__.py", line 1458, in warning
+    self._log(WARNING, msg, args, **kwargs)
+  File "/usr/lib/python3.9/logging/__init__.py", line 1589, in _log
+    self.handle(record)
+  File "/usr/lib/python3.9/logging/__init__.py", line 1599, in handle
+    self.callHandlers(record)
+  File "/usr/lib/python3.9/logging/__init__.py", line 1661, in callHandlers
+    hdlr.handle(record)
+  File "/usr/lib/python3.9/logging/__init__.py", line 952, in handle
+    self.emit(record)
+  File "/usr/lib/python3.9/logging/__init__.py", line 1091, in emit
+    self.handleError(record)
+  File "/usr/lib/python3.9/logging/__init__.py", line 1004, in handleError
+    sys.stderr.write('--- Logging error ---\n')
+RuntimeError: reentrant call inside <_io.BufferedWriter name='<stderr>'>
+[2023-01-22 20:14:47 +0530] [3766] [INFO] Worker exiting (pid: 3766)
+[2023-01-22 20:14:48 +0530] [3772] [INFO] Starting gunicorn 20.1.0
+[2023-01-22 20:14:48 +0530] [3772] [INFO] Listening at: http://0.0.0.0:8080 (3772)
+[2023-01-22 20:14:48 +0530] [3772] [INFO] Using worker: sync
+[2023-01-22 20:14:48 +0530] [3774] [INFO] Booting worker with pid: 3774
+[2023-01-22 20:14:48 +0530] [3775] [INFO] Booting worker with pid: 3775
+[2023-01-22 20:14:48 +0530] [3776] [INFO] Booting worker with pid: 3776
+[2023-01-22 20:14:48 +0530] [3777] [INFO] Booting worker with pid: 3777
+[2023-01-22 20:15:18 +0530] [3772] [CRITICAL] WORKER TIMEOUT (pid:3774)
+[2023-01-22 20:15:18 +0530] [3772] [CRITICAL] WORKER TIMEOUT (pid:3775)
+[2023-01-22 20:15:18 +0530] [3772] [CRITICAL] WORKER TIMEOUT (pid:3776)
+[2023-01-22 20:15:18 +0530] [3772] [CRITICAL] WORKER TIMEOUT (pid:3777)
+[2023-01-22 20:15:18 +0530] [3775] [INFO] Worker exiting (pid: 3775)
+[2023-01-22 20:15:18 +0530] [3776] [INFO] Worker exiting (pid: 3776)
+[2023-01-22 20:15:18 +0530] [3774] [INFO] Worker exiting (pid: 3774)
+[2023-01-22 20:15:18 +0530] [3777] [INFO] Worker exiting (pid: 3777)
+[2023-01-22 20:15:18 +0530] [3772] [WARNING] Worker with pid 3775 was terminated due to signal 9
+[2023-01-22 20:15:18 +0530] [3772] [WARNING] Worker with pid 3776 was terminated due to signal 9
+[2023-01-22 20:15:18 +0530] [4890] [INFO] Booting worker with pid: 4890
+[2023-01-22 20:15:18 +0530] [3772] [WARNING] Worker with pid 3777 was terminated due to signal 9
+[2023-01-22 20:15:18 +0530] [4891] [INFO] Booting worker with pid: 4891
+[2023-01-22 20:15:18 +0530] [4894] [INFO] Booting worker with pid: 4894
+[2023-01-22 20:15:18 +0530] [4897] [INFO] Booting worker with pid: 4897
+[2023-01-22 20:15:49 +0530] [3772] [CRITICAL] WORKER TIMEOUT (pid:4890)
+[2023-01-22 20:15:49 +0530] [3772] [CRITICAL] WORKER TIMEOUT (pid:4891)
+[2023-01-22 20:15:49 +0530] [3772] [CRITICAL] WORKER TIMEOUT (pid:4894)
+[2023-01-22 20:15:49 +0530] [3772] [CRITICAL] WORKER TIMEOUT (pid:4897)
+[2023-01-22 20:15:49 +0530] [4890] [INFO] Worker exiting (pid: 4890)
+[2023-01-22 20:15:49 +0530] [4891] [INFO] Worker exiting (pid: 4891)
+[2023-01-22 20:15:49 +0530] [4894] [INFO] Worker exiting (pid: 4894)
+[2023-01-22 20:15:49 +0530] [4897] [INFO] Worker exiting (pid: 4897)
+[2023-01-22 20:15:49 +0530] [5036] [INFO] Booting worker with pid: 5036
+[2023-01-22 20:15:49 +0530] [3772] [WARNING] Worker with pid 4897 was terminated due to signal 9
+[2023-01-22 20:15:49 +0530] [3772] [WARNING] Worker with pid 4891 was terminated due to signal 9
+[2023-01-22 20:15:49 +0530] [3772] [WARNING] Worker with pid 4894 was terminated due to signal 9
+[2023-01-22 20:15:49 +0530] [5037] [INFO] Booting worker with pid: 5037
+[2023-01-22 20:15:49 +0530] [5038] [INFO] Booting worker with pid: 5038
+[2023-01-22 20:15:49 +0530] [5039] [INFO] Booting worker with pid: 5039
+[2023-01-22 23:41:17 +0530] [3772] [CRITICAL] WORKER TIMEOUT (pid:5037)
+[2023-01-22 23:41:17 +0530] [5037] [INFO] Worker exiting (pid: 5037)
+[2023-01-22 23:41:17 +0530] [25583] [INFO] Booting worker with pid: 25583
+[2023-01-23 03:25:05 +0530] [3772] [CRITICAL] WORKER TIMEOUT (pid:25583)
+[2023-01-23 03:25:05 +0530] [25583] [INFO] Worker exiting (pid: 25583)
+[2023-01-23 03:25:05 +0530] [39668] [INFO] Booting worker with pid: 39668
+[2023-01-23 19:39:39 +0530] [3772] [INFO] Handling signal: term
+[2023-01-23 19:39:39 +0530] [5036] [INFO] Worker exiting (pid: 5036)
+[2023-01-23 19:39:39 +0530] [5039] [INFO] Worker exiting (pid: 5039)
+[2023-01-23 19:39:39 +0530] [39668] [INFO] Worker exiting (pid: 39668)
+[2023-01-23 19:39:39 +0530] [5038] [INFO] Worker exiting (pid: 5038)
+[2023-01-23 19:39:40 +0530] [3772] [INFO] Shutting down: Master
+[2023-01-23 19:39:41 +0530] [98182] [INFO] Starting gunicorn 20.1.0
+[2023-01-23 19:39:41 +0530] [98182] [INFO] Listening at: http://0.0.0.0:8080 (98182)
+[2023-01-23 19:39:41 +0530] [98182] [INFO] Using worker: sync
+[2023-01-23 19:39:41 +0530] [98195] [INFO] Booting worker with pid: 98195
+[2023-01-23 19:39:41 +0530] [98196] [INFO] Booting worker with pid: 98196
+[2023-01-23 19:39:41 +0530] [98197] [INFO] Booting worker with pid: 98197
+[2023-01-23 19:39:41 +0530] [98198] [INFO] Booting worker with pid: 98198
