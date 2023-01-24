@@ -26,6 +26,9 @@ data = list(collection.find({'expired': False}).sort('days_left', 1))
 #data = json.load(data)
 page_number = 1
 cont_count = 5
+recent_data = list(collection.find(
+        {'expired': False}).sort('_id', -1).limit(5))
+
 
 mydb = mysql.connector.connect(
     host="127.0.0.1",
@@ -104,7 +107,7 @@ def login():
             db_password = get_scholars(name)
             if db_password and db_password == password:
                 session['email'] = name
-                return redirect(url_for('home'))
+                return redirect(url_for('index'))
             else:
                 return render_template('login.html', error='Invalid credentials')
         except Exception as e:
@@ -146,13 +149,14 @@ def logout():
 
 @app.route('/')
 def home():
-    return index(1)
+    return render_template('home.html',recent_data=recent_data[:4])
 
 
-@app.route('/page<pages>')
-def index(pages):
-    print(pages)
-    current = int(pages)
+@app.route('/blog')
+def index():
+    page = request.args.get('page',default=1)
+    print(page)
+    current = int(page)
     next_page = current+1
     previous_page = current-1
     if current < 1:
@@ -164,8 +168,7 @@ def index(pages):
     from_page = (current-1)*cont_count
     to_page = current*cont_count
     # get the last 5 entires i.e. recent 5 scraped enterirs which are not expired
-    recent_data = list(collection.find(
-        {'expired': False}).sort('_id', -1).limit(5))
+    
     #recent_data = data[:-5]
     if session.get('email'):
         return render_template('logged_index.html', data=data, from_page=from_page, to_page=to_page, current=current, next=next_page, previous=previous_page, recent_data=recent_data, session=session)

@@ -2046,3 +2046,10 @@ ValueError: invalid literal for int() with base 10: 'sitemap.xml'
 [2023-01-23 19:39:41 +0530] [98185] [INFO] Listening at: http://0.0.0.0:5080 (98185)
 [2023-01-23 19:39:41 +0530] [98185] [INFO] Using worker: sync
 [2023-01-23 19:39:41 +0530] [98199] [INFO] Booting worker with pid: 98199
+[2023-01-23 19:46:54 +0530] [98185] [INFO] Handling signal: term
+[2023-01-23 19:46:54 +0530] [98199] [INFO] Worker exiting (pid: 98199)
+[2023-01-23 19:46:55 +0530] [98185] [INFO] Shutting down: Master
+[2023-01-24 19:45:07 +0530] [212328] [INFO] Starting gunicorn 20.1.0
+[2023-01-24 19:45:07 +0530] [212328] [INFO] Listening at: http://0.0.0.0:5080 (212328)
+[2023-01-24 19:45:07 +0530] [212328] [INFO] Using worker: sync
+[2023-01-24 19:45:07 +0530] [212342] [INFO] Booting worker with pid: 212342

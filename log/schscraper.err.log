@@ -28143,3 +28143,65 @@ RuntimeError: reentrant call inside <_io.BufferedWriter name='<stderr>'>
 [2023-01-23 19:39:41 +0530] [98196] [INFO] Booting worker with pid: 98196
 [2023-01-23 19:39:41 +0530] [98197] [INFO] Booting worker with pid: 98197
 [2023-01-23 19:39:41 +0530] [98198] [INFO] Booting worker with pid: 98198
+[2023-01-23 21:03:43 +0530] [98182] [CRITICAL] WORKER TIMEOUT (pid:98195)
+[2023-01-23 21:03:43 +0530] [98195] [INFO] Worker exiting (pid: 98195)
+[2023-01-23 21:03:43 +0530] [109588] [INFO] Booting worker with pid: 109588
+[2023-01-23 21:05:38 +0530] [98182] [CRITICAL] WORKER TIMEOUT (pid:109588)
+[2023-01-23 21:05:38 +0530] [109588] [INFO] Worker exiting (pid: 109588)
+[2023-01-23 21:05:39 +0530] [109747] [INFO] Booting worker with pid: 109747
+[2023-01-24 05:53:09 +0530] [98182] [CRITICAL] WORKER TIMEOUT (pid:98198)
+[2023-01-24 05:53:09 +0530] [98198] [INFO] Worker exiting (pid: 98198)
+[2023-01-24 05:53:10 +0530] [143922] [INFO] Booting worker with pid: 143922
+[2023-01-24 07:31:04 +0530] [98182] [CRITICAL] WORKER TIMEOUT (pid:98197)
+[2023-01-24 07:31:04 +0530] [98197] [INFO] Worker exiting (pid: 98197)
+[2023-01-24 07:31:05 +0530] [157661] [INFO] Booting worker with pid: 157661
+[2023-01-24 10:58:48,088] ERROR in app: Exception on /logout [GET]
+Traceback (most recent call last):
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/flask/app.py", line 1519, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/flask/app.py", line 1517, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/flask/app.py", line 1503, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/app.py", line 142, in logout
+    return redirect(url_for('index'))
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/flask/helpers.py", line 336, in url_for
+    return appctx.app.handle_url_build_error(error, endpoint, values)
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/flask/helpers.py", line 323, in url_for
+    rv = url_adapter.build(
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/werkzeug/routing/map.py", line 917, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.exceptions.BuildError: Could not build url for endpoint 'index'. Did you forget to specify values ['pages']?
+[2023-01-24 11:04:02,797] ERROR in app: Exception on /logout [GET]
+Traceback (most recent call last):
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/flask/app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/flask/app.py", line 1519, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/flask/app.py", line 1517, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/flask/app.py", line 1503, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/app.py", line 141, in logout
+    session.pop('email')
+  File "/home/nacool/Desktop/Projects/scholarship_scraper/venv/lib/python3.9/site-packages/werkzeug/datastructures.py", line 216, in pop
+    rv = super().pop(key)
+KeyError: 'email'
+[2023-01-24 19:11:54 +0530] [98182] [CRITICAL] WORKER TIMEOUT (pid:157661)
+[2023-01-24 19:11:54 +0530] [157661] [INFO] Worker exiting (pid: 157661)
+[2023-01-24 19:11:54 +0530] [204591] [INFO] Booting worker with pid: 204591
+[2023-01-24 19:45:04 +0530] [98182] [INFO] Handling signal: term
+[2023-01-24 19:45:04 +0530] [143922] [INFO] Worker exiting (pid: 143922)
+[2023-01-24 19:45:04 +0530] [204591] [INFO] Worker exiting (pid: 204591)
+[2023-01-24 19:45:04 +0530] [109747] [INFO] Worker exiting (pid: 109747)
+[2023-01-24 19:45:04 +0530] [98196] [INFO] Worker exiting (pid: 98196)
+[2023-01-24 19:45:06 +0530] [98182] [INFO] Shutting down: Master
+[2023-01-24 19:45:07 +0530] [212325] [INFO] Starting gunicorn 20.1.0
+[2023-01-24 19:45:07 +0530] [212325] [INFO] Listening at: http://0.0.0.0:8080 (212325)
+[2023-01-24 19:45:07 +0530] [212325] [INFO] Using worker: sync
+[2023-01-24 19:45:07 +0530] [212340] [INFO] Booting worker with pid: 212340
+[2023-01-24 19:45:07 +0530] [212343] [INFO] Booting worker with pid: 212343
+[2023-01-24 19:45:07 +0530] [212349] [INFO] Booting worker with pid: 212349
+[2023-01-24 19:45:07 +0530] [212353] [INFO] Booting worker with pid: 212353
