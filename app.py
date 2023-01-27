@@ -250,8 +250,12 @@ def send_email(sch_id, recipient):
     return 'Sent'
 
 @app.route('/robots.txt')
-def sitemap():
+def robot_txt():
     return send_file("robots.txt")
+
+@app.route('/sitemap')
+def sitemap():
+    return send_file('sitemap.xml')
 
 if __name__ == '__main__':
     app.run('0.0.0.0', port=8080, threaded=True)
