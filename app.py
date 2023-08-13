@@ -232,6 +232,11 @@ def edit_blog(post_id):
         
     return post_id
 
+@app.route("/demo")
+def demo_print():
+    text = request.args["print"]
+    return text,200
+
 def send_email(sch_id, recipient):
     #sch_id = request.args.get('sch_id')
     #recipient = request.args.get('recipient')
